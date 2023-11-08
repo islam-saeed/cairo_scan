@@ -84,7 +84,14 @@ module.exports = class Receive {
     let event = this.webhookEvent;
 
     // check greeting is here and is confident
-    let greeting = this.firstEntity(event.message.nlp, "greetings");
+    // let greeting = this.firstEntity(event.message.nlp, "greetings");
+    if(event.message.nlp.traits['wit$greetings']){
+
+      var greeting =event.message.nlp.traits['wit$greetings'][0];
+    }
+
+
+    console.log("greeting: "+greeting);
     let message = event.message.text.trim().toLowerCase();
 
     let response;
@@ -250,7 +257,20 @@ module.exports = class Receive {
       response = Response.genNuxMessage(this.user);
     } else if (payload.includes("CELLTEK")) {
       response = Response.genText("celltek");
-    } else if (payload.includes("SHOP_NOW")) {
+    } 
+     else if (payload.includes("BRANCHES")) { 
+      response = Response.genQuickReply(i18n.__("branches.greeting"), [
+        {
+          title: i18n.__("branches.qanater"),
+          payload: "QANATER"
+        },
+        {
+          title: i18n.__("branches.banha"),
+          payload: "BANHA"
+        }
+      ]);
+    } 
+    else if (payload.includes("SHOP_NOW")) { 
       response = Response.genQuickReply(i18n.__("menu.shop"), [
         {
           title: i18n.__("menu.suggestion"),
