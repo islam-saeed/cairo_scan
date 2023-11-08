@@ -161,6 +161,7 @@ app.post("/webhook", (req, res) => {
                     senderPsid,
                     "with locale:",
                     i18n.getLocale()
+
                   );
                   return receiveAndReturn(
                     users[senderPsid],
@@ -169,11 +170,25 @@ app.post("/webhook", (req, res) => {
                   );
                 });
             } else {
+
               setDefaultUser(senderPsid);
               return receiveAndReturn(users[senderPsid], webhookEvent, false);
             }
           } else {
-            i18n.setLocale(users[senderPsid].locale);
+            let lang =
+            webhookEvent.message.nlp.detected_locales[0].locale.slice(0, 2);
+            switch (lang) {
+              case "en":
+                i18n.setLocale("en_US");
+                break;
+              case "ar":
+                i18n.setLocale("ar_AR");
+                break;
+              default:
+                i18n.setLocale("ar_AR");
+            }
+            
+              console.log("---------------------------lang: ", lang);
             console.log(
               "Profile already exists PSID:",
               senderPsid,

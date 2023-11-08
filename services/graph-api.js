@@ -149,7 +149,7 @@ module.exports = class GraphApi {
         firstName: userProfile.first_name,
         lastName: userProfile.last_name,
         gender: userProfile.gender,
-        locale: userProfile.locale,
+       
         timezone: userProfile.timezone
       };
     } else {

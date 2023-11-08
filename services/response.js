@@ -151,27 +151,23 @@ module.exports = class Response {
       })
     );
 
-    let guide = this.genText(i18n.__("get_started.guidance"));
+    
 
     let curation = this.genQuickReply(i18n.__("get_started.help"), [
       {
-        title: i18n.__("menu.branches"),
-        payload: "BRANCHES"
+        title: i18n.__("menu.suggestion"),
+        payload: "MENU"
       },
       {
         title: i18n.__("menu.help"),
         payload: "CARE_HELP"
       },
       {
-        title: i18n.__("menu.shop"),
-        payload: "SHOP_NOW"
-      },
-      {
-        title: i18n.__("menu.product_launch"),
-        payload: "PRODUCT_LAUNCH"
-      }
+        title: i18n.__("menu.Thanks"),
+        payload: "THANKS"
+      },    
     ]);
 
-    return [welcome, guide, curation];
+    return [welcome, curation];
   }
 };

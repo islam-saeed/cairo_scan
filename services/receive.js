@@ -115,26 +115,22 @@ module.exports = class Receive {
             message: event.message.text
           })
         ),
-        Response.genText(i18n.__("get_started.guidance")),
-        Response.genText("celltek"),
+        Response.genText("Cairo scan"),
         Response.genQuickReply(i18n.__("get_started.help"), [
           {
             title: i18n.__("menu.suggestion"),
-            payload: "CURATION"
+            payload: "MENU"
           },
           {
             title: i18n.__("menu.help"),
             payload: "CARE_HELP"
           },
           {
-            title: i18n.__("menu.product_launch"),
-            payload: "PRODUCT_LAUNCH"
-          },
-          {
-            title: "Celltek",
-            payload: "CELLTEK"
-          }
+            title: i18n.__("menu.Thanks"),
+            payload: "THANKS"
+          },    
         ])
+    
       ];
     }
 
@@ -258,7 +254,60 @@ module.exports = class Receive {
     } else if (payload.includes("CELLTEK")) {
       response = Response.genText("celltek");
     } 
-     else if (payload.includes("BRANCHES")) { 
+    else if (payload.includes("MENU")) { // القائمة
+      console.log("Handling MENU payload")
+      response = Response.genQuickReply(i18n.__("get_started.menu"), [      
+        {
+          title: i18n.__("menu.complaints"),
+          payload: "COMPLAINTS_MENU"
+        },
+        {
+          title: i18n.__("menu.labsBranches"),
+          payload: "LABS_BRANCHES"
+        },
+        {
+          title: i18n.__("menu.radiologyBranches"),
+          payload: "RADIOLOGY_BRANCHES"
+        },
+        {
+          title: i18n.__("menu.contracts"),
+          payload: "CONTRACTS"
+        },
+        {
+          title: i18n.__("menu.preparations"),
+          payload: "PREPARATIONS"
+        },
+        {
+          title: i18n.__("menu.visitDetails"),
+          payload: "VISIT_DETAILS"
+        },
+        {
+          title: i18n.__("menu.resultTests"),
+          payload: "RESULT_TESTS"
+        },
+        {
+          title: i18n.__("menu.resultXray"),
+          payload: "RESULT_XRAY"
+        },
+        {
+          title: i18n.__("menu.prices"),
+          payload: "RADIOLOGY_PRICES"
+        }
+      ]);
+    }
+    else if (payload.includes("RADIOLOGY_PRICES")) { // فروع كايرو سكان
+      response = Response.genQuickReply(i18n.__("insurance_or_contract.title"), [
+        {
+          title: i18n.__("insurance_or_contract.yes"),
+          payload: "SHOW_RADIOLOGY-PRICES"
+        },
+        {
+          title: i18n.__("insurance_or_contract.no"),
+          payload: "NO"
+        }
+      ]);
+    }
+     else if (payload.includes("LABS_BRANCHES")) { // فروع كايرو سكان
       response = Response.genQuickReply(i18n.__("branches.greeting"), [
         {
           title: i18n.__("branches.qanater"),
@@ -270,27 +319,15 @@ module.exports = class Receive {
         }
       ]);
     } 
-    else if (payload.includes("SHOP_NOW")) { 
-      response = Response.genQuickReply(i18n.__("menu.shop"), [
-        {
-          title: i18n.__("menu.suggestion"),
-          payload: "CURATION"
-        },
-        {
-          title: i18n.__("menu.help"),
-          payload: "CARE_HELP"
-        },
-        {
-          title: i18n.__("menu.shop"),
-          payload: "SHOP_NOW"
-        },
-        {
-          title: i18n.__("menu.product_launch"),
-          payload: "PRODUCT_LAUNCH"
-        }
-      ]);
-    } else if (
-      payload.includes("CURATION") ||
+   
+     else if (payload.includes("X-RAY")) { // اسعار الأشعة     
+      response = Response.genText(i18n.__("prices_Radiology.X-ray"));
+    }
+    else if (payload.includes("CT_CORONARY")) { // اسعار الأشعة     
+      response = Response.genText(i18n.__("prices_Radiology.CT_Coronary"));
+    }
+    else if (
+      payload.includes("SHOW_RADIOLOGY-PRICES") ||
       payload.includes("COUPON") ||
       payload.includes("PRODUCT_LAUNCH")
     ) {
@@ -306,7 +343,7 @@ module.exports = class Receive {
     } else if (payload.includes("CHAT-PLUGIN")) {
       response = [
         Response.genText(i18n.__("chat_plugin.prompt")),
-        Response.genText(i18n.__("get_started.guidance")),
+
         Response.genQuickReply(i18n.__("get_started.help"), [
           {
             title: i18n.__("care.order"),
@@ -346,24 +383,18 @@ module.exports = class Receive {
   handlePrivateReply(type, object_id) {
     let welcomeMessage =
       i18n.__("get_started.welcome") +
-      " " +
-      i18n.__("get_started.guidance") +
       ". " +
       i18n.__("get_started.help");
 
     let response = Response.genQuickReply(welcomeMessage, [
       {
         title: i18n.__("menu.suggestion"),
-        payload: "CURATION"
+        payload: "MENU"
       },
       {
         title: i18n.__("menu.help"),
         payload: "CARE_HELP"
-      },
-      {
-        title: i18n.__("menu.product_launch"),
-        payload: "PRODUCT_LAUNCH"
-      }
+      },      
     ]);
 
     let requestBody = {
