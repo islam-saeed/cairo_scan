@@ -259,7 +259,7 @@ module.exports = class Receive {
       response = Response.genQuickReply(i18n.__("get_started.menu"), [      
         {
           title: i18n.__("menu.complaints"),
-          payload: "COMPLAINTS_MENU"
+          payload: "COMPLAINTS"
         },
         {
           title: i18n.__("menu.labsBranches"),
@@ -295,15 +295,39 @@ module.exports = class Receive {
         }
       ]);
     }
-    else if (payload.includes("RADIOLOGY_PRICES")) { // فروع كايرو سكان
-      response = Response.genQuickReply(i18n.__("insurance_or_contract.title"), [
+    else if (payload.includes("RADIOLOGY_PRICES")) { // هل يوجد تأمين أو تعاقد؟
+      response = Response.genQuickReply(i18n.__("questions.contract"), [
         {
-          title: i18n.__("insurance_or_contract.yes"),
+          title: i18n.__("common.yes"),
           payload: "SHOW_RADIOLOGY-PRICES"
         },
         {
-          title: i18n.__("insurance_or_contract.no"),
+          title: i18n.__("common.no"),
           payload: "NO"
+        }
+      ]);
+    }
+    else if (payload.includes("BOOKVISIT_QUESTION")) { //هل تريد حجز زيارة فى الفرع
+      response = Response.genQuickReply(i18n.__("questions.bookVisit"), [
+        {
+          title: i18n.__("common.yes"),
+          payload: "YES_BOOKVISIT"
+        },
+        {
+          title: i18n.__("common.no"),
+          payload: "NO_BOOKVISIT"
+        }
+      ]);
+    }
+    else if (payload.includes("BOOK-HOME-VISIT_QUESTION")) { //هل تريد حجز زيارة منزلية؟
+      response = Response.genQuickReply(i18n.__("questions.bookHomeVisit"), [
+        {
+          title: i18n.__("common.yes"),
+          payload: "YES_BOOKVISIT"
+        },
+        {
+          title: i18n.__("common.no"),
+          payload: "NO_BOOKVISIT"
         }
       ]);
     }
@@ -320,45 +344,17 @@ module.exports = class Receive {
       ]);
     } 
    
-     else if (payload.includes("X-RAY")) { // اسعار الأشعة     
-      response = Response.genText(i18n.__("prices_Radiology.X-ray"));
-    }
+    
     else if (payload.includes("CT_CORONARY")) { // اسعار الأشعة     
       response = Response.genText(i18n.__("prices_Radiology.CT_Coronary"));
     }
     else if (
       payload.includes("SHOW_RADIOLOGY-PRICES") ||
-      payload.includes("COUPON") ||
-      payload.includes("PRODUCT_LAUNCH")
+      payload.includes("X-RAY") ||
+      payload.includes("CT_CORONARY") 
     ) {
       let curation = new Curation(this.user, this.webhookEvent);
       response = curation.handlePayload(payload);
-    } else if (payload.includes("CARE")) {
-      let care = new Care(this.user, this.webhookEvent);
-      response = care.handlePayload(payload);
-    } else if (payload.includes("ORDER")) {
-      response = Order.handlePayload(payload);
-    } else if (payload.includes("CSAT")) {
-      response = Survey.handlePayload(payload);
-    } else if (payload.includes("CHAT-PLUGIN")) {
-      response = [
-        Response.genText(i18n.__("chat_plugin.prompt")),
-
-        Response.genQuickReply(i18n.__("get_started.help"), [
-          {
-            title: i18n.__("care.order"),
-            payload: "CARE_ORDER"
-          },
-          {
-            title: i18n.__("care.billing"),
-            payload: "CARE_BILLING"
-          },
-          {
-            title: i18n.__("care.other"),
-            payload: "CARE_OTHER"
-          }
-        ])
-      ];
     } else if (payload.includes("BOOK_APPOINTMENT")) {
       response = [
         Response.genText(i18n.__("care.appointment")),

@@ -49,6 +49,37 @@ module.exports = class Curation {
       
         break;
 
+      case "X-RAY": // اشعة سينية
+      response = 
+       Response.genQuickReply(i18n.__("prices_Radiology.X-ray"), [      
+          {
+            title: i18n.__("prices_Radiology.visit_branch"),
+            payload: "BOOKVISIT_QUESTION"
+          },
+          {
+            title: i18n.__("prices_Radiology.visit_home"),
+            payload: "BOOK-HOME-VISIT_QUESTION"
+          }
+         
+        ])
+      
+        break;
+      case "CT_CORONARY": // اشعة مقطعية
+      response = 
+      Response.genQuickReply(i18n.__("prices_Radiology.coronary"), [      
+         {
+           title: i18n.__("questions.bookVisit"),
+           payload: "BOOKVISIT_QUESTION"
+         },
+         {
+           title: i18n.__("questions.bookHomeVisit"),
+           payload: "BOOK-HOME-VISIT_QUESTION"
+         }
+        
+       ])
+     
+       break;
+
   
 
       

@@ -1,100 +1,94 @@
 {
 	"profile": {
-		"greeting": "Hello {{userFirstName}}. I am the default assistant for CairoScan services."
+		"greeting": "Welcome {{userFirstName}}. I am the virtual assistant for CairoScan services"
 	},
 	"menu": {
-		"order": "Order updates",
-		"help": "Talk to an agent",
+		"start_over": "Start Over",
+		"branches": "Branches",
+		"order": "Order Updates",
+		"help": "Customer Service",
 		"suggestion": "Menu",
-		"shop": "Shop now",
-		"Thanks": "Thanks",
-		"start_over": "Start over",
-		"branches": "فروع المعمل",
-		"prices ": "Prices for X-ray and booking",
-		"resultXray": "X-ray results",
-		"resultTests": "test results",
-		"visitDetails": "details of the home visit",
+		"shop": "Shop Now",
+		"Thanks": "No, Thanks",
+		"prices": "Prices for Radiology and Booking",
+		"resultXray": "Radiology Results",
+		"resultTests": "Test Results",
+		"visitDetails": "Home Visit Details",
 		"preparations": "Preparations",
-		"contracts": "available contracts",
-		"complaints": "menu.complaints",
-		"labsBranches": "menu.labsBranches",
-		"radiologyBranches": "menu.radiologyBranches",
-		"prices": "menu.prices"
+		"contracts": "Available Contracts",
+		"radiologyBranches": "Radiology Branches",
+		"labsBranches": "Lab Branches",
+		"complaints": "Complaints"
 	},
 	"get_started": {
-		"welcome": "Hello {{userFirstName}}. I am the default assistant for CairoScan services.",
-		"menu": "يمكنك استخدام القائمة الموجودة أدناه ",
-		"help": " What service do you need assistance with today?"
-	},
-	"leadgen": {
-		"promo": "Hi {{userFirstName}}, finding great outfits is now easier and more convenient.",
-		"title": "50% Coupon",
-		"subtitle": "Here is your coupon",
-		"apply": "Apply discount",
-		"coupon": "Added your coupon to this thread, you can now check out the discounted summer collection"
-	},
-	"wholesale_leadgen": {
-		"intro": "Hi {{userFirstName}}, my name is {{agentFirstName}}, I see that you are looking to join our resellers program",
-		"lead_intro": "Hi {{userFirstName}}. Original Coast Clothing can supply your store which fresh a original clothing styles",
-		"lead_question": "Are you interested in becoming an Original Coast Clothing Authorized Reseller?",
-		"lead_qualified": "Thanks for expresing your interest in our brand. We will follow up shortly with more info",
-		"lead_disqualified": "No problem, you can always buy clothing via our website https://www.originalcoastclothing.com/"
+		"welcome": "\"Hello {{userFirstName}}! Welcome to Original Coast Clothing, where you can find clothing styles for every occasion.",
+		"menu": "You can use the menu below ",
+		"help": "What service do you need assistance with today?"
 	},
 	"names_Radiology": {
-		"message": "اختر من القائمةادناه الأشعة",
-		"X-ray": "اشعة سينية",
-		"CT_Chest": "اشعة مقطعية",
-		"MRI_Heart": "اشعة رنين علي القلب",
-		"Liver_Scan": "مسح ذري علي الكبد"
+		"message": "To know the prices for Radiology and booking\nChoose from the menu below",
+		"X-ray": "X-ray",
+		"CT": "CT Scans",
+		"CT_Coronary": "Coronary CT Scan",
+		"MRI_Heart": "MRI Heart Scan",
+		"Liver_Scan": "Liver Atomic Scan"
 	},
 	"prices_Radiology": {
-		"X-ray": "لا يوجد تحضيرات\nالسعر: 25",
-		"CT_Chest": "لا يوجد تحضيرات\nالسعر: 25",
-		"MRI_Heart": "لا يوجد تحضيرات\nالسعر: 25",
-		"Liver_Scan": "لا يوجد تحضيرات\nالسعر: 25"
+		"X-ray": "Price: 25",
+		"CT": "Price: 50 EGP",
+		"CT_Coronary": "Before the scan, fasting for 6 hours + kidney function test + attendance with previous examinations\nPrice: 4200 EGP",
+		"MRI_Heart": "Before the scan, you must do a kidney function test creatinine\nPrice: 5300 EGP",
+		"Liver_Scan": "\nPrice: 25",
+		"visit_branch": "Book a visit at the branch",
+"visit_home": "Book a home visit"
 	},
 	"order": {
-		"prompt": "We'll be happy to help you. Select from the following",
+		"prompt": "We are happy to assist you. Choose from the following",
 		"search": "Search by order number",
-		"account": "Link my Account",
-		"dialog": "Account linking dialog",
-		"searching": "Searching for your last order...",
-		"number": "Sure, please write the order number",
-		"status": "Your order is on it’s way, expect to have it in 3 days."
+		"account": "Link My Account",
+		"dialog": "Account Link Dialog Box",
+		"searching": "Searching for the last order...",
+		"number": "Certainly, please write the order number",
+		"status": "Your order is on its way to you, expected to arrive within 3 days."
 	},
 	"care": {
-		"prompt": "To connect you with the right team please let me know what this is about?",
-		"order": "Order Inquiries",
-		"billing": "Billing Issues",
+		"prompt": "To connect you with the right team, please let me know what you need?",
+		"order": "Inquiries about the order",
+		"billing": "Billing issues",
 		"other": "Other",
-		"appointment": "Thank you for wanting to make an appointment.",
-		"issue": "Hi {{userFirstName}}, my name is {{agentFirstName}}, I'm here to assist you with any questions you might have about your {{topic}}.",
-		"default": "Hi {{userFirstName}}, my name is {{agentFirstName}}, I'm here to assist you today. How can I help you?",
-		"style": "Hi {{userFirstName}}, my name is {{agentFirstName}}, I’m here to answer questions you might have on our summer styles",
-		"end": "This is as far as the demo goes. Leverage the power of the messenger platform for your business. See https://fb.me/get-sample-oc to learn how to build a similar experience",
+		"appointment": "Thank you for wanting to schedule an appointment",
+		"issue": "Hello {{userFirstName}}, let me introduce myself, I am {{agentFirstName}}, and I am here to help you with any questions about {{topic}}.",
+		"default": "Hello {{userFirstName}}, let me introduce myself, I am {{agentFirstName}}, and I am here to help you today. How can I assist you?",
+		"style": "Hello {{userFirstName}}, let me introduce myself, I am {{agentFirstName}}, and I am here to answer any questions you have about the summer models we offer",
+		"end": "This is the most the trial can offer. You can leverage the capabilities of the Messenger platform in your business. Please visit https://fb.me/get-sample-oc to learn how to create a similar experience",
 		"help": "Help"
 	},
 	"survey": {
-		"prompt": "Hi, want to get quick feedback on your recent experience with {{agentFirstName}}",
-		"positive": "Thanks for the feedback",
-		"neutral": "Thanks for the feedback, if there something we should improve feel free to comment with #suggestion",
-		"negative": "Thanks for telling us. Sorry to hear that, if there something we can do to turn this let us know",
-		"suggestion": "Your suggestion has been recorded for future review by the team. If this is something we need to get back to you right now just comment \"help\""
+		"prompt": "Hello, would you like quick feedback on your recent experience with {{agentFirstName}}?",
+		"positive": "Thank you for your feedback",
+		"neutral": "Thank you for the feedback, and if there's anything we should improve, feel free to comment using the hashtag #suggestion",
+		"negative": "Thank you for letting us know. We're sorry to hear that. If there's anything we can do to change what happened, please let us know"
 	},
 	"chat_plugin": {
-		"prompt": "Thanks for visiting our store, be sure to check out all the great styles we have on the summer section."
+		"prompt": "Thank you for visiting our store, make sure to check out all the fantastic styles we have in the summer section."
 	},
 	"fallback": {
-		"any": "Sorry, but I don’t recognize \"{{message}}\".",
-		"attachment": "Thanks for sending this attachment, we can connect you to an agent to review it or we can start over"
-	},
-	"common": {
-		"yes": "yes",
-		"no": "no"
+		"any": "Sorry, but I can't understand \"{{message}}\".",
+		"attachment": "Thank you for sending this attachment. We can connect you with one of the agents to review it, or we can start over"
 	},
 	"branches": {
-		"greeting": "برجاء اختيار الفرع الأقرب لك..",
-		"qanater": "qanater",
-		"banha": "بنها"
+		"greeting": "Please choose the nearest branch for you..",
+		"qanater": "Qanater",
+		"banha": "Banha"
+	},
+	"common": {
+		"yes": "Yes",
+		"no": "No",
+		"title": "Choose Yes or No from the menu below"
+	},
+	"questions": {
+		"contract": "Is there insurance or a contract?",
+		"bookVisit": "Do you want to book a visit at the branch?",
+		"bookHomeVisit": "Do you want to book a home visit?"
 	}
 }
