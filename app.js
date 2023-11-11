@@ -131,8 +131,15 @@ app.post("/webhook", (req, res) => {
             if (!guestUser) {
               // Make call to UserProfile API only if user is not guest
               let user = new User(senderPsid);
-              let lang =
-                webhookEvent.message.nlp.detected_locales[0].locale.slice(0, 2);
+              if (webhookEvent.message.nlp.detected_locales.length > 0) {
+                var lang =
+                  webhookEvent.message.nlp.detected_locales[0].locale.slice(
+                    0,
+                    2
+                  );
+              } else {
+                var lang = "";
+              }
               console.log("lang: ", lang);
               GraphApi.getUserProfile(senderPsid)
                 .then((userProfile) => {
@@ -161,7 +168,6 @@ app.post("/webhook", (req, res) => {
                     senderPsid,
                     "with locale:",
                     i18n.getLocale()
-
                   );
                   return receiveAndReturn(
                     users[senderPsid],
@@ -170,13 +176,16 @@ app.post("/webhook", (req, res) => {
                   );
                 });
             } else {
-
               setDefaultUser(senderPsid);
               return receiveAndReturn(users[senderPsid], webhookEvent, false);
             }
           } else {
-            let lang =
-            webhookEvent.message.nlp.detected_locales[0].locale.slice(0, 2);
+            if (webhookEvent.message.nlp.detected_locales.length > 0) {
+              var lang =
+                webhookEvent.message.nlp.detected_locales[0].locale.slice(0, 2);
+            } else {
+              var lang = "";
+            }
             switch (lang) {
               case "en":
                 i18n.setLocale("en_US");
@@ -187,8 +196,8 @@ app.post("/webhook", (req, res) => {
               default:
                 i18n.setLocale("ar_AR");
             }
-            
-              console.log("---------------------------lang: ", lang);
+
+            console.log("---------------------------lang: ", lang);
             console.log(
               "Profile already exists PSID:",
               senderPsid,

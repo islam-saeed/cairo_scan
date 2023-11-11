@@ -151,8 +151,6 @@ module.exports = class Response {
       })
     );
 
-    
-
     let curation = this.genQuickReply(i18n.__("get_started.help"), [
       {
         title: i18n.__("menu.suggestion"),
@@ -165,7 +163,7 @@ module.exports = class Response {
       {
         title: i18n.__("menu.Thanks"),
         payload: "THANKS"
-      },    
+      }
     ]);
 
     return [welcome, curation];

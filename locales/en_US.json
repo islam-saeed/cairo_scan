@@ -18,7 +18,8 @@
 		"contracts": "Available Contracts",
 		"radiologyBranches": "Radiology Branches",
 		"labsBranches": "Lab Branches",
-		"complaints": "Complaints"
+		"complaints": "Complaints",
+		"approvals": "Approvals"
 	},
 	"get_started": {
 		"welcome": "\"Hello {{userFirstName}}! Welcome to Original Coast Clothing, where you can find clothing styles for every occasion.",
@@ -90,5 +91,8 @@
 		"contract": "Is there insurance or a contract?",
 		"bookVisit": "Do you want to book a visit at the branch?",
 		"bookHomeVisit": "Do you want to book a home visit?"
+	},
+	"customer_service":{
+	  "redirection": "You have been redirected to our customer service, please wait..."
 	}
 }

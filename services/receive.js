@@ -20,6 +20,8 @@ const Curation = require("./curation"),
   i18n = require("../i18n.config"),
   config = require("./config");
 
+var waitingUsers = [];
+
 module.exports = class Receive {
   constructor(user, webhookEvent, isUserRef) {
     this.user = user;
@@ -83,15 +85,23 @@ module.exports = class Receive {
 
     let event = this.webhookEvent;
 
+    console.log("waiting users : ", waitingUsers);
+    console.log("event sender id : ", event.sender.id);
+    if (waitingUsers.includes(event.sender.id)) {
+      if (!event.quick_reply) {
+        return;
+        // return Response.genPostbackButton(i18n.__("menu.suggestion"), "MENU");
+      } else if (event.quick_reply.payload != "MENU") {
+        return;
+      }
+    }
     // check greeting is here and is confident
     // let greeting = this.firstEntity(event.message.nlp, "greetings");
-    if(event.message.nlp.traits['wit$greetings']){
-
-      var greeting =event.message.nlp.traits['wit$greetings'][0];
+    if (event.message.nlp.traits["wit$greetings"]) {
+      var greeting = event.message.nlp.traits["wit$greetings"][0];
     }
 
-
-    console.log("greeting: "+greeting);
+    console.log("greeting: " + greeting);
     let message = event.message.text.trim().toLowerCase();
 
     let response;
@@ -128,9 +138,8 @@ module.exports = class Receive {
           {
             title: i18n.__("menu.Thanks"),
             payload: "THANKS"
-          },    
+          }
         ])
-    
       ];
     }
 
@@ -163,7 +172,9 @@ module.exports = class Receive {
   handleQuickReply() {
     // Get the payload of the quick reply
     let payload = this.webhookEvent.message.quick_reply.payload;
-
+    if (payload.includes("APPROVALS")) {
+      waitingUsers.push(this.webhookEvent.sender.id);
+    }
     return this.handlePayload(payload);
   }
 
@@ -253,10 +264,14 @@ module.exports = class Receive {
       response = Response.genNuxMessage(this.user);
     } else if (payload.includes("CELLTEK")) {
       response = Response.genText("celltek");
-    } 
-    else if (payload.includes("MENU")) { // القائمة
-      console.log("Handling MENU payload")
-      response = Response.genQuickReply(i18n.__("get_started.menu"), [      
+    } else if (payload.includes("MENU")) {
+      // القائمة
+      console.log("Handling MENU payload");
+      response = Response.genQuickReply(i18n.__("get_started.menu"), [
+        {
+          title: i18n.__("menu.approvals"),
+          payload: "APPROVALS"
+        },
         {
           title: i18n.__("menu.complaints"),
           payload: "COMPLAINTS"
@@ -294,8 +309,8 @@ module.exports = class Receive {
           payload: "RADIOLOGY_PRICES"
         }
       ]);
-    }
-    else if (payload.includes("RADIOLOGY_PRICES")) { // هل يوجد تأمين أو تعاقد؟
+    } else if (payload.includes("RADIOLOGY_PRICES")) {
+      // هل يوجد تأمين أو تعاقد؟
       response = Response.genQuickReply(i18n.__("questions.contract"), [
         {
           title: i18n.__("common.yes"),
@@ -306,8 +321,8 @@ module.exports = class Receive {
           payload: "NO"
         }
       ]);
-    }
-    else if (payload.includes("BOOKVISIT_QUESTION")) { //هل تريد حجز زيارة فى الفرع
+    } else if (payload.includes("BOOKVISIT_QUESTION")) {
+      //هل تريد حجز زيارة فى الفرع
       response = Response.genQuickReply(i18n.__("questions.bookVisit"), [
         {
           title: i18n.__("common.yes"),
@@ -318,8 +333,8 @@ module.exports = class Receive {
           payload: "NO_BOOKVISIT"
         }
       ]);
-    }
-    else if (payload.includes("BOOK-HOME-VISIT_QUESTION")) { //هل تريد حجز زيارة منزلية؟
+    } else if (payload.includes("BOOK-HOME-VISIT_QUESTION")) {
+      //هل تريد حجز زيارة منزلية؟
       response = Response.genQuickReply(i18n.__("questions.bookHomeVisit"), [
         {
           title: i18n.__("common.yes"),
@@ -330,8 +345,8 @@ module.exports = class Receive {
           payload: "NO_BOOKVISIT"
         }
       ]);
-    }
-     else if (payload.includes("LABS_BRANCHES")) { // فروع كايرو سكان
+    } else if (payload.includes("LABS_BRANCHES")) {
+      // فروع كايرو سكان
       response = Response.genQuickReply(i18n.__("branches.greeting"), [
         {
           title: i18n.__("branches.qanater"),
@@ -342,16 +357,13 @@ module.exports = class Receive {
           payload: "BANHA"
         }
       ]);
-    } 
-   
-    
-    else if (payload.includes("CT_CORONARY")) { // اسعار الأشعة     
+    } else if (payload.includes("CT_CORONARY")) {
+      // اسعار الأشعة
       response = Response.genText(i18n.__("prices_Radiology.CT_Coronary"));
-    }
-    else if (
+    } else if (
       payload.includes("SHOW_RADIOLOGY-PRICES") ||
       payload.includes("X-RAY") ||
-      payload.includes("CT_CORONARY") 
+      payload.includes("CT_CORONARY")
     ) {
       let curation = new Curation(this.user, this.webhookEvent);
       response = curation.handlePayload(payload);
@@ -360,6 +372,16 @@ module.exports = class Receive {
         Response.genText(i18n.__("care.appointment")),
         Response.genText(i18n.__("care.end"))
       ];
+    } else if (payload.includes("APPROVALS")) {
+      response = Response.genQuickReply(
+        i18n.__("customer_service.redirection"),
+        [
+          {
+            title: i18n.__("menu.suggestion"),
+            payload: "MENU"
+          }
+        ]
+      );
     } else if (payload === "RN_WEEKLY") {
       response = {
         text: `[INFO]The following message is a sample Recurring Notification for a weekly frequency. This is usually sent outside the 24 hour window to notify users on topics that they have opted in.`
@@ -378,9 +400,7 @@ module.exports = class Receive {
 
   handlePrivateReply(type, object_id) {
     let welcomeMessage =
-      i18n.__("get_started.welcome") +
-      ". " +
-      i18n.__("get_started.help");
+      i18n.__("get_started.welcome") + ". " + i18n.__("get_started.help");
 
     let response = Response.genQuickReply(welcomeMessage, [
       {
@@ -390,7 +410,7 @@ module.exports = class Receive {
       {
         title: i18n.__("menu.help"),
         payload: "CARE_HELP"
-      },      
+      }
     ]);
 
     let requestBody = {

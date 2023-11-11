@@ -27,31 +27,29 @@ module.exports = class Curation {
 
     switch (payload) {
       case "SHOW_RADIOLOGY-PRICES":
-        response =Response.genQuickReply(i18n.__("names_Radiology.message"), [      
+        response = Response.genQuickReply(i18n.__("names_Radiology.message"), [
           {
             title: i18n.__("names_Radiology.X-ray"),
             payload: "X-RAY"
-          }, 
+          },
           {
             title: i18n.__("names_Radiology.CT_Coronary"),
             payload: "CT_CORONARY"
-          },  
+          },
           {
             title: i18n.__("names_Radiology.MRI_Heart"),
             payload: "MRI_HEART"
-          }, 
+          },
           {
             title: i18n.__("names_Radiology.Liver_Scan"),
             payload: "LIVER_SCAN"
           }
-         
-        ])
-      
+        ]);
+
         break;
 
       case "X-RAY": // اشعة سينية
-      response = 
-       Response.genQuickReply(i18n.__("prices_Radiology.X-ray"), [      
+        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray"), [
           {
             title: i18n.__("prices_Radiology.visit_branch"),
             payload: "BOOKVISIT_QUESTION"
@@ -60,29 +58,26 @@ module.exports = class Curation {
             title: i18n.__("prices_Radiology.visit_home"),
             payload: "BOOK-HOME-VISIT_QUESTION"
           }
-         
-        ])
-      
+        ]);
+
         break;
       case "CT_CORONARY": // اشعة مقطعية
-      response = 
-      Response.genQuickReply(i18n.__("prices_Radiology.coronary"), [      
-         {
-           title: i18n.__("questions.bookVisit"),
-           payload: "BOOKVISIT_QUESTION"
-         },
-         {
-           title: i18n.__("questions.bookHomeVisit"),
-           payload: "BOOK-HOME-VISIT_QUESTION"
-         }
-        
-       ])
-     
-       break;
+        response = Response.genQuickReply(
+          i18n.__("prices_Radiology.coronary"),
+          [
+            {
+              title: i18n.__("questions.bookVisit"),
+              payload: "BOOKVISIT_QUESTION"
+            },
+            {
+              title: i18n.__("questions.bookHomeVisit"),
+              payload: "BOOK-HOME-VISIT_QUESTION"
+            }
+          ]
+        );
 
-  
+        break;
 
-      
         // Build the recommendation logic here
         outfit = `${this.user.gender}-${this.randomOutfit()}`;
         response = Response.genRecurringNotificationsTemplate(
