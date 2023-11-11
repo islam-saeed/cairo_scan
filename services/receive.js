@@ -87,14 +87,6 @@ module.exports = class Receive {
 
     console.log("waiting users : ", waitingUsers);
     console.log("event sender id : ", event.sender.id);
-    if (waitingUsers.includes(event.sender.id)) {
-      if (!event.quick_reply) {
-        return;
-        // return Response.genPostbackButton(i18n.__("menu.suggestion"), "MENU");
-      } else if (event.quick_reply.payload != "MENU") {
-        return;
-      }
-    }
     // check greeting is here and is confident
     // let greeting = this.firstEntity(event.message.nlp, "greetings");
     if (event.message.nlp.traits["wit$greetings"]) {
@@ -111,6 +103,13 @@ module.exports = class Receive {
       message.includes("start over")
     ) {
       response = Response.genNuxMessage(this.user);
+    } else if (waitingUsers.includes(event.sender.id)) {
+      if (!event.quick_reply) {
+        return;
+        // return Response.genPostbackButton(i18n.__("menu.suggestion"), "MENU");
+      } else if (event.quick_reply.payload != "MENU") {
+        return;
+      }
     } else if (Number(message)) {
       response = Order.handlePayload("ORDER_NUMBER");
     } else if (message.includes("#")) {
@@ -194,6 +193,12 @@ module.exports = class Receive {
       return null;
     }
 
+    if (payload === "MENU" && waitingUsers.length > 0) {
+      waitingUsers = waitingUsers.filter(
+        (id) => id !== this.webhookEvent.sender.id
+      );
+      console.log(waitingUsers);
+    }
     return this.handlePayload(payload.toUpperCase());
   }
 
@@ -373,10 +378,11 @@ module.exports = class Receive {
         Response.genText(i18n.__("care.end"))
       ];
     } else if (payload.includes("APPROVALS")) {
-      response = Response.genQuickReply(
+      response = Response.genButtonTemplate(
         i18n.__("customer_service.redirection"),
         [
           {
+            type: "postback",
             title: i18n.__("menu.suggestion"),
             payload: "MENU"
           }

@@ -131,15 +131,16 @@ app.post("/webhook", (req, res) => {
             if (!guestUser) {
               // Make call to UserProfile API only if user is not guest
               let user = new User(senderPsid);
-              if (webhookEvent.message.nlp.detected_locales.length > 0) {
-                var lang =
-                  webhookEvent.message.nlp.detected_locales[0].locale.slice(
-                    0,
-                    2
-                  );
-              } else {
-                var lang = "";
-              }
+              if (webhookEvent.message)
+                if (webhookEvent.message.nlp.detected_locales.length > 0) {
+                  var lang =
+                    webhookEvent.message.nlp.detected_locales[0].locale.slice(
+                      0,
+                      2
+                    );
+                } else {
+                  var lang = "";
+                }
               console.log("lang: ", lang);
               GraphApi.getUserProfile(senderPsid)
                 .then((userProfile) => {
@@ -180,12 +181,16 @@ app.post("/webhook", (req, res) => {
               return receiveAndReturn(users[senderPsid], webhookEvent, false);
             }
           } else {
-            if (webhookEvent.message.nlp.detected_locales.length > 0) {
-              var lang =
-                webhookEvent.message.nlp.detected_locales[0].locale.slice(0, 2);
-            } else {
-              var lang = "";
-            }
+            if (webhookEvent.message)
+              if (webhookEvent.message.nlp.detected_locales.length > 0) {
+                var lang =
+                  webhookEvent.message.nlp.detected_locales[0].locale.slice(
+                    0,
+                    2
+                  );
+              } else {
+                var lang = "";
+              }
             switch (lang) {
               case "en":
                 i18n.setLocale("en_US");
