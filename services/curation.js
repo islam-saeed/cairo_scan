@@ -24,6 +24,16 @@ module.exports = class Curation {
   handlePayload(payload) {
     let response;
     let outfit;
+let bookVisit= [
+  {
+    title: i18n.__("questions.bookVisit"),
+    payload: "BOOKVISIT_QUESTION"
+  },
+  {
+    title: i18n.__("questions.bookHomeVisit"),
+    payload: "BOOK-HOME-VISIT_QUESTION"
+  }
+]
 
     switch (payload) {
       case "SHOW_RADIOLOGY-PRICES":
@@ -43,6 +53,18 @@ module.exports = class Curation {
           {
             title: i18n.__("names_Radiology.Liver_Scan"),
             payload: "LIVER_SCAN"
+          },
+          {
+            title: i18n.__("names_Radiology.PET-CT"),
+            payload: "PET-CT"
+          },
+          {
+            title: i18n.__("names_Radiology.other"),
+            payload: "OTHER_RADIOLOGY"
+          },
+          {
+            title: i18n.__("names_Radiology.prescription"),
+            payload: "PRESCRIOTION"
           }
         ]);
 
@@ -61,17 +83,55 @@ module.exports = class Curation {
         ]);
 
         break;
+      case "PET-CT": // مسح ذري
+        response = Response.genQuickReply(
+          i18n.__("prices_Radiology.PET-CT"),
+         bookVisit
+        );
+
+        break;
+      case "LIVER_SCAN": //  مسح ذري على الكبد
+        response = Response.genQuickReply(
+          i18n.__("prices_Radiology.Liver_Scan"),
+         bookVisit
+        );
+
+        break;
       case "CT_CORONARY": // اشعة مقطعية
         response = Response.genQuickReply(
           i18n.__("prices_Radiology.coronary"),
+         bookVisit
+        );
+
+        break;
+      case "MRI_HEART": // اشعة مقطعية
+        response = Response.genQuickReply(
+          i18n.__("prices_Radiology.MRI_Heart"),
+         bookVisit
+        );
+
+        break;
+      case "OTHER_RADIOLOGY": // اشعة اخرى
+        response = Response.genButtonTemplate(
+          i18n.__("customer_service.radiology_name"),
           [
             {
-              title: i18n.__("questions.bookVisit"),
-              payload: "BOOKVISIT_QUESTION"
-            },
+              type: "postback",
+              title: i18n.__("menu.suggestion"),
+              payload: "MENU"
+            }
+          ]
+        );
+
+        break;
+      case "PRESCRIOTION": // ارسال الروشتة
+        response = Response.genButtonTemplate(
+          i18n.__("customer_service.prescription"),
+          [
             {
-              title: i18n.__("questions.bookHomeVisit"),
-              payload: "BOOK-HOME-VISIT_QUESTION"
+              type: "postback",
+              title: i18n.__("menu.suggestion"),
+              payload: "MENU"
             }
           ]
         );

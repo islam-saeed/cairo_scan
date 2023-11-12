@@ -382,11 +382,11 @@ module.exports = class Receive {
       // هل يوجد تأمين أو تعاقد؟
       response = Response.genQuickReply(i18n.__("questions.contract"), [
         {
-          title: i18n.__("common.yes"),
+          title: i18n.__("common.no_contract"),
           payload: "SHOW_RADIOLOGY-PRICES"
         },
         {
-          title: i18n.__("common.no"),
+          title: i18n.__("common.yes"),
           payload: "NO"
         }
       ]);
@@ -399,7 +399,7 @@ module.exports = class Receive {
         },
         {
           title: i18n.__("common.no"),
-          payload: "NO_BOOKVISIT"
+          payload: "NO"
         }
       ]);
     } else if (payload.includes("BOOK-HOME-VISIT_QUESTION")) {
@@ -411,7 +411,7 @@ module.exports = class Receive {
         },
         {
           title: i18n.__("common.no"),
-          payload: "NO_BOOKVISIT"
+          payload: "NO"
         }
       ]);
     } else if (payload.includes("LABS_BRANCHES")) {
@@ -432,11 +432,16 @@ module.exports = class Receive {
         return Response.genText(branches);
       });
     } else if (payload.includes("CT_CORONARY")) {
-      // اسعار الأشعة
+      // اسماء واسعار الأشعة
       response = Response.genText(i18n.__("prices_Radiology.CT_Coronary"));
     } else if (
       payload.includes("SHOW_RADIOLOGY-PRICES") ||
       payload.includes("X-RAY") ||
+      payload.includes("OTHER_RADIOLOGY") ||
+      payload.includes("PRESCRIOTION") ||
+      payload.includes("PET-CT") ||
+      payload.includes("LIVER_SCAN") ||
+      payload.includes("MRI_HEART") ||
       payload.includes("CT_CORONARY")
     ) {
       let curation = new Curation(this.user, this.webhookEvent);
@@ -446,7 +451,12 @@ module.exports = class Receive {
         Response.genText(i18n.__("care.appointment")),
         Response.genText(i18n.__("care.end"))
       ];
-    } else if (payload.includes("APPROVALS")) {
+    } else if (
+      payload.includes("APPROVALS")||
+      payload.includes("YES_BOOKVISIT")||
+      payload.includes("NO")
+      ) {
+        //خدمة العملاء
       response = Response.genButtonTemplate(
         i18n.__("customer_service.redirection"),
         [

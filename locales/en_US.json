@@ -30,18 +30,23 @@
 		"message": "To know the prices for Radiology and booking\nChoose from the menu below",
 		"X-ray": "X-ray",
 		"CT": "CT Scans",
+		"PET-CT": "(PET) Positron Emission Tomography scan",
 		"CT_Coronary": "Coronary CT Scan",
 		"MRI_Heart": "MRI Heart Scan",
-		"Liver_Scan": "Liver Atomic Scan"
+		"Liver_Scan": "Liver Atomic Scan",
+		"prescription": "send doctor's prescription.",
+		"other": "Other radiology services."
 	},
 	"prices_Radiology": {
 		"X-ray": "Price: 25",
 		"CT": "Price: 50 EGP",
 		"CT_Coronary": "Before the scan, fasting for 6 hours + kidney function test + attendance with previous examinations\nPrice: 4200 EGP",
+		"PET-CT": " Price: 6000 EGP",
 		"MRI_Heart": "Before the scan, you must do a kidney function test creatinine\nPrice: 5300 EGP",
-		"Liver_Scan": "\nPrice: 25",
+		"Liver_Scan": " Attendance with previous films + fasting 6 hours before the examination.\n Price: 1120 pounds.",
 		"visit_branch": "Book a visit at the branch",
-"visit_home": "Book a home visit"
+		"visit_home": "Book a home visit",
+		"Liver_Scan": "prices_Radiology.Liver_Scan"
 	},
 	"order": {
 		"prompt": "We are happy to assist you. Choose from the following",
@@ -51,18 +56,6 @@
 		"searching": "Searching for the last order...",
 		"number": "Certainly, please write the order number",
 		"status": "Your order is on its way to you, expected to arrive within 3 days."
-	},
-	"care": {
-		"prompt": "To connect you with the right team, please let me know what you need?",
-		"order": "Inquiries about the order",
-		"billing": "Billing issues",
-		"other": "Other",
-		"appointment": "Thank you for wanting to schedule an appointment",
-		"issue": "Hello {{userFirstName}}, let me introduce myself, I am {{agentFirstName}}, and I am here to help you with any questions about {{topic}}.",
-		"default": "Hello {{userFirstName}}, let me introduce myself, I am {{agentFirstName}}, and I am here to help you today. How can I assist you?",
-		"style": "Hello {{userFirstName}}, let me introduce myself, I am {{agentFirstName}}, and I am here to answer any questions you have about the summer models we offer",
-		"end": "This is the most the trial can offer. You can leverage the capabilities of the Messenger platform in your business. Please visit https://fb.me/get-sample-oc to learn how to create a similar experience",
-		"help": "Help"
 	},
 	"survey": {
 		"prompt": "Hello, would you like quick feedback on your recent experience with {{agentFirstName}}?",
@@ -85,6 +78,7 @@
 	"common": {
 		"yes": "Yes",
 		"no": "No",
+		"no_contract": "No,I don't have.",
 		"title": "Choose Yes or No from the menu below"
 	},
 	"questions": {
@@ -92,8 +86,10 @@
 		"bookVisit": "Do you want to book a visit at the branch?",
 		"bookHomeVisit": "Do you want to book a home visit?"
 	},
-	"customer_service":{
-	  "redirection": "You have been redirected to our customer service, please wait..."
+	"customer_service": {
+		"redirection": "You have been redirected to our customer service, please wait...",
+		"radiology_name": "You will be redirected to customer service. Please write the name of the radiology service or send the prescription.",
+		"prescription": " Please send the prescription.\nYou will be redirected to customer service."
 	},
 	"complaints":{
 		"submit":"Please, Submit your complaint and you'll be redirected to our customer service"
