@@ -19,9 +19,13 @@ const Curation = require("./curation"),
   GraphApi = require("./graph-api"),
   i18n = require("../i18n.config"),
   branchLocations = require("../data/cairo locations with bitly link.json"),
+  preparations = require("../data/Copy of تحضيرات الاشعات.json"),
+  companies = require("../data/Companies Cairoscan.json"),
   config = require("./config");
 
 var waitingUsers = [];
+var isPrepPendingFlag = false;
+var isContractPendingFlag = false;
 
 function editDistance(s1, s2) {
   s1 = s1.toLowerCase();
@@ -162,6 +166,30 @@ module.exports = class Receive {
       message.includes("start over")
     ) {
       response = Response.genNuxMessage(this.user);
+    } else if (isPrepPendingFlag) {
+      console.log(
+        preparationSimilarityChecker(preparations, message).reduce(
+          (prev, curr) => {
+            if (prev.similarity >= curr.similarity) {
+              return prev;
+            } else {
+              return curr;
+            }
+          }
+        )
+      );
+      return;
+    } else if (isContractPendingFlag) {
+      console.log(
+        companySimilarityChecker(companies, message).reduce((prev, curr) => {
+          if (prev.similarity >= curr.similarity) {
+            return prev;
+          } else {
+            return curr;
+          }
+        })
+      );
+      return;
     } else if (waitingUsers.includes(event.sender.id)) {
       if (!event.quick_reply) {
         return;
@@ -350,10 +378,6 @@ module.exports = class Receive {
           payload: "LABS_BRANCHES"
         },
         {
-          title: i18n.__("menu.radiologyBranches"),
-          payload: "RADIOLOGY_BRANCHES"
-        },
-        {
           title: i18n.__("menu.contracts"),
           payload: "CONTRACTS"
         },
@@ -452,11 +476,11 @@ module.exports = class Receive {
         Response.genText(i18n.__("care.end"))
       ];
     } else if (
-      payload.includes("APPROVALS")||
-      payload.includes("YES_BOOKVISIT")||
+      payload.includes("APPROVALS") ||
+      payload.includes("YES_BOOKVISIT") ||
       payload.includes("NO")
-      ) {
-        //خدمة العملاء
+    ) {
+      //خدمة العملاء
       response = Response.genButtonTemplate(
         i18n.__("customer_service.redirection"),
         [
@@ -495,6 +519,24 @@ module.exports = class Receive {
         ]
       );
     } else if (payload.includes("VISIT_DETAILS")) {
+      response = Response.genButtonTemplate(i18n.__("home_visit.submit"), [
+        {
+          type: "postback",
+          title: i18n.__("menu.suggestion"),
+          payload: "MENU"
+        }
+      ]);
+    } else if (payload.includes("PREPARATIONS")) {
+      isPrepPendingFlag = true;
+      response = Response.genButtonTemplate(i18n.__("home_visit.submit"), [
+        {
+          type: "postback",
+          title: i18n.__("menu.suggestion"),
+          payload: "MENU"
+        }
+      ]);
+    } else if (payload.includes("CONTRACTS")) {
+      isContractPendingFlag = true;
       response = Response.genButtonTemplate(i18n.__("home_visit.submit"), [
         {
           type: "postback",

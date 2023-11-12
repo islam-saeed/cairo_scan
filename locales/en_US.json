@@ -45,8 +45,7 @@
 		"MRI_Heart": "Before the scan, you must do a kidney function test creatinine\nPrice: 5300 EGP",
 		"Liver_Scan": " Attendance with previous films + fasting 6 hours before the examination.\n Price: 1120 pounds.",
 		"visit_branch": "Book a visit at the branch",
-		"visit_home": "Book a home visit",
-		"Liver_Scan": "prices_Radiology.Liver_Scan"
+		"visit_home": "Book a home visit"
 	},
 	"order": {
 		"prompt": "We are happy to assist you. Choose from the following",
@@ -91,16 +90,19 @@
 		"radiology_name": "You will be redirected to customer service. Please write the name of the radiology service or send the prescription.",
 		"prescription": " Please send the prescription.\nYou will be redirected to customer service."
 	},
-	"complaints":{
-		"submit":"Please, Submit your complaint and you'll be redirected to our customer service"
+	"complaints": {
+		"submit": "Please, Submit your complaint and you'll be redirected to our customer service"
 	},
-	"radiology_results":{
-		"enquire":"Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
+	"radiology_results": {
+		"enquire": "Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
 	},
-	"test_results":{
-		"enquire":"Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
+	"test_results": {
+		"enquire": "Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
 	},
-	"home_visit":{
-		"submit":"Please, Type in the name and the number and you'll be redirected to our customer service"
+	"home_visit": {
+		"submit": "Please, Type in the name and the number and you'll be redirected to our customer service"
+	},
+	"care": {
+		"help": "care.help"
 	}
 }
