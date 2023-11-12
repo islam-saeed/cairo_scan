@@ -94,5 +94,17 @@
 	},
 	"customer_service":{
 	  "redirection": "You have been redirected to our customer service, please wait..."
+	},
+	"complaints":{
+		"submit":"Please, Submit your complaint and you'll be redirected to our customer service"
+	},
+	"radiology_results":{
+		"enquire":"Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
+	},
+	"test_results":{
+		"enquire":"Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
+	},
+	"home_visit":{
+		"submit":"Please, Type in the name and the number and you'll be redirected to our customer service"
 	}
 }

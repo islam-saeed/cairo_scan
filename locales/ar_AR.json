@@ -19,8 +19,7 @@
 		"radiologyBranches": "فروع الأشعة",
 		"labsBranches": "فروع المعمل",
 		"complaints": "الشكاوى",
-		"approvals": "الموافقات",
-		"suggestions": "menu.suggestions"
+		"approvals": "الموافقات"
 	},
 	"get_started": {
 		"welcome": "\"مرحبًا {{userFirstName}}! مرحبًا بك في Original Coast Clothing حيث يمكنك العثور على موديلات ملابس تناسب كل مناسبة.",
@@ -95,5 +94,23 @@
 	},
 	"customer_service": {
 		"redirection": "تم تحويلك إلى خدمة العملاء برجاء الإنتظار"
+	},
+  	"complaints":{
+		"submit":"برجاء كتاية الشكوي الخاصة بك وسيتم تحويلك إلى خدمة العملاء"
+	},
+	"radiology_results":{
+		"enquire":"برجاء كتاية الاسم ورقم التليفون المسجل به البيانات وسيتم تحويلك إلى خدمة العملاء"
+	},
+	"test_results":{
+		"enquire":"برجاء كتاية الاسم ورقم التليفون المسجل به البيانات وسيتم تحويلك إلى خدمة العملاء"
+	},
+	"home_visit":{
+		"submit":"برجاء كتاية الاسم ورقم التليفون وسيتم تحويلك إلى خدمة العملاء"
+	},
+	"contracts":{
+		"enquire":"برجاء كتاية اسم التعاقد - شركة التأمين"
+	},
+	"preparations":{
+		"enquire":"برجاء كتاية اسم الفحص"
 	}
 }

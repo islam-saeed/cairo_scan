@@ -18,9 +18,68 @@ const Curation = require("./curation"),
   Survey = require("./survey"),
   GraphApi = require("./graph-api"),
   i18n = require("../i18n.config"),
+  branchLocations = require("../data/cairo locations with bitly link.json"),
   config = require("./config");
 
 var waitingUsers = [];
+
+function editDistance(s1, s2) {
+  s1 = s1.toLowerCase();
+  s2 = s2.toLowerCase();
+
+  var costs = new Array();
+  for (var i = 0; i <= s1.length; i++) {
+    var lastValue = i;
+    for (var j = 0; j <= s2.length; j++) {
+      if (i == 0) costs[j] = j;
+      else {
+        if (j > 0) {
+          var newValue = costs[j - 1];
+          if (s1.charAt(i - 1) != s2.charAt(j - 1))
+            newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+          costs[j - 1] = lastValue;
+          lastValue = newValue;
+        }
+      }
+    }
+    if (i > 0) costs[s2.length] = lastValue;
+  }
+  return costs[s2.length];
+}
+
+function similarity(s1, s2) {
+  var longer = s1;
+  var shorter = s2;
+  if (s1.length < s2.length) {
+    longer = s2;
+    shorter = s1;
+  }
+  var longerLength = longer.length;
+  if (longerLength == 0) {
+    return 1.0;
+  }
+  return (
+    (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength)
+  );
+}
+
+function companySimilarityChecker(array, string) {
+  return array.map((json) => {
+    return {
+      value: json.name,
+      similarity: similarity(json.name, string)
+    };
+  });
+}
+
+function preparationSimilarityChecker(array, string) {
+  return array.map((json) => {
+    return {
+      value: json.preparation,
+      similarity: similarity(json.preparation, string)
+    };
+  });
+}
 
 module.exports = class Receive {
   constructor(user, webhookEvent, isUserRef) {
@@ -106,7 +165,6 @@ module.exports = class Receive {
     } else if (waitingUsers.includes(event.sender.id)) {
       if (!event.quick_reply) {
         return;
-        // return Response.genPostbackButton(i18n.__("menu.suggestion"), "MENU");
       } else if (event.quick_reply.payload != "MENU") {
         return;
       }
@@ -171,7 +229,13 @@ module.exports = class Receive {
   handleQuickReply() {
     // Get the payload of the quick reply
     let payload = this.webhookEvent.message.quick_reply.payload;
-    if (payload.includes("APPROVALS")) {
+    if (
+      payload.includes("APPROVALS") ||
+      payload.includes("COMPLAINTS") ||
+      payload.includes("RESULT_TESTS") ||
+      payload.includes("RESULT_XRAY") ||
+      payload.includes("VISIT_DETAILS")
+    ) {
       waitingUsers.push(this.webhookEvent.sender.id);
     }
     return this.handlePayload(payload);
@@ -352,16 +416,21 @@ module.exports = class Receive {
       ]);
     } else if (payload.includes("LABS_BRANCHES")) {
       // فروع كايرو سكان
-      response = Response.genQuickReply(i18n.__("branches.greeting"), [
-        {
-          title: i18n.__("branches.qanater"),
-          payload: "QANATER"
-        },
-        {
-          title: i18n.__("branches.banha"),
-          payload: "BANHA"
-        }
-      ]);
+      response = branchLocations.map((location) => {
+        let branches =
+          "المدينة : " +
+          location["City/Locality"] +
+          "\n" +
+          "المنطقة : " +
+          location.Address +
+          "\n" +
+          "العنوان : " +
+          location["Address**"] +
+          "\n" +
+          "الرابط : " +
+          location.location;
+        return Response.genText(branches);
+      });
     } else if (payload.includes("CT_CORONARY")) {
       // اسعار الأشعة
       response = Response.genText(i18n.__("prices_Radiology.CT_Coronary"));
@@ -388,6 +457,41 @@ module.exports = class Receive {
           }
         ]
       );
+    } else if (payload.includes("COMPLAINTS")) {
+      response = Response.genButtonTemplate(i18n.__("complaints.submit"), [
+        {
+          type: "postback",
+          title: i18n.__("menu.suggestion"),
+          payload: "MENU"
+        }
+      ]);
+    } else if (payload.includes("RESULT_TESTS")) {
+      response = Response.genButtonTemplate(i18n.__("test_results.enquire"), [
+        {
+          type: "postback",
+          title: i18n.__("menu.suggestion"),
+          payload: "MENU"
+        }
+      ]);
+    } else if (payload.includes("RESULT_XRAY")) {
+      response = Response.genButtonTemplate(
+        i18n.__("radiology_results.enquire"),
+        [
+          {
+            type: "postback",
+            title: i18n.__("menu.suggestion"),
+            payload: "MENU"
+          }
+        ]
+      );
+    } else if (payload.includes("VISIT_DETAILS")) {
+      response = Response.genButtonTemplate(i18n.__("home_visit.submit"), [
+        {
+          type: "postback",
+          title: i18n.__("menu.suggestion"),
+          payload: "MENU"
+        }
+      ]);
     } else if (payload === "RN_WEEKLY") {
       response = {
         text: `[INFO]The following message is a sample Recurring Notification for a weekly frequency. This is usually sent outside the 24 hour window to notify users on topics that they have opted in.`
