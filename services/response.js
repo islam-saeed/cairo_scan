@@ -159,10 +159,6 @@ module.exports = class Response {
       {
         title: i18n.__("menu.help"),
         payload: "CARE_HELP"
-      },
-      {
-        title: i18n.__("menu.Thanks"),
-        payload: "THANKS"
       }
     ]);
 

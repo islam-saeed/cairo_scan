@@ -26,7 +26,8 @@ const Curation = require("./curation"),
 var waitingUsers = [];
 var isPrepPendingFlag = false;
 var isContractPendingFlag = false;
-
+var prepName;
+var companyName;
 function editDistance(s1, s2) {
   s1 = s1.toLowerCase();
   s2 = s2.toLowerCase();
@@ -79,8 +80,9 @@ function companySimilarityChecker(array, string) {
 function preparationSimilarityChecker(array, string) {
   return array.map((json) => {
     return {
+      scan: json.scan,
       value: json.preparation,
-      similarity: similarity(json.preparation, string)
+      similarity: similarity(json.scan, string)
     };
   });
 }
@@ -166,30 +168,55 @@ module.exports = class Receive {
       message.includes("start over")
     ) {
       response = Response.genNuxMessage(this.user);
-    } else if (isPrepPendingFlag) {
-      console.log(
-        preparationSimilarityChecker(preparations, message).reduce(
-          (prev, curr) => {
-            if (prev.similarity >= curr.similarity) {
-              return prev;
-            } else {
-              return curr;
-            }
-          }
-        )
-      );
-      return;
-    } else if (isContractPendingFlag) {
-      console.log(
-        companySimilarityChecker(companies, message).reduce((prev, curr) => {
+    } 
+    else if (isPrepPendingFlag) {
+       prepName = preparationSimilarityChecker(preparations, message).reduce(
+        (prev, curr) => {
           if (prev.similarity >= curr.similarity) {
             return prev;
           } else {
             return curr;
           }
-        })
+        }
       );
-      return;
+      console.log(
+        prepName
+      );
+      isPrepPendingFlag=false;
+      return  Response.genQuickReply(i18n.__("preparations.suggestion",{ prepName: prepName.scan }), [
+        {
+          title: i18n.__("common.yes"),
+          payload: "SHOWPREP"
+        },
+        {
+          title: i18n.__("common.no"),
+          payload: "NOTPREP"
+        }
+      ]);
+
+    }
+    
+    else if (isContractPendingFlag) {
+companyName = companySimilarityChecker(companies, message).reduce((prev, curr) => {
+  if (prev.similarity >= curr.similarity) {
+    return prev;
+  } else {
+    return curr;
+  }
+})
+      console.log(
+       companyName
+      );
+      return Response.genQuickReply(i18n.__("contracts.suggestion",{ companyName:companyName.value}), [
+        {
+          title: i18n.__("common.yes"),
+          payload: "SHOWCOMPANY"
+        },
+        {
+          title: i18n.__("common.no"),
+          payload: "NOTCOMPANY"
+        }
+      ]);;
     } else if (waitingUsers.includes(event.sender.id)) {
       if (!event.quick_reply) {
         return;
@@ -219,10 +246,6 @@ module.exports = class Receive {
           {
             title: i18n.__("menu.help"),
             payload: "CARE_HELP"
-          },
-          {
-            title: i18n.__("menu.Thanks"),
-            payload: "THANKS"
           }
         ])
       ];
@@ -262,7 +285,15 @@ module.exports = class Receive {
       payload.includes("COMPLAINTS") ||
       payload.includes("RESULT_TESTS") ||
       payload.includes("RESULT_XRAY") ||
-      payload.includes("VISIT_DETAILS")
+      payload.includes("VISIT_DETAILS")||
+      payload.includes("NO")||
+      payload.includes("NOTCOMPANY")||
+      payload.includes("SHOWPREP")||
+      payload.includes("OTHER_RADIOLOGY")||
+      payload.includes("PRESCRIOTION")||
+      payload.includes("CARE_HELP")
+      
+
     ) {
       waitingUsers.push(this.webhookEvent.sender.id);
     }
@@ -359,7 +390,10 @@ module.exports = class Receive {
       payload === "GITHUB"
     ) {
       response = Response.genNuxMessage(this.user);
-    } else if (payload.includes("CELLTEK")) {
+    } 
+    
+    
+    else if (payload.includes("CELLTEK")) {
       response = Response.genText("celltek");
     } else if (payload.includes("MENU")) {
       // القائمة
@@ -402,7 +436,50 @@ module.exports = class Receive {
           payload: "RADIOLOGY_PRICES"
         }
       ]);
-    } else if (payload.includes("RADIOLOGY_PRICES")) {
+    } 
+   
+    else if (payload.includes("NOTCOMPANY")) {
+      // غير متاح
+      response = Response.genButtonTemplate(i18n.__("contracts.no"), 
+        [
+          {
+            type: "postback",
+            title: i18n.__("menu.suggestion"),
+            payload: "MENU"
+          }
+        
+      ]);
+    } 
+    else if (payload.includes("SHOWCOMPANY")) {
+      // متاح
+      response = Response.genButtonTemplate(i18n.__("contracts.yes"), 
+        [
+          {
+            type: "postback",
+            title: i18n.__("menu.suggestion"),
+            payload: "MENU"
+          }
+        
+      ]);
+    } 
+    else if (payload.includes("NOTPREP")) {
+      // ادخال صيغة صحيحة
+      response = Response.genText(i18n.__("preparations.check"));
+      isPrepPendingFlag= true;
+    } 
+    else if (payload.includes("SHOWPREP")) {
+      // التحضيرات
+      response = Response.genButtonTemplate(i18n.__("preparations.prep",{prepValue:prepName.value}), 
+        [
+          {
+            type: "postback",
+            title: i18n.__("menu.suggestion"),
+            payload: "MENU"
+          }
+        
+      ]);
+    } 
+    else if (payload.includes("RADIOLOGY_PRICES")) {
       // هل يوجد تأمين أو تعاقد؟
       response = Response.genQuickReply(i18n.__("questions.contract"), [
         {
@@ -414,7 +491,8 @@ module.exports = class Receive {
           payload: "NO"
         }
       ]);
-    } else if (payload.includes("BOOKVISIT_QUESTION")) {
+    } 
+    else if (payload.includes("BOOKVISIT_QUESTION")) {
       //هل تريد حجز زيارة فى الفرع
       response = Response.genQuickReply(i18n.__("questions.bookVisit"), [
         {
@@ -440,9 +518,10 @@ module.exports = class Receive {
       ]);
     } else if (payload.includes("LABS_BRANCHES")) {
       // فروع كايرو سكان
-      response = branchLocations.map((location) => {
-        let branches =
-          "المدينة : " +
+      response = branchLocations.map((location,index) => {
+       
+         let branches =
+         "المدينة : " +
           location["City/Locality"] +
           "\n" +
           "المنطقة : " +
@@ -453,12 +532,19 @@ module.exports = class Receive {
           "\n" +
           "الرابط : " +
           location.location;
-        return Response.genText(branches);
+          if(index==branchLocations.length-1){
+            console.log("Index :"+index);
+            console.log("Branch location :"+branchLocations);
+            return Response.genQuickReply(branches,[
+              {
+                title:i18n.__("menu.suggestion"),
+                payload:"MENU"
+              }
+            ]);
+          }  
+          return Response.genText(branches);
       });
-    } else if (payload.includes("CT_CORONARY")) {
-      // اسماء واسعار الأشعة
-      response = Response.genText(i18n.__("prices_Radiology.CT_Coronary"));
-    } else if (
+    }  else if (
       payload.includes("SHOW_RADIOLOGY-PRICES") ||
       payload.includes("X-RAY") ||
       payload.includes("OTHER_RADIOLOGY") ||
@@ -478,7 +564,8 @@ module.exports = class Receive {
     } else if (
       payload.includes("APPROVALS") ||
       payload.includes("YES_BOOKVISIT") ||
-      payload.includes("NO")
+      payload.includes("NO")||
+      payload.includes("CARE_HELP")
     ) {
       //خدمة العملاء
       response = Response.genButtonTemplate(
@@ -528,22 +615,10 @@ module.exports = class Receive {
       ]);
     } else if (payload.includes("PREPARATIONS")) {
       isPrepPendingFlag = true;
-      response = Response.genButtonTemplate(i18n.__("home_visit.submit"), [
-        {
-          type: "postback",
-          title: i18n.__("menu.suggestion"),
-          payload: "MENU"
-        }
-      ]);
+      response = Response.genText(i18n.__("preparations.enquire"));
     } else if (payload.includes("CONTRACTS")) {
       isContractPendingFlag = true;
-      response = Response.genButtonTemplate(i18n.__("home_visit.submit"), [
-        {
-          type: "postback",
-          title: i18n.__("menu.suggestion"),
-          payload: "MENU"
-        }
-      ]);
+      response = Response.genText(i18n.__("contracts.enquire"));
     } else if (payload === "RN_WEEKLY") {
       response = {
         text: `[INFO]The following message is a sample Recurring Notification for a weekly frequency. This is usually sent outside the 24 hour window to notify users on topics that they have opted in.`

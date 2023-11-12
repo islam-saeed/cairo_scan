@@ -24,7 +24,7 @@ module.exports = class Curation {
   handlePayload(payload) {
     let response;
     let outfit;
-let bookVisit= [
+var bookVisit= [
   {
     title: i18n.__("questions.bookVisit"),
     payload: "BOOKVISIT_QUESTION"
@@ -71,7 +71,8 @@ let bookVisit= [
         break;
 
       case "X-RAY": // اشعة سينية
-        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray"), [
+        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray"),
+         [
           {
             title: i18n.__("prices_Radiology.visit_branch"),
             payload: "BOOKVISIT_QUESTION"
@@ -97,7 +98,7 @@ let bookVisit= [
         );
 
         break;
-      case "CT_CORONARY": // اشعة مقطعية
+      case "CT_CORONARY": // اشعة مقطعية على القلب
         response = Response.genQuickReply(
           i18n.__("prices_Radiology.coronary"),
          bookVisit

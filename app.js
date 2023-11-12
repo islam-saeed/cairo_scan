@@ -10,6 +10,8 @@
 
 "use strict";
 
+const Profile = require("./services/profile");
+
 // Import dependencies and set up http server
 const express = require("express"),
   { urlencoded, json } = require("body-parser"),
@@ -244,6 +246,7 @@ function isGuestUser(webhookEvent) {
 
 function receiveAndReturn(user, webhookEvent, isUserRef) {
   let receiveMessage = new Receive(user, webhookEvent, isUserRef);
+
   return receiveMessage.handleMessage();
 }
 
@@ -358,4 +361,10 @@ var listener = app.listen(config.port, function () {
     console.log("Test your app by messaging:");
     console.log(`https://m.me/${config.pageId}`);
   }
+  let profile =new Profile()
+  profile.setPersistentMenu();
+  profile.setGreeting()
+  profile.setGetStarted()
+  profile.setWebhook()
+  
 });

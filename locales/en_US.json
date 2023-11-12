@@ -1,6 +1,6 @@
 {
 	"profile": {
-		"greeting": "Welcome {{userFirstName}}. I am the virtual assistant for CairoScan services"
+		"greeting": "Welcome {{userFirstName}}. I am the virtual assistant for Cairo Scan services"
 	},
 	"menu": {
 		"start_over": "Start Over",
@@ -101,6 +101,18 @@
 	},
 	"home_visit": {
 		"submit": "Please, Type in the name and the number and you'll be redirected to our customer service"
+	},
+	"contracts": {
+		"enquire": "Please write the contract name - insurance company",
+		"suggestion": "Do you mean {{companyName}}?",
+		"yes": "Available. To go back to the menu, press the menu",
+		"no": "Not available. To confirm, you will be redirected to customer service"
+	},
+	"preparations": {
+		"enquire": "Please write the examination name",
+		"suggestion": "Do you mean {{prepName}}?",
+		"prep": "Preparations are {{prepValue}}. To go back to the menu, press the menu",
+		"check": "Please write the examination name correctly"
 	},
 	"care": {
 		"help": "care.help"
