@@ -162,15 +162,8 @@ module.exports = class Receive {
     let message = event.message.text.trim().toLowerCase();
 
     let response;
-
-    if (
-      (greeting && greeting.confidence > 0.8) ||
-      message.includes("start over")
-    ) {
-      response = Response.genNuxMessage(this.user);
-    } 
-    else if (isPrepPendingFlag) {
-       prepName = preparationSimilarityChecker(preparations, message).reduce(
+    if (isPrepPendingFlag) {
+      prepName = preparationSimilarityChecker(preparations, message).reduce(
         (prev, curr) => {
           if (prev.similarity >= curr.similarity) {
             return prev;
@@ -179,50 +172,56 @@ module.exports = class Receive {
           }
         }
       );
-      console.log(
-        prepName
+      console.log(prepName);
+      isPrepPendingFlag = false;
+      return Response.genQuickReply(
+        i18n.__("preparations.suggestion", { prepName: prepName.scan }),
+        [
+          {
+            title: i18n.__("common.yes"),
+            payload: "SHOWPREP"
+          },
+          {
+            title: i18n.__("common.no"),
+            payload: "NOTPREP"
+          }
+        ]
       );
-      isPrepPendingFlag=false;
-      return  Response.genQuickReply(i18n.__("preparations.suggestion",{ prepName: prepName.scan }), [
-        {
-          title: i18n.__("common.yes"),
-          payload: "SHOWPREP"
-        },
-        {
-          title: i18n.__("common.no"),
-          payload: "NOTPREP"
+    } else if (isContractPendingFlag) {
+      companyName = companySimilarityChecker(companies, message).reduce(
+        (prev, curr) => {
+          if (prev.similarity >= curr.similarity) {
+            return prev;
+          } else {
+            return curr;
+          }
         }
-      ]);
-
-    }
-    
-    else if (isContractPendingFlag) {
-companyName = companySimilarityChecker(companies, message).reduce((prev, curr) => {
-  if (prev.similarity >= curr.similarity) {
-    return prev;
-  } else {
-    return curr;
-  }
-})
-      console.log(
-       companyName
       );
-      return Response.genQuickReply(i18n.__("contracts.suggestion",{ companyName:companyName.value}), [
-        {
-          title: i18n.__("common.yes"),
-          payload: "SHOWCOMPANY"
-        },
-        {
-          title: i18n.__("common.no"),
-          payload: "NOTCOMPANY"
-        }
-      ]);;
+      console.log(companyName);
+      return Response.genQuickReply(
+        i18n.__("contracts.suggestion", { companyName: companyName.value }),
+        [
+          {
+            title: i18n.__("common.yes"),
+            payload: "SHOWCOMPANY"
+          },
+          {
+            title: i18n.__("common.no"),
+            payload: "NOTCOMPANY"
+          }
+        ]
+      );
     } else if (waitingUsers.includes(event.sender.id)) {
       if (!event.quick_reply) {
         return;
       } else if (event.quick_reply.payload != "MENU") {
         return;
       }
+    } else if (
+      (greeting && greeting.confidence > 0.8) ||
+      message.includes("start over")
+    ) {
+      response = Response.genNuxMessage(this.user);
     } else if (Number(message)) {
       response = Order.handlePayload("ORDER_NUMBER");
     } else if (message.includes("#")) {
@@ -285,15 +284,14 @@ companyName = companySimilarityChecker(companies, message).reduce((prev, curr) =
       payload.includes("COMPLAINTS") ||
       payload.includes("RESULT_TESTS") ||
       payload.includes("RESULT_XRAY") ||
-      payload.includes("VISIT_DETAILS")||
-      payload.includes("NO")||
-      payload.includes("NOTCOMPANY")||
-      payload.includes("SHOWPREP")||
-      payload.includes("OTHER_RADIOLOGY")||
-      payload.includes("PRESCRIOTION")||
-      payload.includes("CARE_HELP")
-      
-
+      payload.includes("VISIT_DETAILS") ||
+      payload.includes("NO") ||
+      payload.includes("NOTCOMPANY") ||
+      payload.includes("SHOWPREP") ||
+      payload.includes("OTHER_RADIOLOGY") ||
+      payload.includes("PRESCRIOTION") ||
+      payload.includes("CARE_HELP") ||
+      payload.includes("SHOW_RADIOLOGY-PRICES")
     ) {
       waitingUsers.push(this.webhookEvent.sender.id);
     }
@@ -390,10 +388,7 @@ companyName = companySimilarityChecker(companies, message).reduce((prev, curr) =
       payload === "GITHUB"
     ) {
       response = Response.genNuxMessage(this.user);
-    } 
-    
-    
-    else if (payload.includes("CELLTEK")) {
+    } else if (payload.includes("CELLTEK")) {
       response = Response.genText("celltek");
     } else if (payload.includes("MENU")) {
       // القائمة
@@ -436,50 +431,41 @@ companyName = companySimilarityChecker(companies, message).reduce((prev, curr) =
           payload: "RADIOLOGY_PRICES"
         }
       ]);
-    } 
-   
-    else if (payload.includes("NOTCOMPANY")) {
+    } else if (payload.includes("NOTCOMPANY")) {
       // غير متاح
-      response = Response.genButtonTemplate(i18n.__("contracts.no"), 
-        [
-          {
-            type: "postback",
-            title: i18n.__("menu.suggestion"),
-            payload: "MENU"
-          }
-        
+      response = Response.genButtonTemplate(i18n.__("contracts.no"), [
+        {
+          type: "postback",
+          title: i18n.__("menu.suggestion"),
+          payload: "MENU"
+        }
       ]);
-    } 
-    else if (payload.includes("SHOWCOMPANY")) {
+    } else if (payload.includes("SHOWCOMPANY")) {
       // متاح
-      response = Response.genButtonTemplate(i18n.__("contracts.yes"), 
-        [
-          {
-            type: "postback",
-            title: i18n.__("menu.suggestion"),
-            payload: "MENU"
-          }
-        
+      response = Response.genButtonTemplate(i18n.__("contracts.yes"), [
+        {
+          type: "postback",
+          title: i18n.__("menu.suggestion"),
+          payload: "MENU"
+        }
       ]);
-    } 
-    else if (payload.includes("NOTPREP")) {
+    } else if (payload.includes("NOTPREP")) {
       // ادخال صيغة صحيحة
       response = Response.genText(i18n.__("preparations.check"));
-      isPrepPendingFlag= true;
-    } 
-    else if (payload.includes("SHOWPREP")) {
+      isPrepPendingFlag = true;
+    } else if (payload.includes("SHOWPREP")) {
       // التحضيرات
-      response = Response.genButtonTemplate(i18n.__("preparations.prep",{prepValue:prepName.value}), 
+      response = Response.genButtonTemplate(
+        i18n.__("preparations.prep", { prepValue: prepName.value }),
         [
           {
             type: "postback",
             title: i18n.__("menu.suggestion"),
             payload: "MENU"
           }
-        
-      ]);
-    } 
-    else if (payload.includes("RADIOLOGY_PRICES")) {
+        ]
+      );
+    } else if (payload.includes("RADIOLOGY_PRICES")) {
       // هل يوجد تأمين أو تعاقد؟
       response = Response.genQuickReply(i18n.__("questions.contract"), [
         {
@@ -491,8 +477,7 @@ companyName = companySimilarityChecker(companies, message).reduce((prev, curr) =
           payload: "NO"
         }
       ]);
-    } 
-    else if (payload.includes("BOOKVISIT_QUESTION")) {
+    } else if (payload.includes("BOOKVISIT_QUESTION")) {
       //هل تريد حجز زيارة فى الفرع
       response = Response.genQuickReply(i18n.__("questions.bookVisit"), [
         {
@@ -518,10 +503,9 @@ companyName = companySimilarityChecker(companies, message).reduce((prev, curr) =
       ]);
     } else if (payload.includes("LABS_BRANCHES")) {
       // فروع كايرو سكان
-      response = branchLocations.map((location,index) => {
-       
-         let branches =
-         "المدينة : " +
+      response = branchLocations.map((location, index) => {
+        let branches =
+          "المدينة : " +
           location["City/Locality"] +
           "\n" +
           "المنطقة : " +
@@ -532,19 +516,19 @@ companyName = companySimilarityChecker(companies, message).reduce((prev, curr) =
           "\n" +
           "الرابط : " +
           location.location;
-          if(index==branchLocations.length-1){
-            console.log("Index :"+index);
-            console.log("Branch location :"+branchLocations);
-            return Response.genQuickReply(branches,[
-              {
-                title:i18n.__("menu.suggestion"),
-                payload:"MENU"
-              }
-            ]);
-          }  
-          return Response.genText(branches);
+        if (index == branchLocations.length - 1) {
+          console.log("Index :" + index);
+          console.log("Branch location :" + branchLocations);
+          return Response.genQuickReply(branches, [
+            {
+              title: i18n.__("menu.suggestion"),
+              payload: "MENU"
+            }
+          ]);
+        }
+        return Response.genText(branches);
       });
-    }  else if (
+    } else if (
       payload.includes("SHOW_RADIOLOGY-PRICES") ||
       payload.includes("X-RAY") ||
       payload.includes("OTHER_RADIOLOGY") ||
@@ -564,7 +548,7 @@ companyName = companySimilarityChecker(companies, message).reduce((prev, curr) =
     } else if (
       payload.includes("APPROVALS") ||
       payload.includes("YES_BOOKVISIT") ||
-      payload.includes("NO")||
+      payload.includes("NO") ||
       payload.includes("CARE_HELP")
     ) {
       //خدمة العملاء

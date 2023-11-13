@@ -86,7 +86,7 @@
 		"bookHomeVisit": "Do you want to book a home visit?"
 	},
 	"customer_service": {
-		"redirection": "You have been redirected to our customer service, please wait...",
+		"redirection": "You have been redirected to customer service. Please wait... If you would like to return to the menu, press the button below.",
 		"radiology_name": "You will be redirected to customer service. Please write the name of the radiology service or send the prescription.",
 		"prescription": " Please send the prescription.\nYou will be redirected to customer service."
 	},
