@@ -156,16 +156,20 @@ app.post("/webhook", (req, res) => {
                 .finally(() => {
                   console.log("locale: " + user.locale);
                   users[senderPsid] = user;
-                  switch (lang) {
-                    case "en":
-                      i18n.setLocale("en_US");
-                      break;
-                    case "ar":
-                      i18n.setLocale("ar_AR");
-                      break;
-                    default:
-                      i18n.setLocale("en_US");
-                  }
+                  if(confidence>.5){
+
+                    switch (lang) {
+                      case "en":
+                        i18n.setLocale("en_US");
+                        break;
+                        case "ar":
+                          i18n.setLocale("ar_AR");
+                          break;
+                          
+                          }
+                          
+                        }
+                      else  i18n.setLocale("en_US ");
                   console.log(
                     "New Profile PSID:",
                     senderPsid,
@@ -185,6 +189,7 @@ app.post("/webhook", (req, res) => {
           } else {
             if (webhookEvent.message)
               if (webhookEvent.message.nlp.detected_locales.length > 0) {
+                var confidence= webhookEvent.message.nlp.detected_locales[0].confidence;
                 var lang =
                   webhookEvent.message.nlp.detected_locales[0].locale.slice(
                     0,
@@ -193,16 +198,20 @@ app.post("/webhook", (req, res) => {
               } else {
                 var lang = "";
               }
-            switch (lang) {
-              case "en":
-                i18n.setLocale("en_US");
-                break;
-              case "ar":
-                i18n.setLocale("ar_AR");
-                break;
-              default:
-                i18n.setLocale("en_US ");
-            }
+              if(confidence>.5){
+
+                switch (lang) {
+                  case "en":
+                    i18n.setLocale("en_US");
+                    break;
+                    case "ar":
+                      i18n.setLocale("ar_AR");
+                      break;
+                      
+                      }
+                      
+                    }
+                  else  i18n.setLocale("en_US ");
 
             console.log("---------------------------lang: ", lang);
             console.log(

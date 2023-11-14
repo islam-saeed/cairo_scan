@@ -219,8 +219,13 @@ module.exports = class Receive {
       }
     } else if (
       (greeting && greeting.confidence > 0.5) ||
-      message.includes("start over")
-    ) {
+      message.includes("start")||
+      message.includes("ابد")||    
+      message.includes("هلا")||
+      message.includes("ازيك")||
+      message.includes("السلام عليكم")||
+      message.includes("مرحبا")
+      ) {
       response = Response.genNuxMessage(this.user);
     } else if (Number(message)) {
       response = Order.handlePayload("ORDER_NUMBER");
