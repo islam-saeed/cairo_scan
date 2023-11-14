@@ -3,7 +3,7 @@
 		"greeting": "Welcome {{userFirstName}}. I am the virtual assistant for Cairo Scan services"
 	},
 	"menu": {
-		"start_over": "Start Over",
+		"start_over": "Get started",
 		"branches": "Branches",
 		"order": "Order Updates",
 		"help": "Customer Service",

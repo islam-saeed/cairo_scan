@@ -164,7 +164,7 @@ app.post("/webhook", (req, res) => {
                       i18n.setLocale("ar_AR");
                       break;
                     default:
-                      i18n.setLocale("ar_AR");
+                      i18n.setLocale("en_US");
                   }
                   console.log(
                     "New Profile PSID:",
@@ -201,7 +201,7 @@ app.post("/webhook", (req, res) => {
                 i18n.setLocale("ar_AR");
                 break;
               default:
-                i18n.setLocale("ar_AR");
+                i18n.setLocale("en_US ");
             }
 
             console.log("---------------------------lang: ", lang);

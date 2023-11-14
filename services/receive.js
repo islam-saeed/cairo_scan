@@ -218,7 +218,7 @@ module.exports = class Receive {
         return;
       }
     } else if (
-      (greeting && greeting.confidence > 0.8) ||
+      (greeting && greeting.confidence > 0.5) ||
       message.includes("start over")
     ) {
       response = Response.genNuxMessage(this.user);
