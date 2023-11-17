@@ -153,15 +153,14 @@ module.exports = class Response {
 
     let curation = this.genQuickReply(i18n.__("get_started.help"), [
       {
-        title: i18n.__("menu.suggestion"),
-        payload: "MENU"
+        title: i18n.__("menu.arabic"),
+        payload: "ARABIC"
       },
       {
-        title: i18n.__("menu.help"),
-        payload: "CARE_HELP"
+        title: i18n.__("menu.english"),
+        payload: "ENGLISH"
       }
     ]);
-
     return [welcome, curation];
   }
 };

@@ -395,7 +395,23 @@ module.exports = class Receive {
       response = Response.genNuxMessage(this.user);
     } else if (payload.includes("CELLTEK")) {
       response = Response.genText("celltek");
-    } else if (payload.includes("MENU")) {
+    } 
+    else if (
+      payload.includes("ARABIC")||
+      payload.includes("ENGLISH")
+    ) {
+      response = Response.genQuickReply(i18n.__("get_started.help"), [
+        {
+          title: i18n.__("menu.suggestion"),
+          payload: "MENU"
+        },
+        {
+          title: i18n.__("menu.help"),
+          payload: "CARE_HELP"
+        }
+      ]);
+    } 
+    else if (payload.includes("MENU")) {
       // القائمة
       console.log("Handling MENU payload");
       response = Response.genQuickReply(i18n.__("get_started.menu"), [
@@ -439,20 +455,20 @@ module.exports = class Receive {
     } else if (payload.includes("NOTCOMPANY")) {
       // غير متاح
       response = Response.genButtonTemplate(i18n.__("contracts.no"), [
-        {
-          type: "postback",
-          title: i18n.__("menu.suggestion"),
-          payload: "MENU"
-        }
+         {
+            type: "postback",
+            title: i18n.__("customer_service.chat"),
+            payload: "GITHUB"
+          }
       ]);
     } else if (payload.includes("SHOWCOMPANY")) {
       // متاح
       response = Response.genButtonTemplate(i18n.__("contracts.yes"), [
-        {
-          type: "postback",
-          title: i18n.__("menu.suggestion"),
-          payload: "MENU"
-        }
+         {
+            type: "postback",
+            title: i18n.__("customer_service.chat"),
+            payload: "GITHUB"
+          }
       ]);
     } else if (payload.includes("NOTPREP")) {
       // ادخال صيغة صحيحة
@@ -562,26 +578,26 @@ module.exports = class Receive {
         [
           {
             type: "postback",
-            title: i18n.__("menu.suggestion"),
-            payload: "MENU"
+            title: i18n.__("customer_service.chat"),
+            payload: "GITHUB"
           }
         ]
       );
     } else if (payload.includes("COMPLAINTS")) {
       response = Response.genButtonTemplate(i18n.__("complaints.submit"), [
-        {
-          type: "postback",
-          title: i18n.__("menu.suggestion"),
-          payload: "MENU"
-        }
+         {
+            type: "postback",
+            title: i18n.__("customer_service.chat"),
+            payload: "GITHUB"
+          }
       ]);
     } else if (payload.includes("RESULT_TESTS")) {
       response = Response.genButtonTemplate(i18n.__("test_results.enquire"), [
-        {
-          type: "postback",
-          title: i18n.__("menu.suggestion"),
-          payload: "MENU"
-        }
+         {
+            type: "postback",
+            title: i18n.__("customer_service.chat"),
+            payload: "GITHUB"
+          }
       ]);
     } else if (payload.includes("RESULT_XRAY")) {
       response = Response.genButtonTemplate(
@@ -596,11 +612,11 @@ module.exports = class Receive {
       );
     } else if (payload.includes("VISIT_DETAILS")) {
       response = Response.genButtonTemplate(i18n.__("home_visit.submit"), [
-        {
-          type: "postback",
-          title: i18n.__("menu.suggestion"),
-          payload: "MENU"
-        }
+         {
+            type: "postback",
+            title: i18n.__("customer_service.chat"),
+            payload: "GITHUB"
+          }
       ]);
     } else if (payload.includes("PREPARATIONS")) {
       isPrepPendingFlag = true;

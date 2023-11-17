@@ -3,6 +3,8 @@
 		"greeting": "Welcome {{userFirstName}}. I am the virtual assistant for Cairo Scan services"
 	},
 	"menu": {
+		"arabic":"التحدث باللغة العربية",
+		"english": "Speak English",
 		"start_over": "Get started",
 		"branches": "Branches",
 		"order": "Order Updates",
@@ -82,13 +84,14 @@
 	},
 	"questions": {
 		"contract": "Is there insurance or a contract?",
-		"bookVisit": "Do you want to book a visit at the branch?",
-		"bookHomeVisit": "Do you want to book a home visit?"
+		"bookVisit": "book a visit at the branch?",
+		"bookHomeVisit": "book a home visit?"
 	},
 	"customer_service": {
 		"redirection": "You have been redirected to customer service. Please wait... If you would like to return to the menu, press the button below.",
 		"radiology_name": "You will be redirected to customer service. Please write the name of the radiology service or send the prescription.",
-		"prescription": " Please send the prescription.\nYou will be redirected to customer service."
+		"prescription": " Please send the prescription.\nYou will be redirected to customer service.",
+		"chat":"start again"
 	},
 	"complaints": {
 		"submit": "Please, Submit your complaint and you'll be redirected to our customer service"
