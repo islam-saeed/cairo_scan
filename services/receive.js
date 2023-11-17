@@ -290,8 +290,7 @@ module.exports = class Receive {
       payload.includes("RESULT_TESTS") ||
       payload.includes("RESULT_XRAY") ||
       payload.includes("VISIT_DETAILS") ||
-      payload.includes("NO") ||
-      payload.includes("NOTCOMPANY") ||
+      payload.includes("NO") ||    
       payload.includes("SHOWPREP") ||
       payload.includes("OTHER_RADIOLOGY") ||
       payload.includes("PRESCRIOTION") ||

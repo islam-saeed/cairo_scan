@@ -17,7 +17,7 @@
 		"resultTests": "Test Results",
 		"visitDetails": "Home Visit Details",
 		"preparations": "Preparations",
-		"contracts": "Available Contracts",
+		"contracts": "Insurance contracts",
 		"radiologyBranches": "Radiology Branches",
 		"labsBranches": "Lab Branches",
 		"complaints": "Complaints",
@@ -108,13 +108,13 @@
 	"contracts": {
 		"enquire": "Please write the contract name - insurance company",
 		"suggestion": "Do you mean {{companyName}}?",
-		"yes": "Available. To go back to the menu, press the menu",
-		"no": "Not available. To confirm, you will be redirected to customer service"
+		"yes": "Yes, there is a contract.\nTo go back to the menu, press the button below.",
+  "no": "Do you want to write the name of another company?\nTo go back to the menu, press the button below."
 	},
 	"preparations": {
 		"enquire": "Please write the examination name",
 		"suggestion": "Do you mean {{prepName}}?",
-		"prep": "Preparations are {{prepValue}}. To go back to the menu, press the menu",
+		"prep": "Preparations are {{prepValue}}. To go back to the menu,  press the button below.",
 		"check": "Please write the examination name correctly"
 	},
 	"care": {
