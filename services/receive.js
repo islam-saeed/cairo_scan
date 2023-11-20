@@ -289,7 +289,8 @@ module.exports = class Receive {
       payload.includes("COMPLAINTS") ||
       payload.includes("RESULT_TESTS") ||
       payload.includes("RESULT_XRAY") ||
-      payload.includes("VISIT_DETAILS") ||
+      payload.includes("VISIT_DETAILS") ||    
+      payload.includes("YES_BOOKVISIT") ||
       payload.includes("NO") ||    
       payload.includes("SHOWPREP") ||
       payload.includes("OTHER_RADIOLOGY") ||
@@ -480,8 +481,8 @@ module.exports = class Receive {
         [
           {
             type: "postback",
-            title: i18n.__("menu.suggestion"),
-            payload: "MENU"
+            title: i18n.__("customer_service.chat"),
+            payload: "GITHUB"
           }
         ]
       );
@@ -604,8 +605,8 @@ module.exports = class Receive {
         [
           {
             type: "postback",
-            title: i18n.__("menu.suggestion"),
-            payload: "MENU"
+            title: i18n.__("customer_service.chat"),
+            payload: "GITHUB"
           }
         ]
       );
