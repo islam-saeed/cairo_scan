@@ -21,7 +21,7 @@ const Curation = require("./curation"),
   branchLocations = require("../data/cairo locations with bitly link.json"),
   radiology_location = require("../data/فروع الأشعة.json"),
   preparations = require("../data/Copy of تحضيرات الاشعات.json"),
-  prices = require("../data/Prices.json"),
+  prices = require("../data/Prices/CT_PET_US.json"),
   companies = require("../data/Companies Cairoscan.json"),
   config = require("./config");
 

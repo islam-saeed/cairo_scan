@@ -1,0 +1,633 @@
+[
+    {
+        "Modality": "X-RAY",
+        "Service_Name": "Sella",
+        "Price": 455,
+        "radiology_Name": "أشعة عادية على تجويف الغده النخاميه"
+       },
+       {
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "10\/2 Sialography One Side",
+        "Price": 895,
+        "radiology_Name": "أشعة عادية على  الغده اللعابية جانب واحد"
+       },
+       {
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "10\/3 Sialography Both Sides",
+        "Price": 1120,
+        "radiology_Name": "أشعة عادية على  الغده اللعابية جانبين"
+       },
+       {
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Ankle",
+        "Price": 520,
+        "radiology_Name": "أشعة عادية على الكاحل"
+       },
+       {
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Antegrade Pyelography Or Nephrostomy",
+        "Price": 705,
+        "radiology_Name": "أشعة بالصبغة للكلي والمثانة عن طريق قسطرة"
+       },
+       {
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Appendix",
+        "Price": 595,
+        "radiology_Name": "أشعة عادية على الزائدة الدودية"
+       },
+       {
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Arm or Forearm",
+        "Price": 520,
+        "radiology_Name": "أشعة عادية على عظام العضد أو الساعد"
+       },
+       {
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Ascending Cystourethrography",
+        "Price": 1520,
+        "radiology_Name": " أشعة بالصبغة للمثانة وقناة مجرى البول"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Barium Enema",
+        "Price": 1900,
+        "radiology_Name": "باريوم علي القولون"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Barium Meal",
+        "Price": 1800,
+        "radiology_Name": "باريوم  علي المعدة"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Barium Meal Follow Through",
+        "Price": 1200,
+        "radiology_Name": "باريوم علي المرئ و القولون و المعدة"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Barium Swallow",
+        "Price": 1700,
+        "radiology_Name": "باريوم علي المرئ"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Both Ankles",
+        "Price": 455,
+        "radiology_Name": "أشعة عادية على الكاحلين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Both Elbows",
+        "Price": 600,
+        "radiology_Name": "أشعة عادية على الكوعين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Both Feet",
+        "Price": 600,
+        "radiology_Name": "أشعة عادية على القدمين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Both Hands And Wrists",
+        "Price": 600,
+        "radiology_Name": "أشعة عادية على اليجين و الرسخين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Both Heels",
+        "Price": 455,
+        "radiology_Name": "أشعة عادية على الكعبين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Both Hips",
+        "Price": 600,
+        "radiology_Name": "أشعة عادية على الفخذين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Both Knees",
+        "Price": 600,
+        "radiology_Name": "أشعة عادية على الركبتين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Both Shoulders",
+        "Price": 455,
+        "radiology_Name": "أشعة عادية على الكتفين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Both Tibia & Femur",
+        "Price": 600,
+        "radiology_Name": "أشعة عادية على عظام الفخذين أو الساقين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Cavernosography",
+        "Price": 785,
+        "radiology_Name": "أشعة عادية علي القضيب  "
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Cavernosometry",
+        "Price": 650,
+        "radiology_Name": "قياس ضغط النسيج الأسفنجي للقضيب        "
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Cavernosometry & Cavernosography",
+        "Price": 895,
+        "radiology_Name":""
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Cervical spine",
+        "Price": 450,
+        "radiology_Name": "أشعة عادية عالفقرات العنقية"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Clavicle",
+        "Price": 425,
+        "radiology_Name": "أشعة عادية على الترقوة"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Coccyx",
+        "Price": 400,
+        "radiology_Name": "أشعة عادية على العصعص"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Dacrocystography one side",
+        "Price": 675,
+        "radiology_Name": "اشعة بالصبغه علي قناة الغدة الدمعية جانب واحد "
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Dacrocystography two sides",
+        "Price": 730,
+        "radiology_Name": "اشعة بالصبغه علي قناة الغدة الدمعية جانبين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Defaecography",
+        "Price": 785,
+        "radiology_Name": "radiology_Name الوظيفى للمستقيم بالباريوم"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Dorsal spine",
+        "Price": 450,
+        "radiology_Name": "أشعة عادية عالفقرات الصدرية"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Dorsolumbar spine",
+        "Price": 570,
+        "radiology_Name": "أشعة عادية عالفقرات الظهرية القطنية "
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Elbow",
+        "Price": 520,
+        "radiology_Name": "أشعة عادية على الكوع"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Facial Bones \/ Orbit",
+        "Price": 435,
+        "radiology_Name": "أشعة عادية على الحجاج أوعظام الوجه"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Femur or Tibia",
+        "Price": 520,
+        "radiology_Name": "أشعة عادية على عظام الفخذ أو الساق"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Fistulography",
+        "Price": 1035,
+        "radiology_Name": "أشعة عادية على الناصور"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Foot",
+        "Price": 520,
+        "radiology_Name": "أشعة عادية على القدم"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Hand",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على اليد"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Hand And wrist",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على اليد و الرسخ"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Hip Joint",
+        "Price": 520,
+        "radiology_Name": "أشعة عادية على مفصل الفخذ"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Humerus",
+        "Price": 520,
+        "radiology_Name": "أشعة عادية على العضد"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Hystrosalpingography",
+        "Price": 1900,
+        "radiology_Name": "أشعة بالصبغة على الرحم والأنابيب"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Intestinal Obstruction ( 2 Films )",
+        "Price": 445,
+        "radiology_Name": "أشعة عادية عالبطن للأنسداد المعوى"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Intravenous Urography (I.V.U)",
+        "Price": 1425,
+        "radiology_Name": "أشعة بالصبغة للكلى"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Knee",
+        "Price": 520,
+        "radiology_Name": "أشعة عادية على الركبة"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "larynx",
+        "Price": 455,
+        "radiology_Name": "أشعة عادية على الحنجرة"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Lumbar spine",
+        "Price": 550,
+        "radiology_Name": "أشعة عادية عالفقرات القطنية"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Mandible Both Side",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على الفك جانبين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Mandible One Side",
+        "Price": 400,
+        "radiology_Name": "أشعة عادية على الفك جانب واحد"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Mastoid (Both Sides)",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على النتوء الحلمى"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Mylography",
+        "Price": 695,
+        "radiology_Name": "أشعة عادية بعد حقن صبغة بالنخاع الشوكى"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Nasal Bone",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على عظام الأنف"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Pain therapy",
+        "Price": 8800,
+        "radiology_Name":""
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Paranasal sinses (All groups)",
+        "Price": 435,
+        "radiology_Name": "أشعة عادية على الجيوب الأنفية كلها"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Paranasal sinses (Anterior group)",
+        "Price": 455,
+        "radiology_Name": "أشعة عادية على الجيوب الأنفية الأمامية"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Pelvis",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على الحوض"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Pharynx",
+        "Price": 420,
+        "radiology_Name": "أشعة عادية على البلعوم"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Plain Abdomen",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على البطن"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Plain Gall Bladder",
+        "Price": 400,
+        "radiology_Name": "أشعة عادية على المرارة"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Plain U.T.",
+        "Price": 420,
+        "radiology_Name": "أشعة عادية على المسالك"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Plain X-Ray Chest & Heart (More than two views)",
+        "Price": 445,
+        "radiology_Name": "أشعة عادية على الصدر و القلب أكثر من وضعين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Plain X-Ray Chest (Two Views)",
+        "Price": 600,
+        "radiology_Name": "أشعة عادية على الصدر وضعين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Portable X-Ray For One Anatomical Site -Near Place",
+        "Price": 655,
+        "radiology_Name":""
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Portable X-Ray For Two Anatomical Sites -Near Place",
+        "Price": 1000,
+        "radiology_Name":""
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Ribs",
+        "Price": 600,
+        "radiology_Name": "أشعة عادية على الضلوع"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Sacroiliac Joints",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على مفاصل الحوض العجزى"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Salivary Gland",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على الغدة اللعابية"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Scapula",
+        "Price": 430,
+        "radiology_Name": "أشعة عادية على لوح الكتف"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Shoulder",
+        "Price": 520,
+        "radiology_Name": "أشعة عادية على  الكتف"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Skeletal Survey",
+        "Price": 895,
+        "radiology_Name": "أشعة عادية على العظام"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Skull more than two views",
+        "Price": 455,
+        "radiology_Name": "أشعة عادية على الجمجمة أكثر من وضعين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Skull two views",
+        "Price": 400,
+        "radiology_Name": "أشعة عادية على الجمجمة وضعين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Sternum",
+        "Price": 435,
+        "radiology_Name": "أشعة عادية على القص"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "T.M.G open&Closed mouth",
+        "Price": 445,
+        "radiology_Name": "أشعة عادية على مفصل الفك"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Thoracic Aortography",
+        "Price": 995,
+        "radiology_Name": "تصوير الشريان الأورطي الصدري"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Tomography of the Long Bones",
+        "Price": 595,
+        "radiology_Name": "اشعة عاديه مقطعية علي العظام الطويلة اليد والرجل"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Vasography - Both Sides",
+        "Price": 1115,
+        "radiology_Name": "أشعة عادية على الحوالب المنوية جانبين"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Vasography - One Side",
+        "Price": 895,
+        "radiology_Name": "أشعة عادية على الحوالب المنوية (جانب واحد)"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Whole Spine on one film",
+        "Price": 600,
+        "radiology_Name": "أشعة عادية على جميع الفقرات معا في فيلم واحد"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية",
+        "Modality": "X-RAY",
+        "Service_Name": "Wrist",
+        "Price": 520,
+        "radiology_Name": " اشعة عمر العظام\nأشعة عادية على الرسخ"
+       }
+]

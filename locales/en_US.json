@@ -1,139 +1,136 @@
 {
-	"profile": {
-		"greeting": "Welcome {{userFirstName}}. I am the virtual assistant for Cairo Scan services"
-	},
-	"menu": {
-		"arabic": "التحدث باللغة العربية",
-		"english": "Speak English",
-		"start_over": "Get started",
-		"branches": "Branches",
-		"order": "Order Updates",
-		"help": "Customer Service",
-		"suggestion": "Menu",
-		"shop": "Shop Now",
-		"Thanks": "No, Thanks",
-		"prices": "Prices for Radiology and Booking",
-		"resultXray": "Radiology Results",
-		"resultTests": "Test Results",
-		"visitDetails": "Home Visit Details",
-		"preparations": "Preparations",
-		"contracts": "Insurance contracts",
-		"radiologyBranches": "Radiology Branches",
-		"labsBranches": "Lab Branches",
-		"complaints": "Complaints",
-		"approvals": "Approvals"
-	},
-	"get_started": {
-		"welcome": "\"Hello {{userFirstName}}! Welcome to Original Coast Clothing, where you can find clothing styles for every occasion.",
-		"menu": "You can use the menu below ",
-		"help": "What service do you need assistance with today?"
-	},
-	"names_Radiology": {
-		"message": "To know the prices for Radiology and booking\nChoose from the menu below",
-		"X-ray1": "Hystrosalpingography(X-RAY)",
-		"X-ray2": "Knee(X-RAY)",
-		"X-ray3": "Lumbar spine(X-RAY)",
-		"X-ray4": "Plain X-Ray Chest (Two Views)",
-		"X-ray5": "Whole Spine on one film",
-		"X-ray6": "Wrist(X-RAY)",
-		"CR1": "Cephalometry(CR)",
-		"CR2": "Panorama(CR)",
-		"CT1": "abdomen ct triphasic spiral",
-		"CT2": "CT Abdomen",
-		"CT3": "CT Abdomen & Pelvis",
-		"CT4": "CT Chest",
-		"other": "Other radiology services.",
-		"enquire": "Please write the name of the radiology or examination",
-		"check": "Please write the name correctly",
-		"price": "The price of the examination is: {{radiologyPrice}} pounds",
-		"suggestion": "Do you mean {{radiologyName}}?"
-	},
-	"prices_Radiology": {
-		"X-ray1": "Price: 1900 EGP",
-		"X-ray2": "Price: 520 EGP",
-		"X-ray3": "Price: 550 EGP",
-		"X-ray4": "Price: 600 EGP",
-		"X-ray5": "Whole Spine on one film\nPrice: 600 EGP",
-		"X-ray6": "Price: 520 EGP",
-		"CR1": "Price: 350 EGP",
-		"CR2": "Price: 390 EGP",
-		"CT1": "abdomen ct triphasic spiral\nPrice: 1640 EGP",
-		"CT2": "Price: 1700 EGP",
-		"CT3": "CT Abdomen & Pelvis\nPrice: 2880 EGP",
-		"CT4": "Price: 1540 EGP",
-		"visit_branch": "Book a visit at the branch",
-		"visit_home": "Book a home visit"
-		
-	},
-	"order": {
-		"prompt": "We are happy to assist you. Choose from the following",
-		"search": "Search by order number",
-		"account": "Link My Account",
-		"dialog": "Account Link Dialog Box",
-		"searching": "Searching for the last order...",
-		"number": "Certainly, please write the order number",
-		"status": "Your order is on its way to you, expected to arrive within 3 days."
-	},
-	"survey": {
-		"prompt": "Hello, would you like quick feedback on your recent experience with {{agentFirstName}}?",
-		"positive": "Thank you for your feedback",
-		"neutral": "Thank you for the feedback, and if there's anything we should improve, feel free to comment using the hashtag #suggestion",
-		"negative": "Thank you for letting us know. We're sorry to hear that. If there's anything we can do to change what happened, please let us know"
-	},
-	"chat_plugin": {
-		"prompt": "Thank you for visiting our store, make sure to check out all the fantastic styles we have in the summer section."
-	},
-	"fallback": {
-		"any": "Sorry, but I can't understand \"{{message}}\".",
-		"attachment": "Thank you for sending this attachment. We can connect you with one of the agents to review it, or we can start over"
-	},
-	"branches": {
-		"greeting": "Please choose the nearest branch for you..",
-		"qanater": "Qanater",
-		"banha": "Banha"
-	},
-	"common": {
-		"yes": "Yes",
-		"no": "No",
-		"no_contract": "No,I don't have.",
-		"title": "Choose Yes or No from the menu below"
-	},
-	"questions": {
-		"contract": "Is there insurance or a contract?",
-		"bookVisit": "book a visit at the branch?",
-		"bookHomeVisit": "book a home visit?"
-	},
-	"customer_service": {
-		"redirection": "You have been redirected to customer service. Please wait... If you would like to return to the menu, press the button below.",
-		"radiology_name": "You will be redirected to customer service. Please write the name of the radiology service or send the prescription.",
-		"prescription": " Please send the prescription.\nYou will be redirected to customer service.",
-		"chat": "start again"
-	},
-	"complaints": {
-		"submit": "Please, Submit your complaint and you'll be redirected to our customer service"
-	},
-	"radiology_results": {
-		"enquire": "Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
-	},
-	"test_results": {
-		"enquire": "Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
-	},
-	"home_visit": {
-		"submit": "Please, Type in the name and the number and you'll be redirected to our customer service"
-	},
-	"contracts": {
-		"enquire": "Please write the contract name - insurance company",
-		"suggestion": "Do you mean {{companyName}}?",
-		"yes": "Yes, there is a contract.\nTo go back to the menu, press the button below.",
-		"no": "Do you want to write the name of another company?\nTo go back to the menu, press the button below."
-	},
-	"preparations": {
-		"enquire": "Please write the examination name",
-		"suggestion": "Do you mean {{prepName}}?",
-		"prep": "Preparations are {{prepValue}}. To go back to the menu,  press the button below.",
-		"check": "Please write the examination name correctly"
-	},
-	"care": {
-		"help": "care.help"
-	}
+  "profile": {
+    "greeting": "Welcome {{userFirstName}}. I am the virtual assistant for Cairo Scan services"
+  },
+  "menu": {
+    "arabic": "التحدث باللغة العربية",
+    "english": "Speak English",
+    "start_over": "Get started",
+    "branches": "Branches",
+    "order": "Order Updates",
+    "help": "Customer Service",
+    "suggestion": "Menu",
+    "shop": "Shop Now",
+    "Thanks": "No, Thanks",
+    "prices": "Prices for Radiology and Booking",
+    "resultXray": "Radiology Results",
+    "resultTests": "Test Results",
+    "visitDetails": "Home Visit Details",
+    "preparations": "Preparations",
+    "contracts": "Insurance contracts",
+    "radiologyBranches": "Radiology Branches",
+    "labsBranches": "Lab Branches",
+    "complaints": "Complaints",
+    "approvals": "Approvals"
+  },
+  "get_started": {
+    "welcome": "\"Hello {{userFirstName}}! Welcome to Original Coast Clothing, where you can find clothing styles for every occasion.",
+    "menu": "You can use the menu below ",
+    "help": "What service do you need assistance with today?"
+  },
+  "names_Radiology": {
+    "message": "To know the prices for Radiology and booking\nChoose from the menu below",
+    "X-ray": "ordinary rays",
+    "CR": "digital conventional ray",
+    "CT": "cross-sectional scan",
+    "PET": "atomic scanning",
+    "NNUCLEAR": "atomic survey",
+    "OT": "tomography",
+    "DX": "Fragility Measurement",
+    "MG": "Mammography",
+    "MRI": "magnetic resonance ray",
+    "US": "Ultrasound",
+    "other": "Other radiology services.",
+    "enquire": "Please write the name of the radiology or examination",
+    "check": "Please write the name correctly",
+    "price": "The price of the examination is: {{radiologyPrice}} pounds",
+    "suggestion": "Do you mean {{radiologyName}}?"
+  },
+  "prices_Radiology": {
+    "X-ray1": "Price: 1900 EGP",
+    "X-ray2": "Price: 520 EGP",
+    "X-ray3": "Price: 550 EGP",
+    "X-ray4": "Price: 600 EGP",
+    "X-ray5": "Whole Spine on one film\nPrice: 600 EGP",
+    "X-ray6": "Price: 520 EGP",
+    "CR1": "Price: 350 EGP",
+    "CR2": "Price: 390 EGP",
+    "CT1": "abdomen ct triphasic spiral\nPrice: 1640 EGP",
+    "CT2": "Price: 1700 EGP",
+    "CT3": "CT Abdomen & Pelvis\nPrice: 2880 EGP",
+    "CT4": "Price: 1540 EGP",
+    "visit_branch": "Book a visit at the branch",
+    "visit_home": "Book a home visit"
+  },
+  "order": {
+    "prompt": "We are happy to assist you. Choose from the following",
+    "search": "Search by order number",
+    "account": "Link My Account",
+    "dialog": "Account Link Dialog Box",
+    "searching": "Searching for the last order...",
+    "number": "Certainly, please write the order number",
+    "status": "Your order is on its way to you, expected to arrive within 3 days."
+  },
+  "survey": {
+    "prompt": "Hello, would you like quick feedback on your recent experience with {{agentFirstName}}?",
+    "positive": "Thank you for your feedback",
+    "neutral": "Thank you for the feedback, and if there's anything we should improve, feel free to comment using the hashtag #suggestion",
+    "negative": "Thank you for letting us know. We're sorry to hear that. If there's anything we can do to change what happened, please let us know"
+  },
+  "chat_plugin": {
+    "prompt": "Thank you for visiting our store, make sure to check out all the fantastic styles we have in the summer section."
+  },
+  "fallback": {
+    "any": "Sorry, but I can't understand \"{{message}}\".",
+    "attachment": "Thank you for sending this attachment. We can connect you with one of the agents to review it, or we can start over"
+  },
+  "branches": {
+    "greeting": "Please choose the nearest branch for you..",
+    "qanater": "Qanater",
+    "banha": "Banha"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "no_contract": "No,I don't have.",
+    "title": "Choose Yes or No from the menu below"
+  },
+  "questions": {
+    "contract": "Is there insurance or a contract?",
+    "bookVisit": "book a visit at the branch?",
+    "bookHomeVisit": "book a home visit?"
+  },
+  "customer_service": {
+    "redirection": "You have been redirected to customer service. Please wait... If you would like to return to the menu, press the button below.",
+    "radiology_name": "You will be redirected to customer service. Please write the name of the radiology service or send the prescription.",
+    "prescription": " Please send the prescription.\nYou will be redirected to customer service.",
+    "chat": "start again"
+  },
+  "complaints": {
+    "submit": "Please, Submit your complaint and you'll be redirected to our customer service"
+  },
+  "radiology_results": {
+    "enquire": "Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
+  },
+  "test_results": {
+    "enquire": "Please, Type in the name and the number that was used to fill the data and you'll be redirected to our customer service"
+  },
+  "home_visit": {
+    "submit": "Please, Type in the name and the number and you'll be redirected to our customer service"
+  },
+  "contracts": {
+    "enquire": "Please write the contract name - insurance company",
+    "suggestion": "Do you mean {{companyName}}?",
+    "yes": "Yes, there is a contract.\nTo go back to the menu, press the button below.",
+    "no": "Do you want to write the name of another company?\nTo go back to the menu, press the button below."
+  },
+  "preparations": {
+    "enquire": "Please write the examination name",
+    "suggestion": "Do you mean {{prepName}}?",
+    "prep": "Preparations are {{prepValue}}. To go back to the menu,  press the button below.",
+    "check": "Please write the examination name correctly"
+  },
+  "care": {
+    "help": "care.help"
+  }
 }

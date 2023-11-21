@@ -1,0 +1,18 @@
+[
+    {
+     
+        "نوع الأشعة": "أشعة عادية ديجيتال",
+        "Modality": "CR",
+        "Service_Name": "Cephalometry",
+        "Price": 350,
+        "radiology_Name": "سيفالوميتري"
+       },
+       {
+        
+        "نوع الأشعة": "أشعة عادية ديجيتال",
+        "Modality": "CR",
+        "Service_Name": "Panorama",
+        "Price": 390,
+        "radiology_Name": "بانوراما على الأسنان"
+       }
+]

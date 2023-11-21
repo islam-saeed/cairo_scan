@@ -1,0 +1,292 @@
+[
+
+    {
+     
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Bone Scan",
+        "Price": 1450,
+        "radiology_Name": "مسح ذرى على العظام"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Brain  For Hydrocephalus",
+        "Price": 995,
+        "radiology_Name": "مسح ذرى على المخ"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Brain Perfusion Spect with HMPAO",
+        "Price": 1570,
+        "radiology_Name": "مسح ذري للمخ بمادة  (HMPAO)"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Breast Lymphoscintigraphy",
+        "Price": 670,
+        "radiology_Name": "مسح ذري علي الأوعية الليمفاوية للثدي"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Dacryoscintigraphy",
+        "Price": 1445,
+        "radiology_Name": "مسح ذري للقنوات الدمعية"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Gallium Scan Infiction",
+        "Price": 12575,
+        "radiology_Name": "مسح ذري بأستخدام مادة الجاليم للعدوي"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "GIT Bleeding",
+        "Price": 1475,
+        "radiology_Name": "مسح ذري لتشخيص نزيف الجهاز الهضمي"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Hida scan",
+        "Price": 1745,
+        "radiology_Name": "مسح ذرى بمادة الهايدا"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Indium Scan",
+        "Price": 30345,
+        "radiology_Name": "مسح ذري بأستخدام مادة انديم "
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Liver Scan",
+        "Price": 1120,
+        "radiology_Name": "مسح ذرى على الكبد"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Lung Scan Perfusion Only",
+        "Price": 1545,
+        "radiology_Name": "مسح ذرى على الرئة مرحلة واحدة"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Lung Scan V\/P",
+        "Price": 1845,
+        "radiology_Name": "مسح ذرى على الرئة مرحلتين"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Lymph scan",
+        "Price": 2445,
+        "radiology_Name": "مسح ذرى على الغدد الليمفاوية"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Meckel's Scan",
+        "Price": 1445,
+        "radiology_Name": "مسح ذري علي الأمعاء"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "MIBG",
+        "Price": 18825,
+        "radiology_Name": "مسح ذري بأستخدام مادة MIBG"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Parathyroid",
+        "Price": 1845,
+        "radiology_Name": "مسح ذرى على الغدة خلف الدرقية"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Renal Scan Dynamic",
+        "Price": 1095,
+        "radiology_Name": "مسح ذرى على الكلى مرحلة واحدة"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Renal Scan Static",
+        "Price": 1095,
+        "radiology_Name": "مسح ذرى على الكلى مرحلة واحدة"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Renal Scan With Captopril",
+        "Price": 1295,
+        "radiology_Name": "مسح ذري علي الكلي بالكابتوبريل"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Renal Scan(Dynamic & Static)",
+        "Price": 1700,
+        "radiology_Name": "مسح ذرى على الكلى مرحلتين"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Renal Scan(Dynamic OR Static)",
+        "Price": 1095,
+        "radiology_Name": "مسح ذرى على الكلى ثابت او متحرك"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Salivary Gland Scintigraphy",
+        "Price": 945,
+        "radiology_Name": "مسح ذري علي الغدد اللعابية"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Scrotal (Testicular) Scan",
+        "Price": 970,
+        "radiology_Name": "مسح ذري علي الخصيتين"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Stress Myocardial Perfusion (Thallium)",
+        "Price": 3300,
+        "radiology_Name": "مسح ذري للقلب بالمجهود"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "T.131 Thyroid Whole Body",
+        "Price": 1595,
+        "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131 "
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "T.131 Thyroid Whole Body  100 M",
+        "Price": 6695,
+        "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 100 M)"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "T.131 Thyroid Whole Body  150 M",
+        "Price": 8720,
+        "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 150 M)"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "T.131 Thyroid Whole Body  16-30 M",
+        "Price": 2695,
+        "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 16-30 M)"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "T.131 Thyroid Whole Body  200 M",
+        "Price": 10345,
+        "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 200 M)"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "T.131 Thyroid Whole Body  50 M",
+        "Price": 4545,
+        "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 50 M)"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "T.131 Thyroid Whole Body  6-15 M",
+        "Price": 1945,
+        "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 6-15 M)"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "T.131 Thyroid Whole Body  80 M",
+        "Price": 2745,
+        "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 80 M)"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "T.131 Thyroid Whole Body 120 M",
+        "Price": 7445,
+        "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 120 M)"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "TC99M - OCTREOTIDE",
+        "Price": 27000,
+        "radiology_Name": "مسح ذري بأستخدام مادة اكتروتيد "
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Thyroid Scan",
+        "Price": 1300,
+        "radiology_Name": "مسح ذرى على الغدة الدرقية"
+       },
+       {
+        
+        "نوع الأشعة": "الطب النووى",
+        "Modality": "Nnuclear midicine",
+        "Service_Name": "Imaging of iodine conditions",
+        "Price": 400,
+        "radiology_Name":"تصوير حالات اليود"
+       }
+]
+

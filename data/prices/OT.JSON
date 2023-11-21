@@ -1,0 +1,238 @@
+[
+    
+    {
+     
+        "Modality": "OT",
+        "Service_Name": "Blood pressure",
+        "Price": 2000,
+        "radiology_Name": "ضغط الدم"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Brain mapping",
+        "Price": 885,
+        "radiology_Name": "رسم مخ"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "DXA",
+        "Price": 550,
+        "radiology_Name": "قياس كثافة العظام"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "E.C.G Portable",
+        "Price": 720,
+        "radiology_Name": "رسم قلب ( زيارة منزلية )"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "E.C.G.",
+        "Price": 460,
+        "radiology_Name": "رسم قلب"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "E.M.G",
+        "Price": 1600,
+        "radiology_Name": "رسم الأعصاب"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "EMG - Both Side",
+        "Price": 3500,
+        "radiology_Name": "رسم الأعصاب طرفين"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "EMG - One Side",
+        "Price": 1600,
+        "radiology_Name": "رسم الأعصاب طرف واحد"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Exercise E.C.G",
+        "Price": 920,
+        "radiology_Name": "رسم القلب بالمجهود"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Holter 24 hours",
+        "Price": 790,
+        "radiology_Name": "الهولتر 24 ساعه"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Holter 48 hours",
+        "Price": 1550,
+        "radiology_Name": "الهولتر 48 ساعه"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "NCT & EMG - Both sides",
+        "Price": 3500,
+        "radiology_Name": "رسم الأعصاب والعضلات وجهين"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "NCT & EMG - One side",
+        "Price": 1600,
+        "radiology_Name": "رسم الاعصاب والعضلات وجه واحد"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Portable - EEG",
+        "Price": 2120,
+        "radiology_Name": "رسم المخ ( زيارة منزلية )"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Portable - EEG - Near",
+        "Price": 1570,
+        "radiology_Name":""
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Portable - EMG",
+        "Price": 2770,
+        "radiology_Name": "رسم العضلات ( زيارة منزلية )"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Portable - EMG - Near",
+        "Price": 2220,
+        "radiology_Name":""
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Regular EEG",
+        "Price": 1040,
+        "radiology_Name": "رسم المخ العادى"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Regular EEG  eight hour- WH",
+        "Price": 4340,
+        "radiology_Name": "رسم المخ 8 ساعات"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - Eleven hours",
+        "Price": 5660,
+        "radiology_Name": "رسم المخ - احدى عشر ساعة"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - Five hours",
+        "Price": 3020,
+        "radiology_Name": "رسم المخ -خمسة ساعات"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - Four hours",
+        "Price": 2580,
+        "radiology_Name": "رسم المخ -أربع ساعات"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - Nine hours",
+        "Price": 4780,
+        "radiology_Name": "رسم المخ - تسع ساعات"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - One hour",
+        "Price": 1425,
+        "radiology_Name": "رسم المخ - أول ساعة"
+       },
+       {
+        
+        "Modality": "OT",
+        "Service_Name": "Regular EEG  seven hour- WH",
+        "Price": 3900,
+        "radiology_Name":""
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - Six hours",
+        "Price": 3460,
+        "radiology_Name": "رسم المخ - ستة ساعات"
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - Ten hours",
+        "Price": 5220,
+        "radiology_Name": "رسم المخ - عشر  ساعات"
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - Three hours",
+        "Price": 2140,
+        "radiology_Name": "رسم المخ - ثلاثة ساعات"
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG  twelve hour- WH",
+        "Price": 6100,
+        "radiology_Name":""
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - Twenty four hours",
+        "Price": 11270,
+        "radiology_Name": "رسم المخ - أربعة و عشرون ساعة "
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - Two hours",
+        "Price": 1700,
+        "radiology_Name": "رسم المخ - ساعتين"
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG - WH",
+        "Price": 1040,
+        "radiology_Name":""
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG -Eight hours",
+        "Price": 4340,
+        "radiology_Name": "رسم المخ - ثمانية ساعات"
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG -Seven hours",
+        "Price": 3900,
+        "radiology_Name": "رسم المخ - سبعة ساعات"
+       },
+       {
+        "Modality": "OT",
+        "Service_Name": "Regular EEG -Twelve hours",
+        "Price": 6100,
+        "radiology_Name": "رسم المخ - اثنى عشر ساعة "
+       }
+]

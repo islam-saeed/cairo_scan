@@ -1,0 +1,107 @@
+[
+    
+    {
+     
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "3D Full Field Digital Mammography with Tomosynthesis -Both Side",
+        "Price": 1400,
+        "radiology_Name": "أشعة الثدى الرقميه المقطعيه ثلاثية الابعاد جانبين"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "3D Full Field Digital Mammography with Tomosynthesis -One Side",
+        "Price": 900,
+        "radiology_Name": "أشعة الثدى الرقميه المقطعيه ثلاثية الابعاد جانب واحد"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Clip localization",
+        "Price": 5200,
+        "radiology_Name": "أشعة لتحديد الماسك"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Computed Digital Mammogram -Both Sides",
+        "Price": 850,
+        "radiology_Name": "أشعة الثدى الرقمية بالكمبيوتر جانبين"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Computed Digital Mammogram -One Side",
+        "Price": 750,
+        "radiology_Name": "أشعة الثدى الرقمية بالكمبيوتر جانب واحد"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Contrast Mammography",
+        "Price": 1700,
+        "radiology_Name": "أشعة الثدى الرقمية بالصبغة"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Galactography",
+        "Price": 920,
+        "radiology_Name": "أشعة  على قنوات الثدى "
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Guided Needle Localization",
+        "Price": 1320,
+        "radiology_Name": "تحديد موقع المرض بالثدى"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Male Full Field Digital Mammography With Tomosynthesis- Both sides",
+        "Price": 850,
+        "radiology_Name": " أشعة الثدى الرقميه بالكمبيوتر-جانبين للرجال "
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Mammo. guided Needle Biopsy",
+        "Price": 1370,
+        "radiology_Name": "عينة من الثدي"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Mammotome",
+        "Price": 9120,
+        "radiology_Name": "عينة من الثدي"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Skin Making in conjunction with breast U.S",
+        "Price": 320,
+        "radiology_Name": "تحديد ورم بالثدى من الخارج"
+       },
+       {
+        
+        "نوع الأشعة": "ماموجرافى",
+        "Modality": "MG",
+        "Service_Name": "Skin Marking De novo",
+        "Price": 420,
+        "radiology_Name": "تحديد ورم من الخارج على الجلد"
+       }
+]
