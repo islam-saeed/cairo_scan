@@ -20,13 +20,16 @@ const Curation = require("./curation"),
   i18n = require("../i18n.config"),
   branchLocations = require("../data/cairo locations with bitly link.json"),
   preparations = require("../data/Copy of تحضيرات الاشعات.json"),
+  prices = require("../data/Prices.json"),
   companies = require("../data/Companies Cairoscan.json"),
   config = require("./config");
 
 var waitingUsers = [];
+var isRadiologyPendingFlag = false;
 var isPrepPendingFlag = false;
 var isContractPendingFlag = false;
 var prepName;
+var radiologyName;
 var companyName;
 function editDistance(s1, s2) {
   s1 = s1.toLowerCase();
@@ -83,6 +86,19 @@ function preparationSimilarityChecker(array, string) {
       scan: json.scan,
       value: json.preparation,
       similarity: similarity(json.scan, string)
+    };
+  });
+}
+function pricesSimilarityChecker(array, string) {
+  return array.map((json) => {
+    console.log("json:", json);  // Add this line for debugging
+    console.log("string:", string);  // Add this line for debugging
+    return {
+      radiology: json.radiology_Name,
+      Service_Name: json.Service_Name,
+      value: json.Price,
+      similarityArabic: similarity(json.radiology_Name, string),
+      similarityEnglish: similarity(json.Service_Name, string)
     };
   });
 }
@@ -162,7 +178,51 @@ module.exports = class Receive {
     let message = event.message.text.trim().toLowerCase();
 
     let response;
-    if (isPrepPendingFlag) {
+    if (isRadiologyPendingFlag) {
+      radiologyName = pricesSimilarityChecker(prices, message).reduce(
+        (prev, curr) => {
+          if (prev.similarityArabic >= curr.similarityArabic ||prev.similarityEnglish >= curr.similarityEnglish) {
+            return prev;
+          } else {
+            return curr;
+          }
+        }
+      );
+      console.log("****radiology_Name:"+radiologyName.similarityEnglish);
+      isRadiologyPendingFlag = false;
+      if(radiologyName.similarityArabic>radiologyName.similarityEnglish){
+
+      
+      return Response.genQuickReply(
+        i18n.__("names_Radiology.suggestion", { radiologyName: radiologyName.radiology }),
+        [
+          {
+            title: i18n.__("common.yes"),
+            payload: "SHOWRADIOLOGYPRICE"
+          },
+          {
+            title: i18n.__("common.no"),
+            payload: "NOTRADIOLOGYPRICE"
+          }
+        ]
+      );
+    }else {
+      return Response.genQuickReply(
+        i18n.__("names_Radiology.suggestion", { radiologyName: radiologyName.Service_Name }),
+        [
+          {
+            title: i18n.__("common.yes"),
+            payload: "SHOWRADIOLOGYPRICE"
+          },
+          {
+            title: i18n.__("common.no"),
+            payload: "NOTRADIOLOGYPRICE"
+          }
+        ]
+      );
+    }
+    } 
+    else if (isPrepPendingFlag) {
       prepName = preparationSimilarityChecker(preparations, message).reduce(
         (prev, curr) => {
           if (prev.similarity >= curr.similarity) {
@@ -293,10 +353,9 @@ module.exports = class Receive {
       payload.includes("YES_BOOKVISIT") ||
       payload.includes("NO") ||    
       payload.includes("SHOWPREP") ||
-      payload.includes("OTHER_RADIOLOGY") ||
+      payload.includes("SHOWRADIOLOGYPRICE") ||
       payload.includes("PRESCRIOTION") ||
-      payload.includes("CARE_HELP") ||
-      payload.includes("SHOW_RADIOLOGY-PRICES")
+      payload.includes("CARE_HELP") 
     ) {
       waitingUsers.push(this.webhookEvent.sender.id);
     }
@@ -452,7 +511,14 @@ module.exports = class Receive {
           payload: "RADIOLOGY_PRICES"
         }
       ]);
-    } else if (payload.includes("NOTCOMPANY")) {
+    } 
+    else if (payload.includes("OTHER_RADIOLOGY")) {
+      // أشعة أخرى
+      response = Response.genText(i18n.__("names_Radiology.enquire"));
+      isRadiologyPendingFlag = true;
+      
+    }
+    else if (payload.includes("NOTCOMPANY")) {
       // غير متاح
       response = Response.genButtonTemplate(i18n.__("contracts.no"), [
          {
@@ -461,7 +527,8 @@ module.exports = class Receive {
             payload: "GITHUB"
           }
       ]);
-    } else if (payload.includes("SHOWCOMPANY")) {
+    }
+     else if (payload.includes("SHOWCOMPANY")) {
       // متاح
       response = Response.genButtonTemplate(i18n.__("contracts.yes"), [
          {
@@ -470,11 +537,18 @@ module.exports = class Receive {
             payload: "GITHUB"
           }
       ]);
-    } else if (payload.includes("NOTPREP")) {
+    } 
+    else if (payload.includes("NOTPREP")) {
       // ادخال صيغة صحيحة
       response = Response.genText(i18n.__("preparations.check"));
       isPrepPendingFlag = true;
-    } else if (payload.includes("SHOWPREP")) {
+    } 
+    else if (payload.includes("NOTRADIOLOGYPRICE")) {
+      // ادخال صيغة صحيحة
+      response = Response.genText(i18n.__("names_Radiology.check"));
+      isRadiologyPendingFlag = true;
+    } 
+    else if (payload.includes("SHOWPREP")) {
       // التحضيرات
       response = Response.genButtonTemplate(
         i18n.__("preparations.prep", { prepValue: prepName.value }),
@@ -486,7 +560,8 @@ module.exports = class Receive {
           }
         ]
       );
-    } else if (payload.includes("RADIOLOGY_PRICES")) {
+    }
+     else if (payload.includes("RADIOLOGY_PRICES")) {
       // هل يوجد تأمين أو تعاقد؟
       response = Response.genQuickReply(i18n.__("questions.contract"), [
         {
@@ -498,7 +573,81 @@ module.exports = class Receive {
           payload: "NO"
         }
       ]);
-    } else if (payload.includes("BOOKVISIT_QUESTION")) {
+    }
+    else if (payload.includes("SHOWRADIOLOGYPRICE")) {
+      // عرض سعر محدد
+      response = Response.genButtonTemplate(
+        i18n.__("names_Radiology.price", { radiologyPrice: radiologyName.value }),
+        [
+          {
+            type: "postback",
+            title: i18n.__("customer_service.chat"),
+            payload: "GITHUB"
+          }
+        ]
+      );
+    }
+     else if (payload.includes("SHOW_RADIOLOGY-PRICES") ) {
+      
+      // عرض بعض الأسعار
+      response = Response.genQuickReply(i18n.__("names_Radiology.message"), [
+        {
+          title: i18n.__("names_Radiology.X-ray1"),
+          payload: "X-RAY1"
+        },
+        {
+          title: i18n.__("names_Radiology.X-ray2"),
+          payload: "X-RAY2"
+        },
+        {
+          title: i18n.__("names_Radiology.X-ray3"),
+          payload: "X-RAY3"
+        },
+        {
+          title: i18n.__("names_Radiology.X-ray5"),
+          payload: "X-RAY5"
+        },
+        {
+          title: i18n.__("names_Radiology.X-ray4"),
+          payload: "X-RAY4"
+        },
+        {
+          title: i18n.__("names_Radiology.X-ray6"),
+          payload: "X-RAY6"
+        },
+        {
+          title: i18n.__("names_Radiology.CR1"),
+          payload: "CR1"
+        },
+        {
+          title: i18n.__("names_Radiology.CR2"),
+          payload: "CR2"
+        },
+        {
+          title: i18n.__("names_Radiology.CT2"),
+          payload: "CT2"
+        },
+        {
+          title: i18n.__("names_Radiology.CT1"),
+          payload: "CT1"
+        },
+        {
+          title: i18n.__("names_Radiology.CT3"),
+          payload: "CT3"
+        },
+        {
+          title: i18n.__("names_Radiology.CT4"),
+          payload: "CT4"
+        },
+       
+        {
+          title: i18n.__("names_Radiology.other"),
+          payload: "OTHER_RADIOLOGY"
+        }
+      ]);
+     
+    }
+    else if (payload.includes("BOOKVISIT_QUESTION")) {
       //هل تريد حجز زيارة فى الفرع
       response = Response.genQuickReply(i18n.__("questions.bookVisit"), [
         {
@@ -549,15 +698,14 @@ module.exports = class Receive {
         }
         return Response.genText(branches);
       });
-    } else if (
-      payload.includes("SHOW_RADIOLOGY-PRICES") ||
+    } else if (      
       payload.includes("X-RAY") ||
-      payload.includes("OTHER_RADIOLOGY") ||
-      payload.includes("PRESCRIOTION") ||
-      payload.includes("PET-CT") ||
-      payload.includes("LIVER_SCAN") ||
-      payload.includes("MRI_HEART") ||
-      payload.includes("CT_CORONARY")
+      payload.includes("CT1") ||
+      payload.includes("CT2") ||
+      payload.includes("CT3") ||
+      payload.includes("CT4") ||
+      payload.includes("CR1") ||
+      payload.includes("CR2")       
     ) {
       let curation = new Curation(this.user, this.webhookEvent);
       response = curation.handlePayload(payload);

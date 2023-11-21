@@ -3,7 +3,7 @@
 		"greeting": "Welcome {{userFirstName}}. I am the virtual assistant for Cairo Scan services"
 	},
 	"menu": {
-		"arabic":"التحدث باللغة العربية",
+		"arabic": "التحدث باللغة العربية",
 		"english": "Speak English",
 		"start_over": "Get started",
 		"branches": "Branches",
@@ -30,24 +30,40 @@
 	},
 	"names_Radiology": {
 		"message": "To know the prices for Radiology and booking\nChoose from the menu below",
-		"X-ray": "X-ray",
-		"CT": "CT Scans",
-		"PET-CT": "(PET) Positron Emission Tomography scan",
-		"CT_Coronary": "Coronary CT Scan",
-		"MRI_Heart": "MRI Heart Scan",
-		"Liver_Scan": "Liver Atomic Scan",
-		"prescription": "send doctor's prescription.",
-		"other": "Other radiology services."
+		"X-ray1": "Hystrosalpingography(X-RAY)",
+		"X-ray2": "Knee(X-RAY)",
+		"X-ray3": "Lumbar spine(X-RAY)",
+		"X-ray4": "Plain X-Ray Chest (Two Views)",
+		"X-ray5": "Whole Spine on one film",
+		"X-ray6": "Wrist(X-RAY)",
+		"CR1": "Cephalometry(CR)",
+		"CR2": "Panorama(CR)",
+		"CT1": "abdomen ct triphasic spiral",
+		"CT2": "CT Abdomen",
+		"CT3": "CT Abdomen & Pelvis",
+		"CT4": "CT Chest",
+		"other": "Other radiology services.",
+		"enquire": "Please write the name of the radiology or examination",
+		"check": "Please write the name correctly",
+		"price": "The price of the examination is: {{radiologyPrice}} pounds",
+		"suggestion": "Do you mean {{radiologyName}}?"
 	},
 	"prices_Radiology": {
-		"X-ray": "Price: 25",
-		"CT": "Price: 50 EGP",
-		"CT_Coronary": "Before the scan, fasting for 6 hours + kidney function test + attendance with previous examinations\nPrice: 4200 EGP",
-		"PET-CT": " Price: 6000 EGP",
-		"MRI_Heart": "Before the scan, you must do a kidney function test creatinine\nPrice: 5300 EGP",
-		"Liver_Scan": " Attendance with previous films + fasting 6 hours before the examination.\n Price: 1120 pounds.",
+		"X-ray1": "Price: 1900 EGP",
+		"X-ray2": "Price: 520 EGP",
+		"X-ray3": "Price: 550 EGP",
+		"X-ray4": "Price: 600 EGP",
+		"X-ray5": "Whole Spine on one film\nPrice: 600 EGP",
+		"X-ray6": "Price: 520 EGP",
+		"CR1": "Price: 350 EGP",
+		"CR2": "Price: 390 EGP",
+		"CT1": "abdomen ct triphasic spiral\nPrice: 1640 EGP",
+		"CT2": "Price: 1700 EGP",
+		"CT3": "CT Abdomen & Pelvis\nPrice: 2880 EGP",
+		"CT4": "Price: 1540 EGP",
 		"visit_branch": "Book a visit at the branch",
 		"visit_home": "Book a home visit"
+		
 	},
 	"order": {
 		"prompt": "We are happy to assist you. Choose from the following",
@@ -91,7 +107,7 @@
 		"redirection": "You have been redirected to customer service. Please wait... If you would like to return to the menu, press the button below.",
 		"radiology_name": "You will be redirected to customer service. Please write the name of the radiology service or send the prescription.",
 		"prescription": " Please send the prescription.\nYou will be redirected to customer service.",
-		"chat":"start again"
+		"chat": "start again"
 	},
 	"complaints": {
 		"submit": "Please, Submit your complaint and you'll be redirected to our customer service"
@@ -109,7 +125,7 @@
 		"enquire": "Please write the contract name - insurance company",
 		"suggestion": "Do you mean {{companyName}}?",
 		"yes": "Yes, there is a contract.\nTo go back to the menu, press the button below.",
-  "no": "Do you want to write the name of another company?\nTo go back to the menu, press the button below."
+		"no": "Do you want to write the name of another company?\nTo go back to the menu, press the button below."
 	},
 	"preparations": {
 		"enquire": "Please write the examination name",

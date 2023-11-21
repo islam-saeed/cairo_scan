@@ -35,97 +35,85 @@ var bookVisit= [
   }
 ]
 
-    switch (payload) {
-      case "SHOW_RADIOLOGY-PRICES":
-        response = Response.genQuickReply(i18n.__("names_Radiology.message"), [
-          {
-            title: i18n.__("names_Radiology.X-ray"),
-            payload: "X-RAY"
-          },
-          {
-            title: i18n.__("names_Radiology.CT_Coronary"),
-            payload: "CT_CORONARY"
-          },
-          {
-            title: i18n.__("names_Radiology.MRI_Heart"),
-            payload: "MRI_HEART"
-          },
-          {
-            title: i18n.__("names_Radiology.Liver_Scan"),
-            payload: "LIVER_SCAN"
-          },
-          {
-            title: i18n.__("names_Radiology.PET-CT"),
-            payload: "PET-CT"
-          },
-          {
-            title: i18n.__("names_Radiology.other"),
-            payload: "OTHER_RADIOLOGY"
-          },
-          {
-            title: i18n.__("names_Radiology.prescription"),
-            payload: "PRESCRIOTION"
-          }
-        ]);
-
-        break;
-
-      case "X-RAY": // اشعة سينية
-        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray"),
-         [
-          {
-            title: i18n.__("prices_Radiology.visit_branch"),
-            payload: "BOOKVISIT_QUESTION"
-          },
-          {
-            title: i18n.__("prices_Radiology.visit_home"),
-            payload: "BOOK-HOME-VISIT_QUESTION"
-          }
-        ]);
-
-        break;
-      case "PET-CT": // مسح ذري
-        response = Response.genQuickReply(
-          i18n.__("prices_Radiology.PET-CT"),
-         bookVisit
+    switch (payload) {   
+      case "X-RAY1": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray1"),
+        bookVisit
         );
 
         break;
-      case "LIVER_SCAN": //  مسح ذري على الكبد
-        response = Response.genQuickReply(
-          i18n.__("prices_Radiology.Liver_Scan"),
-         bookVisit
+  
+      case "X-RAY2": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray2"),
+        bookVisit
         );
 
         break;
-      case "CT_CORONARY": // اشعة مقطعية على القلب
-        response = Response.genQuickReply(
-          i18n.__("prices_Radiology.coronary"),
-         bookVisit
+  
+      case "X-RAY3": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray3"),
+        bookVisit
         );
 
         break;
-      case "MRI_HEART": // اشعة مقطعية
-        response = Response.genQuickReply(
-          i18n.__("prices_Radiology.MRI_Heart"),
-         bookVisit
+  
+      case "X-RAY4": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray4"),
+        bookVisit
         );
 
         break;
-      case "OTHER_RADIOLOGY": // اشعة اخرى
-        response = Response.genButtonTemplate(
-          i18n.__("customer_service.radiology_name"),
-          [
-            {
-              type: "postback",
-              title: i18n.__("menu.suggestion"),
-              payload: "MENU"
-            }
-          ]
+  
+      case "X-RAY5": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray5"),
+        bookVisit
         );
 
         break;
-      case "PRESCRIOTION": // ارسال الروشتة
+  
+      case "X-RAY6": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.X-ray6"),
+        bookVisit
+        );
+
+        break;
+      case "CR1": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.CR1"),
+        bookVisit
+        );
+
+        break;
+      case "CR2": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.CR2"),
+        bookVisit
+        );
+
+        break;
+      case "CT1": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.CT1"),
+        bookVisit
+        );
+
+        break;
+      case "CT2": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.CT2"),
+        bookVisit
+        );
+
+        break;
+      case "CT3": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.CT3"),
+        bookVisit
+        );
+
+        break;
+      case "CT4": // اشعة سينية
+        response = Response.genQuickReply(i18n.__("prices_Radiology.CT4"),
+        bookVisit
+        );
+
+        break;
+  
         response = Response.genButtonTemplate(
           i18n.__("customer_service.prescription"),
           [

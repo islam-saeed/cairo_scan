@@ -1,0 +1,3441 @@
+[
+    {
+     "Modality": "X-RAY",
+     "Service_Name": "Sella",
+     "Price": 455,
+     "radiology_Name": "أشعة عادية على تجويف الغده النخاميه"
+    },
+    {
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "10\/2 Sialography One Side",
+     "Price": 895,
+     "radiology_Name": "أشعة عادية على  الغده اللعابية جانب واحد"
+    },
+    {
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "10\/3 Sialography Both Sides",
+     "Price": 1120,
+     "radiology_Name": "أشعة عادية على  الغده اللعابية جانبين"
+    },
+    {
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Ankle",
+     "Price": 520,
+     "radiology_Name": "أشعة عادية على الكاحل"
+    },
+    {
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Antegrade Pyelography Or Nephrostomy",
+     "Price": 705,
+     "radiology_Name": "أشعة بالصبغة للكلي والمثانة عن طريق قسطرة"
+    },
+    {
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Appendix",
+     "Price": 595,
+     "radiology_Name": "أشعة عادية على الزائدة الدودية"
+    },
+    {
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Arm or Forearm",
+     "Price": 520,
+     "radiology_Name": "أشعة عادية على عظام العضد أو الساعد"
+    },
+    {
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Ascending Cystourethrography",
+     "Price": 1520,
+     "radiology_Name": " أشعة بالصبغة للمثانة وقناة مجرى البول"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Barium Enema",
+     "Price": 1900,
+     "radiology_Name": "باريوم علي القولون"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Barium Meal",
+     "Price": 1800,
+     "radiology_Name": "باريوم  علي المعدة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Barium Meal Follow Through",
+     "Price": 1200,
+     "radiology_Name": "باريوم علي المرئ و القولون و المعدة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Barium Swallow",
+     "Price": 1700,
+     "radiology_Name": "باريوم علي المرئ"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Both Ankles",
+     "Price": 455,
+     "radiology_Name": "أشعة عادية على الكاحلين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Both Elbows",
+     "Price": 600,
+     "radiology_Name": "أشعة عادية على الكوعين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Both Feet",
+     "Price": 600,
+     "radiology_Name": "أشعة عادية على القدمين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Both Hands And Wrists",
+     "Price": 600,
+     "radiology_Name": "أشعة عادية على اليجين و الرسخين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Both Heels",
+     "Price": 455,
+     "radiology_Name": "أشعة عادية على الكعبين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Both Hips",
+     "Price": 600,
+     "radiology_Name": "أشعة عادية على الفخذين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Both Knees",
+     "Price": 600,
+     "radiology_Name": "أشعة عادية على الركبتين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Both Shoulders",
+     "Price": 455,
+     "radiology_Name": "أشعة عادية على الكتفين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Both Tibia & Femur",
+     "Price": 600,
+     "radiology_Name": "أشعة عادية على عظام الفخذين أو الساقين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Cavernosography",
+     "Price": 785,
+     "radiology_Name": "أشعة عادية علي القضيب  "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Cavernosometry",
+     "Price": 650,
+     "radiology_Name": "قياس ضغط النسيج الأسفنجي للقضيب        "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Cavernosometry & Cavernosography",
+     "Price": 895,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Cervical spine",
+     "Price": 450,
+     "radiology_Name": "أشعة عادية عالفقرات العنقية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Clavicle",
+     "Price": 425,
+     "radiology_Name": "أشعة عادية على الترقوة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Coccyx",
+     "Price": 400,
+     "radiology_Name": "أشعة عادية على العصعص"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Dacrocystography one side",
+     "Price": 675,
+     "radiology_Name": "اشعة بالصبغه علي قناة الغدة الدمعية جانب واحد "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Dacrocystography two sides",
+     "Price": 730,
+     "radiology_Name": "اشعة بالصبغه علي قناة الغدة الدمعية جانبين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Defaecography",
+     "Price": 785,
+     "radiology_Name": "radiology_Name الوظيفى للمستقيم بالباريوم"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Dorsal spine",
+     "Price": 450,
+     "radiology_Name": "أشعة عادية عالفقرات الصدرية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Dorsolumbar spine",
+     "Price": 570,
+     "radiology_Name": "أشعة عادية عالفقرات الظهرية القطنية "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Elbow",
+     "Price": 520,
+     "radiology_Name": "أشعة عادية على الكوع"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Facial Bones \/ Orbit",
+     "Price": 435,
+     "radiology_Name": "أشعة عادية على الحجاج أوعظام الوجه"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Femur or Tibia",
+     "Price": 520,
+     "radiology_Name": "أشعة عادية على عظام الفخذ أو الساق"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Fistulography",
+     "Price": 1035,
+     "radiology_Name": "أشعة عادية على الناصور"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Foot",
+     "Price": 520,
+     "radiology_Name": "أشعة عادية على القدم"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Hand",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على اليد"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Hand And wrist",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على اليد و الرسخ"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Hip Joint",
+     "Price": 520,
+     "radiology_Name": "أشعة عادية على مفصل الفخذ"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Humerus",
+     "Price": 520,
+     "radiology_Name": "أشعة عادية على العضد"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Hystrosalpingography",
+     "Price": 1900,
+     "radiology_Name": "أشعة بالصبغة على الرحم والأنابيب"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Intestinal Obstruction ( 2 Films )",
+     "Price": 445,
+     "radiology_Name": "أشعة عادية عالبطن للأنسداد المعوى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Intravenous Urography (I.V.U)",
+     "Price": 1425,
+     "radiology_Name": "أشعة بالصبغة للكلى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Knee",
+     "Price": 520,
+     "radiology_Name": "أشعة عادية على الركبة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "larynx",
+     "Price": 455,
+     "radiology_Name": "أشعة عادية على الحنجرة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Lumbar spine",
+     "Price": 550,
+     "radiology_Name": "أشعة عادية عالفقرات القطنية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Mandible Both Side",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على الفك جانبين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Mandible One Side",
+     "Price": 400,
+     "radiology_Name": "أشعة عادية على الفك جانب واحد"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Mastoid (Both Sides)",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على النتوء الحلمى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Mylography",
+     "Price": 695,
+     "radiology_Name": "أشعة عادية بعد حقن صبغة بالنخاع الشوكى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Nasal Bone",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على عظام الأنف"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Pain therapy",
+     "Price": 8800,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Paranasal sinses (All groups)",
+     "Price": 435,
+     "radiology_Name": "أشعة عادية على الجيوب الأنفية كلها"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Paranasal sinses (Anterior group)",
+     "Price": 455,
+     "radiology_Name": "أشعة عادية على الجيوب الأنفية الأمامية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Pelvis",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على الحوض"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Pharynx",
+     "Price": 420,
+     "radiology_Name": "أشعة عادية على البلعوم"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Plain Abdomen",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على البطن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Plain Gall Bladder",
+     "Price": 400,
+     "radiology_Name": "أشعة عادية على المرارة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Plain U.T.",
+     "Price": 420,
+     "radiology_Name": "أشعة عادية على المسالك"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Plain X-Ray Chest & Heart (More than two views)",
+     "Price": 445,
+     "radiology_Name": "أشعة عادية على الصدر و القلب أكثر من وضعين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Plain X-Ray Chest (Two Views)",
+     "Price": 600,
+     "radiology_Name": "أشعة عادية على الصدر وضعين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Portable X-Ray For One Anatomical Site -Near Place",
+     "Price": 655,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Portable X-Ray For Two Anatomical Sites -Near Place",
+     "Price": 1000,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Ribs",
+     "Price": 600,
+     "radiology_Name": "أشعة عادية على الضلوع"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Sacroiliac Joints",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على مفاصل الحوض العجزى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Salivary Gland",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على الغدة اللعابية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Scapula",
+     "Price": 430,
+     "radiology_Name": "أشعة عادية على لوح الكتف"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Shoulder",
+     "Price": 520,
+     "radiology_Name": "أشعة عادية على  الكتف"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Skeletal Survey",
+     "Price": 895,
+     "radiology_Name": "أشعة عادية على العظام"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Skull more than two views",
+     "Price": 455,
+     "radiology_Name": "أشعة عادية على الجمجمة أكثر من وضعين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Skull two views",
+     "Price": 400,
+     "radiology_Name": "أشعة عادية على الجمجمة وضعين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Sternum",
+     "Price": 435,
+     "radiology_Name": "أشعة عادية على القص"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "T.M.G open&Closed mouth",
+     "Price": 445,
+     "radiology_Name": "أشعة عادية على مفصل الفك"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Thoracic Aortography",
+     "Price": 995,
+     "radiology_Name": "تصوير الشريان الأورطي الصدري"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Tomography of the Long Bones",
+     "Price": 595,
+     "radiology_Name": "اشعة عاديه مقطعية علي العظام الطويلة اليد والرجل"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Vasography - Both Sides",
+     "Price": 1115,
+     "radiology_Name": "أشعة عادية على الحوالب المنوية جانبين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Vasography - One Side",
+     "Price": 895,
+     "radiology_Name": "أشعة عادية على الحوالب المنوية (جانب واحد)"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Whole Spine on one film",
+     "Price": 600,
+     "radiology_Name": "أشعة عادية على جميع الفقرات معا في فيلم واحد"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية",
+     "Modality": "X-RAY",
+     "Service_Name": "Wrist",
+     "Price": 520,
+     "radiology_Name": " اشعة عمر العظام\nأشعة عادية على الرسخ"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية ديجيتال",
+     "Modality": "CR",
+     "Service_Name": "Cephalometry",
+     "Price": 350,
+     "radiology_Name": "سيفالوميتري"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة عادية ديجيتال",
+     "Modality": "CR",
+     "Service_Name": "Panorama",
+     "Price": 390,
+     "radiology_Name": "بانوراما على الأسنان"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "abdomen ct triphasic spiral",
+     "Price": 1640,
+     "radiology_Name": "مقطعية عالبطن ثلاثية المراحل"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. angio - Portography",
+     "Price": 2030,
+     "radiology_Name": "أشعة مقطعية على الوريد الكبدى البابى "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. angio - pulmonary",
+     "Price": 2030,
+     "radiology_Name": "أشعة مقطعية على الشريان الرئوى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. angio - Venography",
+     "Price": 2180,
+     "radiology_Name": "أشعة مقطعية على الأوردة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. angio - Volumetry",
+     "Price": 2240,
+     "radiology_Name": "أشعة مقطعية لتحديد الحجم "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Angio Lower Limb",
+     "Price": 2750,
+     "radiology_Name": "أشعة مقطعية على شرايين الأطراف السفلية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Angio Upper Limb",
+     "Price": 2750,
+     "radiology_Name": "أشعة مقطعية على شرايين الأطراف العلوية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Anteversion Angle",
+     "Price": 1510,
+     "radiology_Name": "أشعة مقطعية لتحديد زاوية التفاف القدم"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Bone Biopsy",
+     "Price": 3200,
+     "radiology_Name": "عينة على العظام عن طريق الأشعة المقطعية "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Carotid Angio",
+     "Price": 2160,
+     "radiology_Name": "أشعة مقطعية على الوريد السباتى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Liver Biopsy",
+     "Price": 3200,
+     "radiology_Name": "عينة من الكبد عن طريق الاشعة المقطعية "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Lung Biopsy",
+     "Price": 3200,
+     "radiology_Name": "عينة من الرئة عن طريق الاشعة المقطعية "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Pediatic Heart",
+     "Price": 1825,
+     "radiology_Name": "أشعة مقطعية على قلب الأطفال"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Renal Angio",
+     "Price": 2160,
+     "radiology_Name": "أشعة مقطعية على شرايين الكلى "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "C.T. Renal Biopsy",
+     "Price": 3200,
+     "radiology_Name": "عينة من الكلى عن طريق الأشعة المقطعية "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT - Cisternography",
+     "Price": 4223,
+     "radiology_Name": "مقطعية على سائل النخاع الشوكى بالصبغة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT - TAVI Protocol",
+     "Price": 3200,
+     "radiology_Name": "أشعة مقطعية تافى بروتوكول"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT - Volumetry",
+     "Price": 1620,
+     "radiology_Name": "أشعة مقطعية لقياس الحجم"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT 3 D",
+     "Price": 1590,
+     "radiology_Name": "أشعة مقطعية ثلاثية الأبعاد"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT 3D  Face & Paranasal Sinuses",
+     "Price": 1670,
+     "radiology_Name": "مقطعية على الوجه وجيوب أنفية ثلاثي الأبعاد "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT 3D Face",
+     "Price": 1670,
+     "radiology_Name": "أشعة مقطعية عالوجه ثلاثية الأبعاد"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT 3D Pelvis",
+     "Price": 1670,
+     "radiology_Name": "مقطعية على مفصل حوض ثلاثي الأبعاد"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Abdomen",
+     "Price": 1700,
+     "radiology_Name": "مقطعية عالبطن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Abdomen & Pelvis",
+     "Price": 2880,
+     "radiology_Name": "مقطعية عالبطن و الحوض"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Aspiration",
+     "Price": 2900,
+     "radiology_Name": "بذل بواسطة الأشعة المقطعية "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Betrous bone",
+     "Price": 1720,
+     "radiology_Name": "مقطعية عالأذن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Brain Lab",
+     "Price": 2160,
+     "radiology_Name": "أشعة مقطعية على المخ ببروتوكول خاص لحجرة العمليات "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Brain Or Spine With Omipaque",
+     "Price": 1570,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Brain with contrast",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالمخ بالصبغة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Brain without contrast",
+     "Price": 970,
+     "radiology_Name": "مقطعية عالمخ بدون صبغة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Cervical Spine (C1 - C7)",
+     "Price": 1480,
+     "radiology_Name": "مقطعية عالفقرات العنقية جميعها"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Cervical Spine (C3 - C7)",
+     "Price": 1480,
+     "radiology_Name": "مقطعية عالفقرات العنقية من الثالثة الى السابعة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Chest",
+     "Price": 1540,
+     "radiology_Name": "مقطعية عالصدر"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Coronary Angio With Calcium Scoring",
+     "Price": 4326,
+     "radiology_Name": "مقطعية على الشرايين التاجية مع قياس نسبة الكالسيوم"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Coronary Calcium Scoring",
+     "Price": 1720,
+     "radiology_Name": " قياس نسبة الكالسيوم في الشرايين التاجية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Dental Scan",
+     "Price": 1460,
+     "radiology_Name": "اشعة مقطعية علي الأسنان"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Dorsal Spine",
+     "Price": 1460,
+     "radiology_Name": "مقطعية عالفقرات الصدرية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Enterography",
+     "Price": 1772,
+     "radiology_Name": "اشعة مقطعية على الامعاء"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Guided Biopsy",
+     "Price": 2670,
+     "radiology_Name": "عينة عن طريق الاشعة المقطعية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Guided Catheter Drainage",
+     "Price": 2900,
+     "radiology_Name": "تشفيطات بالقسطرة الموجهة بالاشعة المقطعية "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Hip",
+     "Price": 1440,
+     "radiology_Name": "مقطعية على مفصل الفخذ"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Liver Triphasic Study",
+     "Price": 2270,
+     "radiology_Name": "مقطعية عالكبد ثلاث مراحل"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Ankle",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالكاحل الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Elbow",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالكوع الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Femur",
+     "Price": 1360,
+     "radiology_Name": "مقطعية على عظام الفخد الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Foot",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالقدم اليسرى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Forearm",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالساعد الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Hand",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عاليد اليسرى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Humerus",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالعضد الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Knee",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالركبة اليسرى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Leg",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالساق اليسرى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Shoulder",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالكتف الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT LT Wrist",
+     "Price": 1440,
+     "radiology_Name": "مقطعية عالرسخ الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Lumbar Spine from L1 to S1",
+     "Price": 1440,
+     "radiology_Name": "مقطعية عالفقرات القطنية جميعها"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Lumbar Spine from L3 to S1",
+     "Price": 1440,
+     "radiology_Name": "مقطعية عالفقرات القطنية من الثالثه الى الخامسة"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Mandible 3D",
+     "Price": 1460,
+     "radiology_Name": "مقطعية على الفك ثلاثية الأبعاد"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Nasopharynx",
+     "Price": 1380,
+     "radiology_Name": "مقطعية عالبلعوم الأنفى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Neck",
+     "Price": 1550,
+     "radiology_Name": "مقطعية عالعنق"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Orbit",
+     "Price": 1800,
+     "radiology_Name": "مقطعية عالحجاج"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Orbit & Brain",
+     "Price": 1800,
+     "radiology_Name": "مقطعية عالمخ و الحجاج"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Paranasal Sinuses - Full examination",
+     "Price": 1440,
+     "radiology_Name": "مقطعية عالجيوب الأنفية فحص بالكامل"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Paranasal Sinuses - Routine",
+     "Price": 1060,
+     "radiology_Name": "مقطعية عالجيوب الأنفية فحص دورى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Parotid",
+     "Price": 1460,
+     "radiology_Name": "أشعة مقطعية على الغدة االنكافية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Pelvis",
+     "Price": 1730,
+     "radiology_Name": "مقطعية الحوض"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Petrous Bone",
+     "Price": 1720,
+     "radiology_Name": "مقطعية عالأذن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT  Hand",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عاليد اليمنى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Ankle",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالكاحل الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Elbow",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالكوع الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Femur",
+     "Price": 1360,
+     "radiology_Name": "مقطعية على عظام الفخد الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Foot",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالقدم اليمنى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Forearm",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالساعد الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Humerus",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالعضد الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Knee",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالركبة اليمنى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Leg",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالساق اليمنى"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Shoulder",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالكتف الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT RT Wrist",
+     "Price": 1440,
+     "radiology_Name": "مقطعية عالرسخ الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Sacroiliac joints",
+     "Price": 1400,
+     "radiology_Name": "مقطعية على المفصل العجزي الحرقفي"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Scanogram (For Measurement or Limb Length)",
+     "Price": 1180,
+     "radiology_Name": "أشعة مقطعية لقياس طول الطرفين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Sella",
+     "Price": 1720,
+     "radiology_Name": "مقطعية عالغدة النخامية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Sella & Brain",
+     "Price": 1720,
+     "radiology_Name": "مقطعية عالمخ و الغدة النخامية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Shoulder with Arthrography",
+     "Price": 1590,
+     "radiology_Name": "مقطعية على مفصل الكتف مع حقن صبغه في المفصل"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Sternum",
+     "Price": 1360,
+     "radiology_Name": "مقطعية على عظمة القص"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Triphasic Abdomen ( liver ) & Pelvis",
+     "Price": 920,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Urinary Tract Without Contrast",
+     "Price": 1700,
+     "radiology_Name": "مقطعية على المسالك البولية "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Virtual Bronchoscopy",
+     "Price": 1570,
+     "radiology_Name": "المنظار التخيلي علي القصبة الهوائية والشعب الهوائية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT Virtual Colonoscopy",
+     "Price": 1570,
+     "radiology_Name": "المنظار التخيلي علي القولون"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. angio - Aortography",
+     "Price": 2240,
+     "radiology_Name": "مقطعية على الشريان الاورطى كله"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. Aortography & TAVI measurements",
+     "Price": 1800,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. Both Knees",
+     "Price": 2160,
+     "radiology_Name": "أشعة مقطعية على الركبتين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. Both Legs",
+     "Price": 2160,
+     "radiology_Name": "أشعة مقطعية على الرجلين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. Both Thigh",
+     "Price": 2160,
+     "radiology_Name": "أشعة مقطعية على الفخذيين"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. Coronary - Dr. Nabil Farag",
+     "Price": 4400,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. Dorsolumbar",
+     "Price": 1460,
+     "radiology_Name": "أشعة مقطعية على الفقرات الصدرية و القطنية"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. LT - Arm",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالذراع الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. RT - Arm",
+     "Price": 1360,
+     "radiology_Name": "مقطعية عالذراع الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT. Thigh",
+     "Price": 1360,
+     "radiology_Name": "أشعة مقطعية على الفخذ"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "CT.angio - Cerebral",
+     "Price": 2180,
+     "radiology_Name": "أشعة مقطعية على شرايين المخ"
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "Pain Therapy 8",
+     "Price": 5000,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "Pain Therapy RF",
+     "Price": 27500,
+     "radiology_Name": "علاج الالم باستخدام التردد الحراري "
+    },
+    {
+     
+     "نوع الأشعة": "أشعة مقطعية",
+     "Modality": "CT",
+     "Service_Name": "TAVI measurements only",
+     "Price": 1620,
+     "radiology_Name": "قياسات تافي فقط "
+    },
+    {
+     
+     "نوع الأشعة": "ديكسا وفيتامين د",
+     "Modality": "DX",
+     "Service_Name": "DXA & Vitamin D Promo",
+     "Price": 300,
+     "radiology_Name": "قياس هشهاة العظام و فيتامين د"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "3D Full Field Digital Mammography with Tomosynthesis -Both Side",
+     "Price": 1400,
+     "radiology_Name": "أشعة الثدى الرقميه المقطعيه ثلاثية الابعاد جانبين"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "3D Full Field Digital Mammography with Tomosynthesis -One Side",
+     "Price": 900,
+     "radiology_Name": "أشعة الثدى الرقميه المقطعيه ثلاثية الابعاد جانب واحد"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Clip localization",
+     "Price": 5200,
+     "radiology_Name": "أشعة لتحديد الماسك"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Computed Digital Mammogram -Both Sides",
+     "Price": 850,
+     "radiology_Name": "أشعة الثدى الرقمية بالكمبيوتر جانبين"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Computed Digital Mammogram -One Side",
+     "Price": 750,
+     "radiology_Name": "أشعة الثدى الرقمية بالكمبيوتر جانب واحد"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Contrast Mammography",
+     "Price": 1700,
+     "radiology_Name": "أشعة الثدى الرقمية بالصبغة"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Galactography",
+     "Price": 920,
+     "radiology_Name": "أشعة  على قنوات الثدى "
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Guided Needle Localization",
+     "Price": 1320,
+     "radiology_Name": "تحديد موقع المرض بالثدى"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Male Full Field Digital Mammography With Tomosynthesis- Both sides",
+     "Price": 850,
+     "radiology_Name": " أشعة الثدى الرقميه بالكمبيوتر-جانبين للرجال "
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Mammo. guided Needle Biopsy",
+     "Price": 1370,
+     "radiology_Name": "عينة من الثدي"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Mammotome",
+     "Price": 9120,
+     "radiology_Name": "عينة من الثدي"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Skin Making in conjunction with breast U.S",
+     "Price": 320,
+     "radiology_Name": "تحديد ورم بالثدى من الخارج"
+    },
+    {
+     
+     "نوع الأشعة": "ماموجرافى",
+     "Modality": "MG",
+     "Service_Name": "Skin Marking De novo",
+     "Price": 420,
+     "radiology_Name": "تحديد ورم من الخارج على الجلد"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "Functional MRI - Fmri Blod Technique",
+     "Price": 7000,
+     "radiology_Name": "التصوير بالرنين المغناطيسي الوظيفي - تقنية Fmri Blod"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "Functional MRI - Fmri Brain",
+     "Price": 9500,
+     "radiology_Name": "التصوير بالرنين المغناطيسي الوظيفي - الدماغ Fmri"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "Functional MRI - Fmri Brain & Perfusion",
+     "Price": 10500,
+     "radiology_Name": "التصوير بالرنين المغناطيسي الوظيفي - التصوير بالرنين المغناطيسي للدماغ والتروية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "Functional MRI - Fmri Brain & Resting State",
+     "Price": 7500,
+     "radiology_Name": "التصوير بالرنين المغناطيسي الوظيفي - الدماغ Fmri وحالة الراحة"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRA & MRV",
+     "Price": 4050,
+     "radiology_Name": "رنين على الشرايين و الاوردة"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - Brachial Plexus",
+     "Price": 2060,
+     "radiology_Name": "رنين على الضفيرة العصبية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Ankle Arthrography",
+     "Price": 2630,
+     "radiology_Name": "رنين على مفصل الكاحل الأيسر بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Arm",
+     "Price": 2060,
+     "radiology_Name": "رنين على الذراع الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Foot",
+     "Price": 2700,
+     "radiology_Name": "رنين على القدم اليسرى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Hand",
+     "Price": 2700,
+     "radiology_Name": "رنين على اليد اليسرى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Hip Arthrography",
+     "Price": 2530,
+     "radiology_Name": "رنين على مفصل الفخذ الأيسر بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Knee Arthrography",
+     "Price": 2630,
+     "radiology_Name": "رنين على مفصل الركبة الأيسر بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Leg",
+     "Price": 2060,
+     "radiology_Name": "رنين على الساق اليسرى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Shoulder Arthrography",
+     "Price": 2630,
+     "radiology_Name": "رنين على مفصل الكتف الأيسر بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Wrist",
+     "Price": 2270,
+     "radiology_Name": "رنين على الساعد الأيسر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - LT Wrist Arthrography",
+     "Price": 2650,
+     "radiology_Name": "رنين على مفصل الرسخ الأيسر بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - Orbit",
+     "Price": 2700,
+     "radiology_Name": "رنين على الحجاج"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - Petrous Bones",
+     "Price": 2700,
+     "radiology_Name": "رنين على الأذن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Ankle Arthrography",
+     "Price": 2630,
+     "radiology_Name": "رنين على مفصل الكاحل الأيمن بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Arm",
+     "Price": 2060,
+     "radiology_Name": "رنين على الذراع الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - Rt Foot",
+     "Price": 2700,
+     "radiology_Name": "رنين على القدم اليمنى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Forearm",
+     "Price": 1950,
+     "radiology_Name": "رنين على الساعد الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Hand",
+     "Price": 2700,
+     "radiology_Name": "رنين على اليد اليمنى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Hip Arthrography",
+     "Price": 2530,
+     "radiology_Name": "رنين على مفصل الفخذ الأيمن بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Knee Arthrography",
+     "Price": 2630,
+     "radiology_Name": "رنين على مفصل الركبة الأيمن بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Leg",
+     "Price": 2060,
+     "radiology_Name": "رنين على الساق اليمنى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Shoulder Arthrography",
+     "Price": 2630,
+     "radiology_Name": "رنين على مفصل الكتف الأيمن بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Wrist",
+     "Price": 2270,
+     "radiology_Name": "رنين على الساعد الايمن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI - RT Wrist Arthrography",
+     "Price": 2650,
+     "radiology_Name": "رنين على مفصل الرسخ الأيمن بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Abdomen Other Than Liver",
+     "Price": 2370,
+     "radiology_Name": "رنين على البطن غير الكبد"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Angiography (MRA)",
+     "Price": 2450,
+     "radiology_Name": "رنين على الأوعية الدموية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Ankle Arthrography",
+     "Price": 2630,
+     "radiology_Name": "رنين على مفصل الكاحل بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Both Knees",
+     "Price": 4600,
+     "radiology_Name": "رنين على الركبتين"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Brain",
+     "Price": 2300,
+     "radiology_Name": "رنين على المخ"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Brain & MRA",
+     "Price": 2370,
+     "radiology_Name": "رنين على المخ و شرايين المخ"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Brain & MRA & MRV",
+     "Price": 4125,
+     "radiology_Name": "رنين على المخ وأوردة وشرايين المخ"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Brain & MRV",
+     "Price": 2370,
+     "radiology_Name": "رنين على المخ و أوردة المخ"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI BRAIN & SPECTROSCOPY",
+     "Price": 2600,
+     "radiology_Name": "رنين للدماغ والتحليل الطيفي"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI BRAIN Stroke Protocol",
+     "Price": 3800,
+     "radiology_Name": "رنين على المخ بروتوكول الجلطه"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Brain Volumetry",
+     "Price": 4500,
+     "radiology_Name": "قياس حجم الدماغ بالرنين المغناطيسي"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Breasts",
+     "Price": 3750,
+     "radiology_Name": "رنين على الثديين"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Cervical Spine",
+     "Price": 2270,
+     "radiology_Name": "رنين على الفقرات العنقية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Chest",
+     "Price": 2060,
+     "radiology_Name": "رنين على الصدر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI CSF Flowmetry",
+     "Price": 3050,
+     "radiology_Name": "رنين لتدفق سائل النخاع الشوكى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Dorsal Spine",
+     "Price": 2270,
+     "radiology_Name": "رنين على الفقرات الصدرية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Enterography",
+     "Price": 2200,
+     "radiology_Name": "رنين على الأمعاء"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI -FOOT",
+     "Price": 2700,
+     "radiology_Name": "رنين على القدم"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Heart",
+     "Price": 5300,
+     "radiology_Name": "رنين على القلب"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Hip Arthrography",
+     "Price": 2530,
+     "radiology_Name": "رنين على مفصل الفخذ الايمن "
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Knee Arthrography",
+     "Price": 2630,
+     "radiology_Name": "رنين على مفصل الركبة"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Liver",
+     "Price": 2460,
+     "radiology_Name": "رنين على الكبد"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Lower Limb",
+     "Price": 2600,
+     "radiology_Name": "رنين على الطرف السفلى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI -LT Ankle",
+     "Price": 2270,
+     "radiology_Name": "رنين على الكاحل الايسر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI LT Elbow",
+     "Price": 2060,
+     "radiology_Name": "رنين على الكوع الايسر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI -LT Forearm",
+     "Price": 1950,
+     "radiology_Name": "رنين على الساعد الايسر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI LT Hip Joint",
+     "Price": 2270,
+     "radiology_Name": "رنين على مفصل الفخذ الايمن "
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI LT Knee",
+     "Price": 2300,
+     "radiology_Name": "رنين على الركبة الاليسر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI LT Shoulder",
+     "Price": 2300,
+     "radiology_Name": "رنين على الكتف الايسر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI -LT Thigh",
+     "Price": 1950,
+     "radiology_Name": "رنين على الفخذ الايسر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Lumbar Spine",
+     "Price": 2300,
+     "radiology_Name": "رنين على الفقرات القطنية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI MRCP",
+     "Price": 2270,
+     "radiology_Name": "رنين على القنوات المرارية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI MRU",
+     "Price": 2530,
+     "radiology_Name": "رنين على المسالك البولية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI nasopharynx",
+     "Price": 2060,
+     "radiology_Name": "رنين على البلعوم الانفى "
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Neck",
+     "Price": 2060,
+     "radiology_Name": "رنين على الرقبة"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Neurography",
+     "Price": 5500,
+     "radiology_Name": "رنين لتصوير الأعصاب"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Orbit & brain",
+     "Price": 2700,
+     "radiology_Name": "رنين على المخ و الحجاج"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Paranasa Sinuses",
+     "Price": 2270,
+     "radiology_Name": "رنين على الجيوب الانفيه"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Pelvis",
+     "Price": 2300,
+     "radiology_Name": "رنين على الحوض"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI -Perfusion",
+     "Price": 2470,
+     "radiology_Name": "رنين مغناطيسى للقياس تدفق الدم"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Petrous Bones",
+     "Price": 2700,
+     "radiology_Name": "رنين على الاذن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Pregnancy & Fetal MR",
+     "Price": 2030,
+     "radiology_Name": "الحمل و الجنين "
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Prostatic",
+     "Price": 3700,
+     "radiology_Name": "رنين عبى البروستاتا"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI -RT Ankle",
+     "Price": 2270,
+     "radiology_Name": "رنين على الكاحل الايمن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI RT Elbow",
+     "Price": 2060,
+     "radiology_Name": "رنين على الكوع الايمن "
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI RT Hip Joint",
+     "Price": 2270,
+     "radiology_Name": "رنين على مفصل الفخذ الايمن "
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI RT Knee",
+     "Price": 2300,
+     "radiology_Name": "رنين على الركبة"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI RT Shoulder",
+     "Price": 2300,
+     "radiology_Name": "رنين على مفصل الكتف"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI -RT Thigh",
+     "Price": 1950,
+     "radiology_Name": "رنين على الفخذ الأيمن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Sacroilliac Joint",
+     "Price": 2270,
+     "radiology_Name": "رنين على المفصل العجزى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Sacrum & coccyx",
+     "Price": 2060,
+     "radiology_Name": "رنين العجز والعصعص"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Sella",
+     "Price": 2270,
+     "radiology_Name": "رنين على الغدة النخامية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Shoulder Arthrography",
+     "Price": 2630,
+     "radiology_Name": "رنين على مفصل الكتف بالحقن"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI SPECTROSCOPY",
+     "Price": 2200,
+     "radiology_Name": "الرنين الطيفى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Sternum",
+     "Price": 2060,
+     "radiology_Name": "رنين على القفص الصدر"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI T.M.J",
+     "Price": 2060,
+     "radiology_Name": "رنين على مفصل الفك"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Upper Limb",
+     "Price": 2600,
+     "radiology_Name": "رنين على الطرف العلوى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Vessel Wall",
+     "Price": 7000,
+     "radiology_Name": "رنين على جدار الاوعية الدموية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI Whole Spine",
+     "Price": 4400,
+     "radiology_Name": "رنين على كل العمود الفقرى"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Abdomen & Pelvis",
+     "Price": 4200,
+     "radiology_Name": "رنين على البطن و الحوض"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Angio Lower Limb",
+     "Price": 2200,
+     "radiology_Name": "رنين على شرايين الاطراف السفليه"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Aortography",
+     "Price": 2600,
+     "radiology_Name": "رنين على الاوعية الدموية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Both Joints",
+     "Price": 2800,
+     "radiology_Name": "رنين على أى مفصلين"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Brain Lab",
+     "Price": 2060,
+     "radiology_Name": "رنين على المخببروتوكول خاص لحجرة العمليات"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Brain Volumetry",
+     "Price": 2900,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Cisternography",
+     "Price": 3350,
+     "radiology_Name": "رنين على سائل المخ"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Defeography",
+     "Price": 2600,
+     "radiology_Name": "رنين على عضلات الشرج اثناء التبرز"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Dorsolumber Spine",
+     "Price": 2060,
+     "radiology_Name": "رنين عالفقرات الصدرية و القطنية"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Fistulography - Dr. Rania Farouk",
+     "Price": 2450,
+     "radiology_Name": "رنين على الناصور"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Heart Promo",
+     "Price": 5300,
+     "radiology_Name":""
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Rectum",
+     "Price": 865,
+     "radiology_Name": "رنين على عضلات الشرج"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Whole Body",
+     "Price": 4250,
+     "radiology_Name": "رنين عالجسم بالكامل"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRI. Wrist Arthrography",
+     "Price": 2650,
+     "radiology_Name": "رنين على مفصل الرسخ"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "MRV",
+     "Price": 3250,
+     "radiology_Name": "رنين على الأوردة"
+    },
+    {
+     
+     "نوع الأشعة": "الرنين المغناطيسى",
+     "Modality": "MRI",
+     "Service_Name": "Tractography",
+     "Price": 6100,
+     "radiology_Name": "رنين على الاعصاب ( تخطيط مسار الاعصاب )"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Bone Scan",
+     "Price": 1450,
+     "radiology_Name": "مسح ذرى على العظام"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Brain  For Hydrocephalus",
+     "Price": 995,
+     "radiology_Name": "مسح ذرى على المخ"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Brain Perfusion Spect with HMPAO",
+     "Price": 1570,
+     "radiology_Name": "مسح ذري للمخ بمادة  (HMPAO)"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Breast Lymphoscintigraphy",
+     "Price": 670,
+     "radiology_Name": "مسح ذري علي الأوعية الليمفاوية للثدي"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Dacryoscintigraphy",
+     "Price": 1445,
+     "radiology_Name": "مسح ذري للقنوات الدمعية"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Gallium Scan Infiction",
+     "Price": 12575,
+     "radiology_Name": "مسح ذري بأستخدام مادة الجاليم للعدوي"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "GIT Bleeding",
+     "Price": 1475,
+     "radiology_Name": "مسح ذري لتشخيص نزيف الجهاز الهضمي"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Hida scan",
+     "Price": 1745,
+     "radiology_Name": "مسح ذرى بمادة الهايدا"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Indium Scan",
+     "Price": 30345,
+     "radiology_Name": "مسح ذري بأستخدام مادة انديم "
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Liver Scan",
+     "Price": 1120,
+     "radiology_Name": "مسح ذرى على الكبد"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Lung Scan Perfusion Only",
+     "Price": 1545,
+     "radiology_Name": "مسح ذرى على الرئة مرحلة واحدة"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Lung Scan V\/P",
+     "Price": 1845,
+     "radiology_Name": "مسح ذرى على الرئة مرحلتين"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Lymph scan",
+     "Price": 2445,
+     "radiology_Name": "مسح ذرى على الغدد الليمفاوية"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Meckel's Scan",
+     "Price": 1445,
+     "radiology_Name": "مسح ذري علي الأمعاء"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "MIBG",
+     "Price": 18825,
+     "radiology_Name": "مسح ذري بأستخدام مادة MIBG"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Parathyroid",
+     "Price": 1845,
+     "radiology_Name": "مسح ذرى على الغدة خلف الدرقية"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Renal Scan Dynamic",
+     "Price": 1095,
+     "radiology_Name": "مسح ذرى على الكلى مرحلة واحدة"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Renal Scan Static",
+     "Price": 1095,
+     "radiology_Name": "مسح ذرى على الكلى مرحلة واحدة"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Renal Scan With Captopril",
+     "Price": 1295,
+     "radiology_Name": "مسح ذري علي الكلي بالكابتوبريل"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Renal Scan(Dynamic & Static)",
+     "Price": 1700,
+     "radiology_Name": "مسح ذرى على الكلى مرحلتين"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Renal Scan(Dynamic OR Static)",
+     "Price": 1095,
+     "radiology_Name": "مسح ذرى على الكلى ثابت او متحرك"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Salivary Gland Scintigraphy",
+     "Price": 945,
+     "radiology_Name": "مسح ذري علي الغدد اللعابية"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Scrotal (Testicular) Scan",
+     "Price": 970,
+     "radiology_Name": "مسح ذري علي الخصيتين"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Stress Myocardial Perfusion (Thallium)",
+     "Price": 3300,
+     "radiology_Name": "مسح ذري للقلب بالمجهود"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "T.131 Thyroid Whole Body",
+     "Price": 1595,
+     "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131 "
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "T.131 Thyroid Whole Body  100 M",
+     "Price": 6695,
+     "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 100 M)"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "T.131 Thyroid Whole Body  150 M",
+     "Price": 8720,
+     "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 150 M)"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "T.131 Thyroid Whole Body  16-30 M",
+     "Price": 2695,
+     "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 16-30 M)"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "T.131 Thyroid Whole Body  200 M",
+     "Price": 10345,
+     "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 200 M)"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "T.131 Thyroid Whole Body  50 M",
+     "Price": 4545,
+     "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 50 M)"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "T.131 Thyroid Whole Body  6-15 M",
+     "Price": 1945,
+     "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 6-15 M)"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "T.131 Thyroid Whole Body  80 M",
+     "Price": 2745,
+     "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 80 M)"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "T.131 Thyroid Whole Body 120 M",
+     "Price": 7445,
+     "radiology_Name": "مسح ذري للجسم كلة بأستخدام اليود المشعة T.131( 120 M)"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "TC99M - OCTREOTIDE",
+     "Price": 27000,
+     "radiology_Name": "مسح ذري بأستخدام مادة اكتروتيد "
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "Thyroid Scan",
+     "Price": 1300,
+     "radiology_Name": "مسح ذرى على الغدة الدرقية"
+    },
+    {
+     
+     "نوع الأشعة": "الطب النووى",
+     "Modality": "Nnuclear midicine",
+     "Service_Name": "تصوير حالات اليود",
+     "Price": 400,
+     "radiology_Name":""
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Blood pressure",
+     "Price": 2000,
+     "radiology_Name": "ضغط الدم"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Brain mapping",
+     "Price": 885,
+     "radiology_Name": "رسم مخ"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "DXA",
+     "Price": 550,
+     "radiology_Name": "قياس كثافة العظام"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "E.C.G Portable",
+     "Price": 720,
+     "radiology_Name": "رسم قلب ( زيارة منزلية )"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "E.C.G.",
+     "Price": 460,
+     "radiology_Name": "رسم قلب"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "E.M.G",
+     "Price": 1600,
+     "radiology_Name": "رسم الأعصاب"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "EMG - Both Side",
+     "Price": 3500,
+     "radiology_Name": "رسم الأعصاب طرفين"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "EMG - One Side",
+     "Price": 1600,
+     "radiology_Name": "رسم الأعصاب طرف واحد"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Exercise E.C.G",
+     "Price": 920,
+     "radiology_Name": "رسم القلب بالمجهود"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Holter 24 hours",
+     "Price": 790,
+     "radiology_Name": "الهولتر 24 ساعه"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Holter 48 hours",
+     "Price": 1550,
+     "radiology_Name": "الهولتر 48 ساعه"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "NCT & EMG - Both sides",
+     "Price": 3500,
+     "radiology_Name": "رسم الأعصاب والعضلات وجهين"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "NCT & EMG - One side",
+     "Price": 1600,
+     "radiology_Name": "رسم الاعصاب والعضلات وجه واحد"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Portable - EEG",
+     "Price": 2120,
+     "radiology_Name": "رسم المخ ( زيارة منزلية )"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Portable - EEG - Near",
+     "Price": 1570,
+     "radiology_Name":""
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Portable - EMG",
+     "Price": 2770,
+     "radiology_Name": "رسم العضلات ( زيارة منزلية )"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Portable - EMG - Near",
+     "Price": 2220,
+     "radiology_Name":""
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Regular EEG",
+     "Price": 1040,
+     "radiology_Name": "رسم المخ العادى"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Regular EEG  eight hour- WH",
+     "Price": 4340,
+     "radiology_Name": "رسم المخ 8 ساعات"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - Eleven hours",
+     "Price": 5660,
+     "radiology_Name": "رسم المخ - احدى عشر ساعة"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - Five hours",
+     "Price": 3020,
+     "radiology_Name": "رسم المخ -خمسة ساعات"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - Four hours",
+     "Price": 2580,
+     "radiology_Name": "رسم المخ -أربع ساعات"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - Nine hours",
+     "Price": 4780,
+     "radiology_Name": "رسم المخ - تسع ساعات"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - One hour",
+     "Price": 1425,
+     "radiology_Name": "رسم المخ - أول ساعة"
+    },
+    {
+     
+     "Modality": "OT",
+     "Service_Name": "Regular EEG  seven hour- WH",
+     "Price": 3900,
+     "radiology_Name":""
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - Six hours",
+     "Price": 3460,
+     "radiology_Name": "رسم المخ - ستة ساعات"
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - Ten hours",
+     "Price": 5220,
+     "radiology_Name": "رسم المخ - عشر  ساعات"
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - Three hours",
+     "Price": 2140,
+     "radiology_Name": "رسم المخ - ثلاثة ساعات"
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG  twelve hour- WH",
+     "Price": 6100,
+     "radiology_Name":""
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - Twenty four hours",
+     "Price": 11270,
+     "radiology_Name": "رسم المخ - أربعة و عشرون ساعة "
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - Two hours",
+     "Price": 1700,
+     "radiology_Name": "رسم المخ - ساعتين"
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG - WH",
+     "Price": 1040,
+     "radiology_Name":""
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG -Eight hours",
+     "Price": 4340,
+     "radiology_Name": "رسم المخ - ثمانية ساعات"
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG -Seven hours",
+     "Price": 3900,
+     "radiology_Name": "رسم المخ - سبعة ساعات"
+    },
+    {
+     "Modality": "OT",
+     "Service_Name": "Regular EEG -Twelve hours",
+     "Price": 6100,
+     "radiology_Name": "رسم المخ - اثنى عشر ساعة "
+    },
+    {
+     "نوع الأشعة": "المسح الذرى",
+     "Modality": "PET",
+     "Service_Name": "Gallium 68",
+     "Price": 8800,
+     "radiology_Name": "جاليوم 68"
+    },
+    {
+     "نوع الأشعة": "المسح الذرى",
+     "Modality": "PET",
+     "Service_Name": "Pet - CT Dotate - Nuclear",
+     "Price": 8800,
+     "radiology_Name": "المسح الذرى لأورام الغدد الصماء "
+    },
+    {
+     "نوع الأشعة": "المسح الذرى",
+     "Modality": "PET",
+     "Service_Name": "PET - CT. Nuclear",
+     "Price": 6300,
+     "radiology_Name": " المسح الذرى البوزيترونى المقطعى"
+    },
+    {
+     "نوع الأشعة": "المسح الذرى",
+     "Modality": "PET",
+     "Service_Name": "Pet - Pediatric - Nuclear",
+     "Price": 5700,
+     "radiology_Name": " المسح الذرى البوزيترونى المقطعى للاطفال"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "3D & 4D Obstetric U.S",
+     "Price": 1080,
+     "radiology_Name": "موجات فوق صوتية علي الحمل ثلاثية و رباعية الأبعاد"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "3D & 4D U\/S For More Than Twins",
+     "Price": 979,
+     "radiology_Name": "موجات فوق صوتية ثلاثية و رباعية الابعاد علي أكثر من توأمين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "3D & 4D U\/S For Twins",
+     "Price": 1450,
+     "radiology_Name": "موجات فوق صوتية ثلاثية و رباعية الابعاد علي توأمين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "3D Abdomen",
+     "Price": 620,
+     "radiology_Name": "موجات فوق الصوتية ثلاثية الابعاد على البطن"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "3D Pelvis",
+     "Price": 570,
+     "radiology_Name": "موجات فوق الصوتية ثلاثية الابعاد على الحوض"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "3D Vaginal Ultrasound",
+     "Price": 1080,
+     "radiology_Name": "موجات فوق الصوتية من فتحة المهبل "
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Abdomen and Pelvis u.s",
+     "Price": 810,
+     "radiology_Name": "موجات فوق صوتية على البطن والحوض"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Abdominal U\/S",
+     "Price": 620,
+     "radiology_Name": " موجات  فوق صوتية على البطن"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Amniocentesis",
+     "Price": 950,
+     "radiology_Name": "فحص السائل الأمنيوسي"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Aorta",
+     "Price": 1080,
+     "radiology_Name": "دوبلر على الشريان الأورطي"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Arterial duplex of  lower limb & Aorta",
+     "Price": 720,
+     "radiology_Name": "دوبلكس علي شريان الاورطي والطرفين السفلين "
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Breast Biopsy - U.S. Guided",
+     "Price": 3200,
+     "radiology_Name": "عينة من الثدى "
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Color Doppler On PLacenta",
+     "Price": 620,
+     "radiology_Name": "دوبلر ملون على المشيمة "
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Echo cardiography",
+     "Price": 830,
+     "radiology_Name": "موجات فوق صوتيه للقلب"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Follicullometry",
+     "Price": 490,
+     "radiology_Name": "متابعة التبويض (ثلاث مراحل) "
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Hepatic Arteries",
+     "Price": 620,
+     "radiology_Name": "دوبلر على شريان الكبد"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Inferior vena cava",
+     "Price": 560,
+     "radiology_Name": "دوبلر على الوريد الأجوف السفلي"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Lower Limb Arteries & Veins (Both Sides)",
+     "Price": 1470,
+     "radiology_Name": "دوبلر على أوردة و شرايين الطرفين السفليين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Lower Limb Arteries & Veins (One Side)",
+     "Price": 1200,
+     "radiology_Name": "دوبلر على أوردة و شرايين الطرف السفلى"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Lower Limb Arteries (Both Sides)",
+     "Price": 1080,
+     "radiology_Name": "دوبلر على شرايين الطرفين السفليين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Lower Limb Arteries (One Side)",
+     "Price": 930,
+     "radiology_Name": "دوبلر على شرايين الطرف السفلى"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Lower Limb Veins (Both Sides)",
+     "Price": 979,
+     "radiology_Name": "دوبلر على أوردة الطرفين السفليين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Lower Limb Veins (One Side)",
+     "Price": 810,
+     "radiology_Name": "دوبلر على أوردة الطرف السفلى"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Neck Arteries",
+     "Price": 979,
+     "radiology_Name": "دوبلر على شرايين الرقبة"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Pap Smear",
+     "Price": 630,
+     "radiology_Name": "مسحة من عنق الرحم"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "PCD For Arterial & Veins Of  Two Limbs- Near Place",
+     "Price": 3830,
+     "radiology_Name": "دوبلر على أوردة و شرايين طرفين ( زيارة منزلية )"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "PCD For Arterial & Veins Of One Limb- Near Place",
+     "Price": 2800,
+     "radiology_Name": "دوبلر على أوردة و شرايين طرف واحد ( زيارة منزلية )"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "PCD For Arterial Of One Limb- Near Place",
+     "Price": 2000,
+     "radiology_Name": "دوبلر على شرايين طرف واحد ( زيارة منزلية )"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "PCD For Arterial Of Two Limbs- Near Place",
+     "Price": 2600,
+     "radiology_Name": "دوبلر على شرايين طرفين ( زيارة منزلية )"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "PCD For Veins Of One Limb- Near Place",
+     "Price": 1780,
+     "radiology_Name": "دوبلر على أوردة طرف واحد ( زيارة منزلية )"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "PCD For Veins Of Two Limbs- Near Place",
+     "Price": 2300,
+     "radiology_Name": "دوبلر على أوردة طرفين ( زيارة منزلية )"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Pediatric Echo Cardiography",
+     "Price": 830,
+     "radiology_Name": "موجات فوق صوتيه للقلب أطفال"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Pelvis\/ Gynae \/ Obstetrics less than 4 months",
+     "Price": 540,
+     "radiology_Name": "موجات فوق صوتية أمراض النساء والحمل أقل من اربع شهور"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Penile Artery",
+     "Price": 980,
+     "radiology_Name": "دوبلر على شريان القضيب"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Portable Carotid Duplex- Near Place",
+     "Price": 1780,
+     "radiology_Name": "دوبلر على الرقبة ( زيارة منزلية )"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Portable echo cardiography",
+     "Price": 1900,
+     "radiology_Name": "موجات فوق صوتيه للقلب ( زيارة منزلية )"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Portable U\/S - Near Place",
+     "Price": 1650,
+     "radiology_Name": "موجات فوق صوتيه  ( زيارة منزلية )"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Portal vein",
+     "Price": 1080,
+     "radiology_Name": "دوبلر على الوريد البابي الكبدي"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Pregnancy more than 4M",
+     "Price": 510,
+     "radiology_Name": "موجات فوق الصوتية علي حمل اكثر من اربع شهور"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Renal arteries",
+     "Price": 1030,
+     "radiology_Name": "دوبلر على شرايين الكلي"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Sonohysterogram",
+     "Price": 930,
+     "radiology_Name": "موجات صوتية على الرحم بالمحلول"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Testis",
+     "Price": 780,
+     "radiology_Name": "دوبلر على شرايين و أوردة الخصية"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Trans - Rectal U.S",
+     "Price": 750,
+     "radiology_Name": "موجات فوق صوتية عن طريق الشرج"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Trans Cranial Arterial Doppler",
+     "Price": 690,
+     "radiology_Name": "شرايين المخ عن طريق الجمجمة"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Transrectal Prostatic Biopsy",
+     "Price": 1580,
+     "radiology_Name": "عينة من البروستاتا عن طريق الشرج"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Trans-Vaginal U.S",
+     "Price": 720,
+     "radiology_Name": "موجات فوق صوتية للحوض عن طريق المهبل"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Aspiration",
+     "Price": 3500,
+     "radiology_Name": "بذل عن طريق السونار"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Axilla",
+     "Price": 490,
+     "radiology_Name": "موجات فوق صوتية علي الأبط "
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Biopsy",
+     "Price": 3200,
+     "radiology_Name": "عينة عن طريق موجات فوق صوتية"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Breast - Both Sides",
+     "Price": 979,
+     "radiology_Name": "موجات فوق صوتية على الثدى جانبين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Breast - Mammography Complementary",
+     "Price": 370,
+     "radiology_Name": "موجات فوق صوتية على الثدى مكملة للماموجرام"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Breast - One Side",
+     "Price": 680,
+     "radiology_Name": "موجات فوق صوتية على الثدى جانب واحد"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Chest Wall",
+     "Price": 590,
+     "radiology_Name": "موجات فوق صوتية على جدار الصدر"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Obst &color Doppler On PLacenta",
+     "Price": 830,
+     "radiology_Name": "دوبلر الحمل "
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Of Any Joint",
+     "Price": 670,
+     "radiology_Name": "موجات فوق الصوتية علي اي مفصل"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Of Any Two Joints",
+     "Price": 1550,
+     "radiology_Name": "موجات فوق الصوتية علي اي مفصلين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Shearwave",
+     "Price": 670,
+     "radiology_Name": "موجات فوق الصوتية لقياس تليف الكبد"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S Thyroid",
+     "Price": 620,
+     "radiology_Name": "موجات فوق صوتية للغدة الدرقية "
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S. Pelvis",
+     "Price": 620,
+     "radiology_Name": "موجات فوق الصوتية على الحوض"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U.S. Skull (Pediatrics only)",
+     "Price": 540,
+     "radiology_Name": "موجات فوق صوتية للجمجمة أطفال فقط"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "U\/S Guided Breast Cyst Aspiration",
+     "Price": 1000,
+     "radiology_Name": "شفط كيس بالثدي بالإستدلال بالموجات فوق الصوتيه"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Ultrasound parotid & salivary glands",
+     "Price": 570,
+     "radiology_Name": "الموجات فوق الصوتية للغدد النكفية واللعابية"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Upper Limb Arteries & Veins (Both Sides)",
+     "Price": 1750,
+     "radiology_Name": "دوبلر على أوردة و شرايين الطرفين العلويين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Upper Limb Arteries & Veins (one Side)",
+     "Price": 1240,
+     "radiology_Name": "دوبلر على أوردة و شرايين الطرف العلوى"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Upper Limb Arteries (Both Sides)",
+     "Price": 1100,
+     "radiology_Name": "دوبلر على شرايين الطرفين العلويين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Upper Limb Arteries (One Side)",
+     "Price": 930,
+     "radiology_Name": "دوبلر على شرايين الطرف العلوى"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Upper Limb Veins (Both Sides)",
+     "Price": 1240,
+     "radiology_Name": "دوبلر على أوردة الطرفين العلويين"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Upper Limb Veins (One Side)",
+     "Price": 830,
+     "radiology_Name": "دوبلر على أوردة الطرف العلوى"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "US. Hernia",
+     "Price": 620,
+     "radiology_Name": "موجات فوق صوتية على الفتاء"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "US. Obst",
+     "Price": 670,
+     "radiology_Name": "موجات فوق صوتية على الحمل"
+    },
+    {
+     "نوع الأشعة": "الموجات فوق الصوتية",
+     "Modality": "US",
+     "Service_Name": "Wire Localization - U.S. Guided",
+     "Price": 2700,
+     "radiology_Name": "ابرة تحديد ورم للثدى بالموجات الفوق الصوتية"
+    }
+   ]
