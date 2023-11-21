@@ -19,6 +19,7 @@ const Curation = require("./curation"),
   GraphApi = require("./graph-api"),
   i18n = require("../i18n.config"),
   branchLocations = require("../data/cairo locations with bitly link.json"),
+  radiology_location = require("../data/فروع الأشعة.json"),
   preparations = require("../data/Copy of تحضيرات الاشعات.json"),
   prices = require("../data/Prices.json"),
   companies = require("../data/Companies Cairoscan.json"),
@@ -90,9 +91,7 @@ function preparationSimilarityChecker(array, string) {
   });
 }
 function pricesSimilarityChecker(array, string) {
-  return array.map((json) => {
-    console.log("json:", json);  // Add this line for debugging
-    console.log("string:", string);  // Add this line for debugging
+  return array.map((json) => {   
     return {
       radiology: json.radiology_Name,
       Service_Name: json.Service_Name,
@@ -487,6 +486,10 @@ module.exports = class Receive {
           payload: "LABS_BRANCHES"
         },
         {
+          title: i18n.__("menu.radiologyBranches"),
+          payload: "RADIOLOGY_BRANCHES"
+        },
+        {
           title: i18n.__("menu.contracts"),
           payload: "CONTRACTS"
         },
@@ -576,16 +579,11 @@ module.exports = class Receive {
     }
     else if (payload.includes("SHOWRADIOLOGYPRICE")) {
       // عرض سعر محدد
-      response = Response.genButtonTemplate(
-        i18n.__("names_Radiology.price", { radiologyPrice: radiologyName.value }),
-        [
-          {
-            type: "postback",
-            title: i18n.__("customer_service.chat"),
-            payload: "GITHUB"
-          }
-        ]
-      );
+      response = Response.genQuickReply(i18n.__("names_Radiology.price", { radiologyPrice: radiologyName.value }), [
+        {
+          title: i18n.__("menu.suggestion"),
+          payload: "MENU"
+        }])    
     }
      else if (payload.includes("SHOW_RADIOLOGY-PRICES") ) {
       
@@ -671,7 +669,39 @@ module.exports = class Receive {
           payload: "NO"
         }
       ]);
-    } else if (payload.includes("LABS_BRANCHES")) {
+    } 
+    else if (payload.includes("RADIOLOGY_BRANCHES")) {
+      // فروع الأشعة
+      response = radiology_location.map((location, index) => {
+        let Rbranches =
+          "المدينة : " +
+          location["City/Locality"] +
+         
+         
+          "\n" +
+          "العنوان : " +
+          location["address"].arabic +
+          "\n" +
+          location["address"].english +
+          "\n" +
+          "الرابط : " +
+          location.location+
+          "\n" +
+          "مواعيد العمل : " +
+          "\n"+
+          location.time;
+        if (index == radiology_location.length - 1) {
+          return Response.genQuickReply(Rbranches, [
+            {
+              title: i18n.__("menu.suggestion"),
+              payload: "GITHUB"
+            }
+          ]);
+        }
+        return Response.genText(Rbranches);
+      });
+    }
+    else if (payload.includes("LABS_BRANCHES")) {
       // فروع كايرو سكان
       response = branchLocations.map((location, index) => {
         let branches =
@@ -692,13 +722,14 @@ module.exports = class Receive {
           return Response.genQuickReply(branches, [
             {
               title: i18n.__("menu.suggestion"),
-              payload: "MENU"
+              payload: "GITHUB"
             }
           ]);
         }
         return Response.genText(branches);
       });
-    } else if (      
+    }
+     else if (      
       payload.includes("X-RAY") ||
       payload.includes("CT1") ||
       payload.includes("CT2") ||
