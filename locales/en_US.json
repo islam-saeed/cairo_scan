@@ -34,7 +34,7 @@
     "CR": "digital conventional ray",
     "CT": "cross-sectional scan",
     "PET": "atomic scanning",
-    "NNUCLEAR": "atomic survey",
+    "NNUCLEAR": "nuclear medicine",
     "OT": "tomography",
     "DX": "Fragility Measurement",
     "MG": "Mammography",
@@ -104,7 +104,7 @@
     "redirection": "You have been redirected to customer service. Please wait... If you would like to return to the menu, press the button below.",
     "radiology_name": "You will be redirected to customer service. Please write the name of the radiology service or send the prescription.",
     "prescription": " Please send the prescription.\nYou will be redirected to customer service.",
-    "chat": "start again"
+    "chat": "Menu"
   },
   "complaints": {
     "submit": "Please, Submit your complaint and you'll be redirected to our customer service"

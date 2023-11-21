@@ -146,7 +146,7 @@ module.exports = class Profile {
         {
           title: i18n.__("menu.suggestion"),
           type: "postback",
-          payload: "MENU"
+          payload: "GITHUB"
         }
       ]
     };
