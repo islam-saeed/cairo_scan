@@ -29,6 +29,7 @@ const Curation = require("./curation"),
   nnuPrice = require("../data/Prices/Nanu.json"),
  otPrice = require("../data/Prices/OT.json"),
   mriPrice = require("../data/Prices/MRI.json"),
+  allPrices = require("../data/Prices/allPricece.json"),
   companies = require("../data/Companies Cairoscan.json"),
   config = require("./config");
 
@@ -37,10 +38,11 @@ var isCustomerServicesFlag=false;
 var isRadiologyPendingFlag = false;
 var isPrepPendingFlag = false;
 var isContractPendingFlag = false;
-var category=[];
+var category=allPrices;
 var prepName;
 var radiologyName;
 var companyName;
+// helper function
 function editDistance(s1, s2) {
   s1 = s1.toLowerCase();
   s2 = s2.toLowerCase();
