@@ -134,7 +134,7 @@ app.post("/webhook", (req, res) => {
               // Make call to UserProfile API only if user is not guest
               let user = new User(senderPsid);
               if (webhookEvent.message)
-                if (webhookEvent.message.nlp.detected_locales.length > 0) {
+                if (webhookEvent.message.nlp?.detected_locales?.length > 0) {
                   var lang =
                     webhookEvent.message.nlp.detected_locales[0].locale.slice(
                       0,
@@ -169,7 +169,7 @@ app.post("/webhook", (req, res) => {
                           }
                           
                         }
-                      else  i18n.setLocale("en_US ");
+                      else  i18n.setLocale("ar_AR");
                   console.log(
                     "New Profile PSID:",
                     senderPsid,
@@ -188,7 +188,7 @@ app.post("/webhook", (req, res) => {
             }
           } else {
             if (webhookEvent.message)
-              if (webhookEvent.message.nlp.detected_locales.length > 0) {
+              if (webhookEvent.message?.nlp?.detected_locales?.length > 0) {
                 var confidence= webhookEvent.message.nlp.detected_locales[0].confidence;
                 var lang =
                   webhookEvent.message.nlp.detected_locales[0].locale.slice(
@@ -211,7 +211,7 @@ app.post("/webhook", (req, res) => {
                       }
                       
                     }
-                  else  i18n.setLocale("en_US ");
+                  else  i18n.setLocale("ar_AR");
 
             console.log("---------------------------lang: ", lang);
             console.log(
