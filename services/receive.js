@@ -67,10 +67,7 @@ function editDistance(s1, s2) {
 
 
 function similarity(s1, s2) {
-   // Check if either string is not a valid string
-   if (typeof s1 !== 'string' || typeof s2 !== 'string') {
-    return 0.0;
-  }
+
   var longer = s1;
   var shorter = s2;
   if (s1.length < s2.length) {
@@ -209,15 +206,18 @@ module.exports = class Receive {
    }
    else if (isRadiologyPendingFlag) {
              
-        radiologyName = pricesSimilarityChecker(category, message).reduce(
-          (prev, curr) => {
-            if (prev.similarityArabic >= curr.similarityArabic ||prev.similarityEnglish >= curr.similarityEnglish) {
-              return prev;
-            } else {
-              return curr;
-            }
-          }
-        );
+    radiologyName = pricesSimilarityChecker(category, message).reduce(
+      (prev, curr) => {
+        const prevMaxSimilarity = Math.max(prev.similarityArabic, prev.similarityEnglish);
+        const currMaxSimilarity = Math.max(curr.similarityArabic, curr.similarityEnglish);
+    
+        if (prevMaxSimilarity >= currMaxSimilarity) {
+          return prev;
+        } else {
+          return curr;
+        }
+      }
+    );
         console.log("****radiology_Name:"+radiologyName.similarityArabic);
         isRadiologyPendingFlag = false;
         if(radiologyName.similarityArabic>.7||radiologyName.similarityArabic>radiologyName.similarityEnglish){
