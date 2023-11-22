@@ -44,7 +44,7 @@
 
     "enquireCateg": "Please write the name of the radiology you want to know its price.",
 
-    "enquire": "Please write the name of the radiology \nA customer service representative will respond to you",
+    "enquire": "Send us the doctor's prescription.\nOne of our customer service representatives will respond to you.",
     "check": "Please write the name correctly",
     "price": "The price of the examination is: {{radiologyPrice}} pounds",
     "suggestion": "Do you mean {{radiologyName}}?"
@@ -85,7 +85,7 @@
   },
   "fallback": {
     "any": "Sorry, but I can't understand \"{{message}}\".",
-    "attachment": "Thank you for sending this attachment. We can connect you with one of the agents to review it, or we can start over"
+	"attachment": "Thank you for sending this attachment. One of our customer service representatives will respond to you,\n or you can return to the menu."
   },
   "branches": {
     "greeting": "Please choose the nearest branch for you..",
