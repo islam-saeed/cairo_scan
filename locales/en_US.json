@@ -41,7 +41,10 @@
     "MRI": "magnetic resonance ray",
     "US": "Ultrasound",
     "other": "Other radiology services.",
-    "enquire": "Please write the name of the radiology or examination",
+
+    "enquireCateg": "Please write the name of the radiology you want to know its price.",
+
+    "enquire": "Please write the name of the radiology \nA customer service representative will respond to you",
     "check": "Please write the name correctly",
     "price": "The price of the examination is: {{radiologyPrice}} pounds",
     "suggestion": "Do you mean {{radiologyName}}?"

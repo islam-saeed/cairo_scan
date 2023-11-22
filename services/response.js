@@ -145,13 +145,11 @@ module.exports = class Response {
   }
 
   static genNuxMessage(user) {
-    let welcome = this.genText(
-      i18n.__("profile.greeting", {
-        userFirstName: user.firstName
-      })
-    );
+  
 
-    let curation = this.genQuickReply(i18n.__("get_started.help"), [
+    let welcome = this.genQuickReply(i18n.__("profile.greeting", {
+      userFirstName: user.firstName
+    }), [
       {
         title: i18n.__("menu.arabic"),
         payload: "ARABIC"
@@ -161,6 +159,6 @@ module.exports = class Response {
         payload: "ENGLISH"
       }
     ]);
-    return [welcome, curation];
+    return [welcome];
   }
 };

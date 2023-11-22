@@ -21,7 +21,7 @@ const Curation = require("./curation"),
   branchLocations = require("../data/cairo locations with bitly link.json"),
   radiology_location = require("../data/فروع الأشعة.json"),
   preparations = require("../data/Copy of تحضيرات الاشعات.json"),
-  prices = require("../data/Prices/CT_PET_US.json"),
+  raidiologyPrices = require("../data/Prices/CT_PET_US.json"),
   X_ray = require("../data/Prices/X-Ray.json"),
   crPrice = require("../data/Prices/CR.json"),
   dxPrice = require("../data/Prices/DX.json"),
@@ -33,8 +33,11 @@ const Curation = require("./curation"),
   config = require("./config");
 
 var waitingUsers = [];
+var isCustomerServicesFlag=false;
+var isRadiologyPendingFlag = false;
 var isPrepPendingFlag = false;
 var isContractPendingFlag = false;
+var category=[];
 var prepName;
 var radiologyName;
 var companyName;
@@ -62,7 +65,12 @@ function editDistance(s1, s2) {
   return costs[s2.length];
 }
 
+
 function similarity(s1, s2) {
+   // Check if either string is not a valid string
+   if (typeof s1 !== 'string' || typeof s2 !== 'string') {
+    return 0.0;
+  }
   var longer = s1;
   var shorter = s2;
   if (s1.length < s2.length) {
@@ -73,7 +81,9 @@ function similarity(s1, s2) {
   if (longerLength == 0) {
     return 1.0;
   }
+  console.log("S2: "+longer);
   return (
+
     (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength)
   );
 }
@@ -93,6 +103,18 @@ function preparationSimilarityChecker(array, string) {
       scan: json.scan,
       value: json.preparation,
       similarity: similarity(json.scan, string)
+    };
+  });
+}
+// Prices
+function pricesSimilarityChecker(array, string) {  
+  return array.map((json) => {   
+    return {
+      radiology: json.radiology_Name,
+      Service_Name: json.Service_Name,
+      value: json.Price,
+      similarityArabic: similarity(json.radiology_Name, string),
+      similarityEnglish: similarity(json.Service_Name, string)
     };
   });
 }
@@ -170,10 +192,69 @@ module.exports = class Receive {
 
     console.log("greeting: " + greeting);
     let message = event.message.text.trim().toLowerCase();
-
+    
     let response;
-   
-     if (isPrepPendingFlag) {
+    if (isCustomerServicesFlag) {
+     isCustomerServicesFlag=false
+    return Response.genButtonTemplate(
+      i18n.__("customer_service.redirection"),
+      [
+        {
+          type: "postback",
+          title: i18n.__("customer_service.chat"),
+          payload: "GITHUB"
+        }
+      ]
+      );
+   }
+   else if (isRadiologyPendingFlag) {
+             
+        radiologyName = pricesSimilarityChecker(category, message).reduce(
+          (prev, curr) => {
+            if (prev.similarityArabic >= curr.similarityArabic ||prev.similarityEnglish >= curr.similarityEnglish) {
+              return prev;
+            } else {
+              return curr;
+            }
+          }
+        );
+        console.log("****radiology_Name:"+radiologyName.similarityArabic);
+        isRadiologyPendingFlag = false;
+        if(radiologyName.similarityArabic>.7||radiologyName.similarityArabic>radiologyName.similarityEnglish){
+      
+        
+        return Response.genQuickReply(
+          i18n.__("names_Radiology.suggestion", { radiologyName: radiologyName.radiology }),
+          [
+            {
+              title: i18n.__("common.yes"),
+              payload: "SHOWRADIOLOGYPRICE"
+            },
+            {
+              title: i18n.__("common.no"),
+              payload: "NOTRADIOLOGYPRICE"
+            }
+          ]
+        );
+      }else {
+        return Response.genQuickReply(
+          i18n.__("names_Radiology.suggestion", { radiologyName: radiologyName.Service_Name }),
+          [
+            {
+              title: i18n.__("common.yes"),
+              payload: "SHOWRADIOLOGYPRICE"
+            },
+            {
+              title: i18n.__("common.no"),
+              payload: "NOTRADIOLOGYPRICE"
+            }
+          ]
+        );
+      }
+      
+      
+    }
+   else if (isPrepPendingFlag) {
       prepName = preparationSimilarityChecker(preparations, message).reduce(
         (prev, curr) => {
           if (prev.similarity >= curr.similarity) {
@@ -306,6 +387,7 @@ module.exports = class Receive {
       payload.includes("SHOWPREP") ||
       payload.includes("SHOWRADIOLOGYPRICE") ||
       payload.includes("PRESCRIOTION") ||
+      payload.includes("PRICE") ||
       payload.includes("CARE_HELP") 
     ) {
       waitingUsers.push(this.webhookEvent.sender.id);
@@ -469,13 +551,8 @@ module.exports = class Receive {
     } 
     else if (payload.includes("OTHER_RADIOLOGY")) {
       // أشعة أخرى    
-      response = Response.genButtonTemplate(i18n.__("names_Radiology.enquire"), [
-        {
-           type: "postback",
-           title: i18n.__("customer_service.chat"),
-           payload: "GITHUB"
-         }
-     ]);
+      response = Response.genText(i18n.__("names_Radiology.enquire"));   
+      isCustomerServicesFlag=true     
     }
     else if (payload.includes("NOTCOMPANY")) {
       // غير متاح
@@ -529,6 +606,11 @@ module.exports = class Receive {
         }
       ]);
     }
+    else if (payload.includes("NOTRADIOLOGYPRICE")) {
+      // ادخال صيغة صحيحة
+      response = Response.genText(i18n.__("names_Radiology.check"));
+      isRadiologyPendingFlag = true;
+    } 
     else if (payload.includes("SHOWRADIOLOGYPRICE")) {
       // عرض سعر محدد
       response = Response.genQuickReply(i18n.__("names_Radiology.price", { radiologyPrice: radiologyName.value }), [
@@ -539,7 +621,7 @@ module.exports = class Receive {
     }
      else if (payload.includes("SHOW_RADIOLOGY-PRICES") ) {
       
-      // عرض بعض الأسعار
+      // عرض ال categories
       response = Response.genQuickReply(i18n.__("names_Radiology.message"), [
         {
           title: i18n.__("names_Radiology.X-ray"),
@@ -617,243 +699,63 @@ module.exports = class Receive {
     } 
     else if (payload.includes("CT_PRICE")) {
       // أشعة مقطعية
-      response = prices.CT.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == prices.CT.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=raidiologyPrices.CT;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("US_PRICE")) {
       // الموجات فوق الصوتية"
-      response = prices.US.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == prices.US.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=raidiologyPrices.US;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("PET_PRICE")) {
       // المسح الذرى
-      response = prices.PET.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == prices.PET.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=raidiologyPrices.PET;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("X-RAY_PRICE")) {
       //أشعة عادية
-              response = X_ray.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == X_ray.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=X_ray;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("mg_PRICE")) {
       //ماموجرافى
-              response = mgPrice.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == mgPrice.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=mgPrice;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("CR_PRICE")) {
       //أشعة عادية ديجيتال
-              response = crPrice.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == crPrice.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=crPrice;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("NNUCLEAR_PRICE")) {
       //الطب النووى
-              response = nnuPrice.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == nnuPrice.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=nnuPrice;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("OT_PRICE")) {
-      //قياس هشاشة
-              response = otPrice.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == otPrice.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      //OT 
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=otPrice;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("DX_PRICE")) {
       //قياس هشاشة
-              response = dxPrice.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == dxPrice.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=dxPrice;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("MRI_PRICE")) {
       //أشعة بالرنين المغنطيسي"
-              response = mriPrice.map((price, index) => {
-        let prices_Radiology =          
-          price["radiology_Name"] +
-          "\n" +          
-          price["Service_Name"]+
-          "\n" +
-         
-          "السعر : " +
-            price.Price+" "+
-          "جنية" 
-         
-        if (index == mriPrice.length - 1) {
-          return Response.genQuickReply(prices_Radiology, [
-            {
-              title: i18n.__("menu.suggestion"),
-              payload: "GITHUB"
-            }
-          ]);
-        }
-        return Response.genText(prices_Radiology);
-      });
+      response = Response.genText(i18n.__("names_Radiology.enquireCateg"));
+      category=mriPrice;
+      isRadiologyPendingFlag=true
     }
     else if (payload.includes("RADIOLOGY_BRANCHES")) {
       // فروع الأشعة
@@ -953,24 +855,12 @@ module.exports = class Receive {
           }
       ]);
     } else if (payload.includes("RESULT_XRAY")) {
-      response = Response.genButtonTemplate(
-        i18n.__("radiology_results.enquire"),
-        [
-          {
-            type: "postback",
-            title: i18n.__("customer_service.chat"),
-            payload: "GITHUB"
-          }
-        ]
-      );
+      response = Response.genText(i18n.__("radiology_results.enquire"));   
+      isCustomerServicesFlag=true
+  
     } else if (payload.includes("VISIT_DETAILS")) {
-      response = Response.genButtonTemplate(i18n.__("home_visit.submit"), [
-         {
-            type: "postback",
-            title: i18n.__("customer_service.chat"),
-            payload: "GITHUB"
-          }
-      ]);
+      response = Response.genText(i18n.__("home_visit.submit"));   
+      isCustomerServicesFlag=true    
     } else if (payload.includes("PREPARATIONS")) {
       isPrepPendingFlag = true;
       response = Response.genText(i18n.__("preparations.enquire"));
