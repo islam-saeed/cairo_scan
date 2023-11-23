@@ -284,7 +284,8 @@ module.exports = class Receive {
           }
         ]
       );
-    } else if (isContractPendingFlag) {
+    } 
+    else if (isContractPendingFlag) {
       companyName = companySimilarityChecker(companies, message).reduce(
         (prev, curr) => {
           if (prev.similarity >= curr.similarity) {
@@ -389,6 +390,7 @@ module.exports = class Receive {
       payload.includes("SHOWRADIOLOGYPRICE") ||
       payload.includes("PRESCRIOTION") ||
       payload.includes("PRICE") ||
+      payload.includes("CONTRACTS") ||
       payload.includes("CARE_HELP")
     ) {
       waitingUsers.push(this.webhookEvent.sender.id);
@@ -942,13 +944,9 @@ module.exports = class Receive {
         }
       ]);
     } else if (payload.includes("RESULT_TESTS")) {
-      response = Response.genButtonTemplate(i18n.__("test_results.enquire"), [
-        {
-          type: "postback",
-          title: i18n.__("customer_service.chat"),
-          payload: "GITHUB"
-        }
-      ]);
+      response = Response.genText(i18n.__("test_results.enquire"));
+      isCustomerServicesFlag = true;
+   
     } else if (payload.includes("RESULT_XRAY")) {
       response = Response.genText(i18n.__("radiology_results.enquire"));
       isCustomerServicesFlag = true;
